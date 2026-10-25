@@ -10,16 +10,26 @@ import Select from '../../../Select';
 import Video from '../../settings/Video';
 import Helper from '../../helper';
 
+// The upload filter below always produces 8 bit 4:2:0, so Main is the only
+// profile this coder can actually encode.
+const profiles = ['main'];
+
 function init(initialState) {
 	const state = {
 		bitrate: '4096',
 		fps: '25',
 		gop: '2',
-		profile: '77',
+		profile: 'main',
 		rc_mode: '1',
 		quality: '-1',
 		...initialState,
 	};
+
+	// Profiles stored before this fix are H.264 numbers (578/77/100), which
+	// hevc_vaapi rejects with "No usable encoding profile found".
+	if (!profiles.includes(state.profile)) {
+		state.profile = 'main';
+	}
 
 	return state;
 }
@@ -89,9 +99,7 @@ RateControl.defaultProps = {
 function Profile(props) {
 	return (
 		<Select label={<Trans>Profile</Trans>} value={props.value} onChange={props.onChange}>
-			<MenuItem value="578">baseline (constrained)</MenuItem>
-			<MenuItem value="77">main</MenuItem>
-			<MenuItem value="100">high</MenuItem>
+			<MenuItem value="main">main</MenuItem>
 		</Select>
 	);
 }

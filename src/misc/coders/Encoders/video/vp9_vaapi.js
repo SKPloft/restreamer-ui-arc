@@ -10,16 +10,25 @@ import Select from '../../../Select';
 import Video from '../../settings/Video';
 import Helper from '../../helper';
 
+// The upload filter below always produces 8 bit 4:2:0, i.e. VP9 profile 0.
+const profiles = ['0'];
+
 function init(initialState) {
 	const state = {
 		bitrate: '4096',
 		fps: '25',
 		gop: '2',
-		profile: '77',
+		profile: '0',
 		rc_mode: '1',
 		quality: '-1',
 		...initialState,
 	};
+
+	// Profiles stored before this fix are H.264 numbers (578/77/100), which
+	// vp9_vaapi rejects.
+	if (!profiles.includes(state.profile)) {
+		state.profile = '0';
+	}
 
 	return state;
 }
@@ -89,9 +98,7 @@ RateControl.defaultProps = {
 function Profile(props) {
 	return (
 		<Select label={<Trans>Profile</Trans>} value={props.value} onChange={props.onChange}>
-			<MenuItem value="578">baseline (constrained)</MenuItem>
-			<MenuItem value="77">main</MenuItem>
-			<MenuItem value="100">high</MenuItem>
+			<MenuItem value="0">profile 0</MenuItem>
 		</Select>
 	);
 }
