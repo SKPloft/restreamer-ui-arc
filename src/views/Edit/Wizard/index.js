@@ -12,6 +12,7 @@ import Typography from '@mui/material/Typography';
 
 import * as Decoders from '../../../misc/coders/Decoders';
 import * as Encoders from '../../../misc/coders/Encoders';
+import { targetCodecs } from '../../../misc/coders/targets';
 import * as M from '../../../utils/metadata';
 import FullSources from '../Sources';
 import H from '../../../utils/help';
@@ -493,12 +494,9 @@ export default function Wizard(props) {
 			);
 		}
 
-		// Offer AV1 coders next to H.264 so the hardware encoders registered for
-		// av1 (VAAPI/QSV) are reachable from the ingest wizard as well.
-		const encoders = [
-			...Encoders.Video.GetCodersForCodec('h264', $skills.encoders.video, 'any'),
-			...Encoders.Video.GetCodersForCodec('av1', $skills.encoders.video, 'any'),
-		];
+		// Offer every target codec (H.264, HEVC, AV1, VP9) so the hardware
+		// coders the connected ffmpeg reports are reachable from the wizard.
+		const encoders = targetCodecs.flatMap((codec) => Encoders.Video.GetCodersForCodec(codec, $skills.encoders.video, 'any'));
 
 		let encodersList = [];
 
@@ -511,6 +509,9 @@ export default function Wizard(props) {
 		}
 
 		let streamList = [];
+
+		const selectedEncoder = Encoders.Video.Get($profile.video.encoder.coder);
+		const encoderCodec = selectedEncoder === null ? null : selectedEncoder.codec;
 
 		for (let s of streams) {
 			if (s.type !== 'video') {
@@ -539,6 +540,7 @@ export default function Wizard(props) {
 				decodersList={decodersList}
 				onDecoderChange={handleDecoderChange}
 				encoder={$profile.video.encoder.coder}
+				encoderCodec={encoderCodec}
 				encodersList={encodersList}
 				onEncoderChange={handleEncoderChange}
 			/>

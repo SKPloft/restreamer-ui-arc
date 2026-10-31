@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Paper from '../../../misc/Paper';
 import PaperHeader from '../../../misc/PaperHeader';
 import Select from '../../../misc/Select';
+import CodecNotice from '../../../misc/coders/CodecNotice';
 
 export default function VideoProfile(props) {
 	return (
@@ -55,6 +56,7 @@ export default function VideoProfile(props) {
 										{props.encodersList}
 									</Select>
 								</Grid>
+								<CodecNotice codec={props.encoderCodec} coder={props.encoder} />
 							</React.Fragment>
 						)}
 					</React.Fragment>

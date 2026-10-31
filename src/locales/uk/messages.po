@@ -13,12 +13,12 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/misc/EncodingSelect.js:237
+#: src/misc/EncodingSelect.js:239
 msgid "<0>Compatibility list</0>"
 msgstr "<0>Список сумісності</0>"
 
-#: src/views/Edit/Profile.js:560
-#: src/views/Edit/Profile.js:719
+#: src/views/Edit/Profile.js:561
+#: src/views/Edit/Profile.js:720
 msgid "<0>Show probe details</0>"
 msgstr "<0>Показати деталі зонда</0>"
 
@@ -45,7 +45,7 @@ msgstr "7 (+ фрагментований формат MP4)"
 #: src/misc/ChannelList.js:412
 #: src/views/Edit/index.js:647
 #: src/views/Edit/index.js:666
-#: src/views/Edit/Profile.js:599
+#: src/views/Edit/Profile.js:600
 #: src/views/Edit/Wizard/Abort.js:14
 #: src/views/Publication/Edit.js:631
 #: src/views/Settings.js:2278
@@ -236,7 +236,7 @@ msgstr "Аудіо пристрій"
 msgid "Audio from device"
 msgstr "Аудіо з пристрою"
 
-#: src/views/Edit/Profile.js:614
+#: src/views/Edit/Profile.js:615
 #: src/views/Edit/ProfileSummary.js:90
 #: src/views/Publication/Edit.js:565
 msgid "Audio settings"
@@ -279,6 +279,10 @@ msgstr "Автоматичне очищення всіх мультимедій�
 msgid "Autoplay"
 msgstr "Автовідтворення"
 
+#: src/misc/coders/CodecNotice.js:28
+msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
+msgstr ""
+
 #: src/views/Playersite.js:477
 msgid "Available"
 msgstr "Доступно"
@@ -291,13 +295,13 @@ msgstr "AVFoundation"
 msgid "avoid_negative_ts"
 msgstr "avoid_negative_ts"
 
-#: src/views/Edit/Profile.js:760
+#: src/views/Edit/Profile.js:761
 #: src/views/Edit/Wizard/Abort.js:25
 #: src/views/Edit/Wizard/Audio.js:109
 #: src/views/Edit/Wizard/License.js:38
 #: src/views/Edit/Wizard/Metadata.js:35
 #: src/views/Edit/Wizard/Video.js:66
-#: src/views/Edit/Wizard/VideoProfile.js:67
+#: src/views/Edit/Wizard/VideoProfile.js:69
 #: src/views/Publication/Add.js:561
 msgid "Back"
 msgstr "Назад"
@@ -452,7 +456,7 @@ msgstr "Виберіть вхідний потік ..."
 msgid "Choose between CFR and VFR (Auto)"
 msgstr "Виберіть між CFR та VFR (Авто)"
 
-#: src/misc/EncodingSelect.js:215
+#: src/misc/EncodingSelect.js:216
 msgid "Choose codec ..."
 msgstr "Виберіть кодек ..."
 
@@ -487,7 +491,7 @@ msgstr "Закрити"
 msgid "Code injection"
 msgstr "Введення коду"
 
-#: src/misc/EncodingSelect.js:213
+#: src/misc/EncodingSelect.js:214
 #: src/misc/modals/Hint.js:68
 #: src/misc/modals/Hint.js:83
 msgid "Codec"
@@ -685,8 +689,8 @@ msgstr "Колір смерті"
 msgid "Decibels (dB)"
 msgstr "Децибели (дБ)"
 
-#: src/misc/EncodingSelect.js:223
-#: src/views/Edit/Wizard/VideoProfile.js:48
+#: src/misc/EncodingSelect.js:225
+#: src/views/Edit/Wizard/VideoProfile.js:49
 msgid "Decoder"
 msgstr "Декодер"
 
@@ -759,6 +763,8 @@ msgstr "Опис"
 msgid "Design"
 msgstr "Дизайн"
 
+#: src/misc/coders/Encoders/video/av1_qsv.js:153
+#: src/misc/coders/Encoders/video/av1_vaapi.js:155
 #: src/views/Edit/Sources/Framebuffer.js:87
 #: src/views/Edit/Wizard/Audio.js:87
 #: src/views/Publication/Services/Framebuffer.js:93
@@ -922,7 +928,7 @@ msgstr "Наполегливо рекомендуємо увімкнути ав�
 msgid "Enabling basic auth is strongly advised. Otherwise, anybody could write data to /memfs."
 msgstr "Настійно рекомендується увімкнути базові повноваження. Інакше будь-хто зможе записати дані до /memfs."
 
-#: src/views/Edit/Wizard/VideoProfile.js:54
+#: src/views/Edit/Wizard/VideoProfile.js:55
 msgid "Encoder"
 msgstr "Енкодер"
 
@@ -1018,12 +1024,12 @@ msgstr "Не вдалося створити службу публікації (
 msgid "Failed to create publication website files."
 msgstr "Не вдалося створити файли веб-сайту публікації."
 
-#: src/views/Edit/Profile.js:512
-#: src/views/Edit/Profile.js:671
+#: src/views/Edit/Profile.js:513
+#: src/views/Edit/Profile.js:672
 msgid "Failed to probe the source. Please check the <0>probe details</0>."
 msgstr "Не вдалось отримати джерело. Перевірте <0>probe details</0>."
 
-#: src/utils/restreamer.js:449
+#: src/utils/restreamer.js:450
 msgid "Failed to refresh token: {0}"
 msgstr "Не вдалося оновити токен: {0}"
 
@@ -1077,7 +1083,7 @@ msgstr "Шлях до файлу"
 msgid "Filter"
 msgstr "Фільтр"
 
-#: src/views/Edit/Profile.js:768
+#: src/views/Edit/Profile.js:769
 msgid "Finish"
 msgstr "Завершити"
 
@@ -1189,6 +1195,14 @@ msgstr "Google Analytics ID"
 msgid "Google Analytics Tracker Name"
 msgstr "Google Analytics Tracker Name"
 
+#: src/misc/coders/CodecNotice.js:19
+msgid "H.264 can be used for HLS, RTMP publishing and any player."
+msgstr ""
+
+#: src/misc/coders/CodecNotice.js:50
+msgid "Hardware coders need the matching device and driver (VAAPI: /dev/dri, QSV: oneVPL runtime)."
+msgstr ""
+
 #: src/views/Edit/Sources/V4L.js:154
 #: src/views/Edit/Wizard/Sources/V4L.js:140
 msgid "Hardware device"
@@ -1205,6 +1219,10 @@ msgstr "Заголовок"
 #: src/misc/coders/settings/Video.js:243
 msgid "Height"
 msgstr "Висота"
+
+#: src/misc/coders/CodecNotice.js:23
+msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
+msgstr ""
 
 #: src/views/Main/index.js:406
 msgid "HLS"
@@ -1279,8 +1297,8 @@ msgstr "Відбиток"
 msgid "In addition to the player, the Restreamer offers a complete landingpage, which you can use to present your live stream easily and quickly."
 msgstr "Окрім плеєра, Restreamer пропонує повноцінний лендінг, за допомогою якого ви можете легко і швидко презентувати свій прямий ефір."
 
-#: src/views/Edit/Profile.js:521
-#: src/views/Edit/Profile.js:680
+#: src/views/Edit/Profile.js:522
+#: src/views/Edit/Profile.js:681
 msgid "In order to proceed anyways, you can provide <0>hints</0> about the available streams."
 msgstr ""
 
@@ -1484,15 +1502,15 @@ msgstr "Логування"
 msgid "Login"
 msgstr "Логін"
 
-#: src/utils/restreamer.js:262
-#: src/utils/restreamer.js:296
+#: src/utils/restreamer.js:263
+#: src/utils/restreamer.js:297
 msgid "Login failed: {0}"
 msgstr "Помилка входу: {0}"
 
-#: src/utils/restreamer.js:271
-#: src/utils/restreamer.js:276
-#: src/utils/restreamer.js:305
-#: src/utils/restreamer.js:310
+#: src/utils/restreamer.js:272
+#: src/utils/restreamer.js:277
+#: src/utils/restreamer.js:306
+#: src/utils/restreamer.js:311
 msgid "Login failed: Couldn't load API details"
 msgstr "Помилка входу: не вдалося завантажити деталі API"
 
@@ -1530,7 +1548,7 @@ msgstr "Основний канал"
 msgid "Main channel not found"
 msgstr "Основний канал не знайдено"
 
-#: src/views/Edit/Wizard/index.js:200
+#: src/views/Edit/Wizard/index.js:201
 msgid "Main channel saved"
 msgstr "Головний канал збережено"
 
@@ -1714,11 +1732,11 @@ msgstr "Мережеве джерело"
 #: src/views/Edit/Wizard/Audio.js:114
 #: src/views/Edit/Wizard/Metadata.js:40
 #: src/views/Edit/Wizard/Video.js:71
-#: src/views/Edit/Wizard/VideoProfile.js:78
+#: src/views/Edit/Wizard/VideoProfile.js:80
 msgid "Next"
 msgstr "Далі"
 
-#: src/views/Edit/Profile.js:602
+#: src/views/Edit/Profile.js:603
 msgid "Next: Audio"
 msgstr "Далі: Аудіо"
 
@@ -1756,7 +1774,7 @@ msgstr "Джерело не вибрано"
 msgid "No sources available"
 msgstr "Немає доступних джерел"
 
-#: src/misc/EncodingSelect.js:175
+#: src/misc/EncodingSelect.js:176
 msgid "No suitable encoder found."
 msgstr "Відповідний енкодер не знайдено."
 
@@ -2018,6 +2036,7 @@ msgstr "Постер"
 msgid "Poster image URL"
 msgstr "URL-адреса зображення плакату"
 
+#: src/misc/coders/Encoders/video/av1_qsv.js:76
 #: src/misc/coders/Encoders/video/h264_libx264.js:82
 #: src/misc/coders/Encoders/video/h264_nvenc.js:75
 #: src/misc/coders/Encoders/video/hevc_libx265.js:82
@@ -2078,13 +2097,15 @@ msgstr "Звіт про процес"
 msgid "Processing & Control"
 msgstr "Обробка та контроль"
 
+#: src/misc/coders/Encoders/video/av1_qsv.js:95
+#: src/misc/coders/Encoders/video/av1_vaapi.js:94
 #: src/misc/coders/Encoders/video/h264_nvenc.js:100
 #: src/misc/coders/Encoders/video/h264_vaapi.js:89
-#: src/misc/coders/Encoders/video/hevc_vaapi.js:91
+#: src/misc/coders/Encoders/video/hevc_vaapi.js:101
 #: src/misc/coders/Encoders/video/hevc_videotoolbox.js:64
-#: src/misc/coders/Encoders/video/vp9_vaapi.js:91
+#: src/misc/coders/Encoders/video/vp9_vaapi.js:100
 #: src/misc/coders/settings/Video.js:142
-#: src/views/Edit/Wizard/VideoProfile.js:27
+#: src/views/Edit/Wizard/VideoProfile.js:28
 msgid "Profile"
 msgstr "Профіль"
 
@@ -2147,9 +2168,10 @@ msgstr "Витягнути або отримати дані:"
 msgid "QP"
 msgstr "QP"
 
+#: src/misc/coders/Encoders/video/av1_vaapi.js:152
 #: src/misc/coders/Encoders/video/h264_vaapi.js:146
-#: src/misc/coders/Encoders/video/hevc_vaapi.js:148
-#: src/misc/coders/Encoders/video/vp9_vaapi.js:148
+#: src/misc/coders/Encoders/video/hevc_vaapi.js:156
+#: src/misc/coders/Encoders/video/vp9_vaapi.js:155
 #: src/misc/Progress.js:118
 msgid "Quality"
 msgstr "Якість"
@@ -2159,10 +2181,11 @@ msgstr "Якість"
 msgid "Raspberry Pi camera"
 msgstr "Raspberry Pi камера"
 
+#: src/misc/coders/Encoders/video/av1_vaapi.js:75
 #: src/misc/coders/Encoders/video/h264_nvenc.js:152
 #: src/misc/coders/Encoders/video/h264_vaapi.js:70
-#: src/misc/coders/Encoders/video/hevc_vaapi.js:72
-#: src/misc/coders/Encoders/video/vp9_vaapi.js:72
+#: src/misc/coders/Encoders/video/hevc_vaapi.js:82
+#: src/misc/coders/Encoders/video/vp9_vaapi.js:81
 msgid "Rate control"
 msgstr "Контроль швидкості"
 
@@ -2468,7 +2491,7 @@ msgstr "Виберіть джерело відео:"
 msgid "Select whether you pull the stream from a <0>network source</0> (such as a network camera) or the <1>internal RTMP server</1> (e.g., OBS streams to the Restreamer)."
 msgstr "Виберіть, чи витягувати потік з <0>мережевого джерела</0> (наприклад, мережевої камери) або з <1>внутрішнього RTMP-сервера</1> (наприклад, потоки OBS до рестрімера)."
 
-#: src/misc/EncodingSelect.js:209
+#: src/misc/EncodingSelect.js:210
 msgid "Select your encoding setting:"
 msgstr "Виберіть налаштування кодування:"
 
@@ -2834,7 +2857,7 @@ msgid "The deletion of this channel can not be recovered. All publications of th
 msgstr "Видалення цього каналу не можна відновити. Всі публікації цього каналу будуть видалені."
 
 #: src/views/Edit/index.js:302
-#: src/views/Edit/Wizard/index.js:176
+#: src/views/Edit/Wizard/index.js:177
 #: src/views/Publication/Edit.js:262
 msgid "The input profile is not complete. Please define a video and audio source."
 msgstr "Вхідний профіль не завершено. Будь ласка, визначте джерело відео та аудіо."
@@ -2911,7 +2934,7 @@ msgstr "Налаштування для \"{0}\" збережено"
 msgid "The source doesn't provide any audio streams."
 msgstr "Джерело не транслює жодних аудіопотоків."
 
-#: src/views/Edit/Profile.js:696
+#: src/views/Edit/Profile.js:697
 msgid "The source doesn't provide any audio streams. Please check the <0>probe details</0>."
 msgstr "Джерело не транслює жодних аудіопотоків. Перевірте <0>деталі зонда</0>."
 
@@ -2923,7 +2946,7 @@ msgstr "Джерело не надає жодних сумісних аудіо�
 msgid "The source doesn't provide any compatible video streams. Please check the <0>requirements</0>."
 msgstr "Джерело не надає жодних сумісних відеопотоків. Будь ласка, перевірте <0>вимоги</0>."
 
-#: src/views/Edit/Profile.js:537
+#: src/views/Edit/Profile.js:538
 msgid "The source doesn't provide any video streams. Please check the <0>probe details</0>."
 msgstr "Джерело не надає відеопотоків. Перевірте <0>деталі зонда</0>."
 
@@ -2939,7 +2962,7 @@ msgstr "Для виводу SRT потрібен сервер SRT."
 msgid "The video source doesn't provide any compatible audio stream. <0>Silence audio</0> is recommended. Services e.g. YouTube, Facebook & Co. require an audio channel."
 msgstr "Джерело відео не надає сумісного аудіопотоку. <Рекомендується ввімкнути беззвучний звук. Сервіси, такі як YouTube, Facebook & Co. вимагають аудіоканал."
 
-#: src/views/Edit/Wizard/VideoProfile.js:23
+#: src/views/Edit/Wizard/VideoProfile.js:24
 msgid "The video source is compatible. Select the desired resolution:"
 msgstr "Джерело відео сумісне. Виберіть бажану роздільну здатність:"
 
@@ -3345,7 +3368,7 @@ msgstr "Відео"
 msgid "Video device"
 msgstr "Відеопристрій"
 
-#: src/views/Edit/Profile.js:490
+#: src/views/Edit/Profile.js:491
 #: src/views/Edit/ProfileSummary.js:66
 #: src/views/Publication/Edit.js:540
 msgid "Video settings"
@@ -3353,7 +3376,7 @@ msgstr "Налаштування відео"
 
 #: src/views/Edit/Wizard/Source.js:15
 #: src/views/Edit/Wizard/Video.js:19
-#: src/views/Edit/Wizard/VideoProfile.js:16
+#: src/views/Edit/Wizard/VideoProfile.js:17
 msgid "Video setup"
 msgstr "Налаштування відео"
 
@@ -3380,6 +3403,10 @@ msgstr "Віртуальне джерело"
 #: src/misc/filters/audio/Volume.js:44
 msgid "Volume"
 msgstr "Гучність"
+
+#: src/misc/coders/CodecNotice.js:36
+msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
+msgstr ""
 
 #: src/views/Publication/Services/Livespotting.js:88
 msgid "VPU ID"
@@ -3438,11 +3465,11 @@ msgstr "Ви повинні підключитися вручну"
 msgid "You have unsaved changes. Please save them before you can control the service again."
 msgstr "У вас є незбережені зміни. Будь ласка, збережіть їх, перш ніж знову зможете керувати службою."
 
-#: src/views/Edit/Wizard/VideoProfile.js:36
+#: src/views/Edit/Wizard/VideoProfile.js:37
 msgid "Your stream needs to be encoded, but there's no suitable encoder available."
 msgstr "Ваш потік потрібно кодувати, але немає відповідного кодера."
 
-#: src/views/Edit/Wizard/VideoProfile.js:43
+#: src/views/Edit/Wizard/VideoProfile.js:44
 msgid "Your stream needs to be encoded. Choose the desired encoder:"
 msgstr "Ваш потік потрібно закодувати. Виберіть потрібний енкодер:"
 

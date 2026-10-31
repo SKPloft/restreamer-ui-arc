@@ -9,6 +9,7 @@ import Link from '@mui/material/Link';
 
 import * as Encoders from './coders/Encoders';
 import * as Decoders from './coders/Decoders';
+import CodecNotice from './coders/CodecNotice';
 import Select from './Select';
 import H from '../utils/help';
 
@@ -217,6 +218,7 @@ export default function EncodingSelect(props) {
 					{encoderList}
 				</Select>
 			</Grid>
+			<CodecNotice codec={coder !== null ? coder.codec : null} coder={coder !== null ? coder.coder : null} />
 			{decoderList.length >= 2 && (
 				<React.Fragment>
 					<Grid item xs={12}>

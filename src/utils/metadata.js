@@ -244,6 +244,7 @@ import SemverGt from 'semver/functions/gt';
 import SemverCompare from 'semver/functions/compare';
 
 import * as Coders from '../misc/coders/Encoders';
+import { targetCodecs } from '../misc/coders/targets';
 import * as Filters from '../misc/filters';
 import * as version from '../version';
 
@@ -1090,8 +1091,8 @@ const preselectProfile = (type, streams, profile, encoders, preselectAudio = tru
 
 		if (video.encoder.coder === 'copy') {
 			// Copy is only muxable when the output containers accept the codec.
-			// AV1 is allowed because the HLS output is fMP4 (hls_segment_type fmp4).
-			return streamCodec === 'h264' || streamCodec === 'av1';
+			// Non H.264 codecs are written as fMP4 HLS (hls_segment_type fmp4).
+			return targetCodecs.includes(streamCodec);
 		}
 
 		const coder = Coders.Video.Get(video.encoder.coder);
@@ -1099,7 +1100,7 @@ const preselectProfile = (type, streams, profile, encoders, preselectAudio = tru
 			return false;
 		}
 
-		if (coder.codec !== 'h264' && coder.codec !== 'av1') {
+		if (!targetCodecs.includes(coder.codec)) {
 			return false;
 		}
 

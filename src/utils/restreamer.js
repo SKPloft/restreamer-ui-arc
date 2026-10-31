@@ -10,6 +10,7 @@ import SemverMajor from 'semver/functions/major';
 import SemverMinor from 'semver/functions/minor';
 
 import * as M from './metadata';
+import { isFmp4OnlyCoder } from '../misc/coders/targets';
 import * as Storage from './storage';
 import * as Version from '../version';
 import API from './api';
@@ -1675,18 +1676,18 @@ class Restreamer {
 			tee_muxer = true;
 		}
 
-		// AV1 cannot be muxed into MPEG-TS, so AV1 outputs must use the fMP4 HLS
-		// variant. Derive the effective HLS version from the output video coder.
-		const videoCoderIsAV1 = (() => {
+		// HEVC/AV1/VP9 cannot be muxed into MPEG-TS, so those outputs must use
+		// the fMP4 HLS variant. Derive the effective version from the coder.
+		const outputVideoCoder = (() => {
 			const options = (outputs[0] && outputs[0].options) || [];
 			for (let i = 0; i < options.length - 1; i++) {
 				if (options[i] === '-c:v' || options[i] === '-codec:v') {
-					return `${options[i + 1]}`.startsWith('av1');
+					return `${options[i + 1]}`;
 				}
 			}
-			return false;
+			return '';
 		})();
-		const hls_version = videoCoderIsAV1 ? 7 : control.hls.version;
+		const hls_version = isFmp4OnlyCoder(outputVideoCoder) ? 7 : control.hls.version;
 
 		// 1.5 Set hls filename vars
 		const hlsStorage = control.hls.storage;

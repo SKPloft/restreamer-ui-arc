@@ -13,12 +13,12 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/misc/EncodingSelect.js:237
+#: src/misc/EncodingSelect.js:239
 msgid "<0>Compatibility list</0>"
 msgstr "<0>Λίστα συμβατότητας</0>"
 
-#: src/views/Edit/Profile.js:560
-#: src/views/Edit/Profile.js:719
+#: src/views/Edit/Profile.js:561
+#: src/views/Edit/Profile.js:720
 msgid "<0>Show probe details</0>"
 msgstr "<0>Εμφάνιση λεπτομερειών ανιχνευτή</0>"
 
@@ -45,7 +45,7 @@ msgstr "7 (+ κατακερματισμένη μορφή MP4)"
 #: src/misc/ChannelList.js:412
 #: src/views/Edit/index.js:647
 #: src/views/Edit/index.js:666
-#: src/views/Edit/Profile.js:599
+#: src/views/Edit/Profile.js:600
 #: src/views/Edit/Wizard/Abort.js:14
 #: src/views/Publication/Edit.js:631
 #: src/views/Settings.js:2278
@@ -236,7 +236,7 @@ msgstr "Συσκευή ήχου"
 msgid "Audio from device"
 msgstr "Ήχος από συσκευή"
 
-#: src/views/Edit/Profile.js:614
+#: src/views/Edit/Profile.js:615
 #: src/views/Edit/ProfileSummary.js:90
 #: src/views/Publication/Edit.js:565
 msgid "Audio settings"
@@ -279,6 +279,10 @@ msgstr "Αυτόματος καθαρισμός όλων των δεδομένω
 msgid "Autoplay"
 msgstr "Αυτόματο παιχνίδι"
 
+#: src/misc/coders/CodecNotice.js:28
+msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
+msgstr ""
+
 #: src/views/Playersite.js:477
 msgid "Available"
 msgstr "Διαθέσιμο"
@@ -291,13 +295,13 @@ msgstr "Ίδρυμα AVFoundation"
 msgid "avoid_negative_ts"
 msgstr "avoid_negative_ts"
 
-#: src/views/Edit/Profile.js:760
+#: src/views/Edit/Profile.js:761
 #: src/views/Edit/Wizard/Abort.js:25
 #: src/views/Edit/Wizard/Audio.js:109
 #: src/views/Edit/Wizard/License.js:38
 #: src/views/Edit/Wizard/Metadata.js:35
 #: src/views/Edit/Wizard/Video.js:66
-#: src/views/Edit/Wizard/VideoProfile.js:67
+#: src/views/Edit/Wizard/VideoProfile.js:69
 #: src/views/Publication/Add.js:561
 msgid "Back"
 msgstr "Πίσω"
@@ -452,7 +456,7 @@ msgstr "Επιλέξτε μια ροή εισόδου ..."
 msgid "Choose between CFR and VFR (Auto)"
 msgstr "Επιλέξτε μεταξύ CFR και VFR (Auto)"
 
-#: src/misc/EncodingSelect.js:215
+#: src/misc/EncodingSelect.js:216
 msgid "Choose codec ..."
 msgstr "Επιλέξτε codec ..."
 
@@ -487,7 +491,7 @@ msgstr "Κλείστε το"
 msgid "Code injection"
 msgstr "Έγχυση κώδικα"
 
-#: src/misc/EncodingSelect.js:213
+#: src/misc/EncodingSelect.js:214
 #: src/misc/modals/Hint.js:68
 #: src/misc/modals/Hint.js:83
 msgid "Codec"
@@ -685,8 +689,8 @@ msgstr "Χρώμα θανάτου"
 msgid "Decibels (dB)"
 msgstr "Ντεσιμπέλ (dB)"
 
-#: src/misc/EncodingSelect.js:223
-#: src/views/Edit/Wizard/VideoProfile.js:48
+#: src/misc/EncodingSelect.js:225
+#: src/views/Edit/Wizard/VideoProfile.js:49
 msgid "Decoder"
 msgstr "Αποκωδικοποιητής"
 
@@ -759,6 +763,8 @@ msgstr "Περιγραφή"
 msgid "Design"
 msgstr "Σχεδιασμός"
 
+#: src/misc/coders/Encoders/video/av1_qsv.js:153
+#: src/misc/coders/Encoders/video/av1_vaapi.js:155
 #: src/views/Edit/Sources/Framebuffer.js:87
 #: src/views/Edit/Wizard/Audio.js:87
 #: src/views/Publication/Services/Framebuffer.js:93
@@ -922,7 +928,7 @@ msgstr "Η ενεργοποίηση της εξουσιοδότησης συνι
 msgid "Enabling basic auth is strongly advised. Otherwise, anybody could write data to /memfs."
 msgstr "Η ενεργοποίηση του βασικού auth συνιστάται ανεπιφύλακτα. Διαφορετικά, οποιοσδήποτε μπορεί να γράψει δεδομένα στο /memfs."
 
-#: src/views/Edit/Wizard/VideoProfile.js:54
+#: src/views/Edit/Wizard/VideoProfile.js:55
 msgid "Encoder"
 msgstr "Κωδικοποιητής"
 
@@ -1018,12 +1024,12 @@ msgstr "Αποτυχία δημιουργίας υπηρεσίας δημοσί�
 msgid "Failed to create publication website files."
 msgstr "Απέτυχε η δημιουργία αρχείων ιστότοπου δημοσίευσης."
 
-#: src/views/Edit/Profile.js:512
-#: src/views/Edit/Profile.js:671
+#: src/views/Edit/Profile.js:513
+#: src/views/Edit/Profile.js:672
 msgid "Failed to probe the source. Please check the <0>probe details</0>."
 msgstr "Απέτυχε η διερεύνηση της πηγής. Ελέγξτε τις λεπτομέρειες του <0>ανιχνευτή</0>."
 
-#: src/utils/restreamer.js:449
+#: src/utils/restreamer.js:450
 msgid "Failed to refresh token: {0}"
 msgstr "Απέτυχε η ανανέωση του κουπονιού: {0}"
 
@@ -1077,7 +1083,7 @@ msgstr "Διαδρομή αρχείου"
 msgid "Filter"
 msgstr "Φίλτρο"
 
-#: src/views/Edit/Profile.js:768
+#: src/views/Edit/Profile.js:769
 msgid "Finish"
 msgstr "Τέλος"
 
@@ -1189,6 +1195,14 @@ msgstr "Αναγνωριστικό Google Analytics"
 msgid "Google Analytics Tracker Name"
 msgstr "Όνομα ανιχνευτή Google Analytics"
 
+#: src/misc/coders/CodecNotice.js:19
+msgid "H.264 can be used for HLS, RTMP publishing and any player."
+msgstr ""
+
+#: src/misc/coders/CodecNotice.js:50
+msgid "Hardware coders need the matching device and driver (VAAPI: /dev/dri, QSV: oneVPL runtime)."
+msgstr ""
+
 #: src/views/Edit/Sources/V4L.js:154
 #: src/views/Edit/Wizard/Sources/V4L.js:140
 msgid "Hardware device"
@@ -1205,6 +1219,10 @@ msgstr "Επικεφαλίδα"
 #: src/misc/coders/settings/Video.js:243
 msgid "Height"
 msgstr "Ύψος"
+
+#: src/misc/coders/CodecNotice.js:23
+msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
+msgstr ""
 
 #: src/views/Main/index.js:406
 msgid "HLS"
@@ -1279,8 +1297,8 @@ msgstr "Εκτύπωση"
 msgid "In addition to the player, the Restreamer offers a complete landingpage, which you can use to present your live stream easily and quickly."
 msgstr "Εκτός από τη συσκευή αναπαραγωγής, το Restreamer προσφέρει μια πλήρη σελίδα προορισμού, την οποία μπορείτε να χρησιμοποιήσετε για να παρουσιάσετε τη ζωντανή ροή σας εύκολα και γρήγορα."
 
-#: src/views/Edit/Profile.js:521
-#: src/views/Edit/Profile.js:680
+#: src/views/Edit/Profile.js:522
+#: src/views/Edit/Profile.js:681
 msgid "In order to proceed anyways, you can provide <0>hints</0> about the available streams."
 msgstr ""
 
@@ -1484,15 +1502,15 @@ msgstr "Καταγραφή"
 msgid "Login"
 msgstr "Σύνδεση"
 
-#: src/utils/restreamer.js:262
-#: src/utils/restreamer.js:296
+#: src/utils/restreamer.js:263
+#: src/utils/restreamer.js:297
 msgid "Login failed: {0}"
 msgstr "Η σύνδεση απέτυχε: {0}"
 
-#: src/utils/restreamer.js:271
-#: src/utils/restreamer.js:276
-#: src/utils/restreamer.js:305
-#: src/utils/restreamer.js:310
+#: src/utils/restreamer.js:272
+#: src/utils/restreamer.js:277
+#: src/utils/restreamer.js:306
+#: src/utils/restreamer.js:311
 msgid "Login failed: Couldn't load API details"
 msgstr "Η σύνδεση απέτυχε: API: Δεν μπόρεσε να φορτώσει λεπτομέρειες API"
 
@@ -1530,7 +1548,7 @@ msgstr "Κύριο κανάλι"
 msgid "Main channel not found"
 msgstr "Το κύριο κανάλι δεν βρέθηκε"
 
-#: src/views/Edit/Wizard/index.js:200
+#: src/views/Edit/Wizard/index.js:201
 msgid "Main channel saved"
 msgstr "Κύριο κανάλι αποθηκευμένο"
 
@@ -1714,11 +1732,11 @@ msgstr "Πηγή δικτύου"
 #: src/views/Edit/Wizard/Audio.js:114
 #: src/views/Edit/Wizard/Metadata.js:40
 #: src/views/Edit/Wizard/Video.js:71
-#: src/views/Edit/Wizard/VideoProfile.js:78
+#: src/views/Edit/Wizard/VideoProfile.js:80
 msgid "Next"
 msgstr "Επόμενο"
 
-#: src/views/Edit/Profile.js:602
+#: src/views/Edit/Profile.js:603
 msgid "Next: Audio"
 msgstr "Επόμενος: Ήχος"
 
@@ -1756,7 +1774,7 @@ msgstr "Δεν έχει επιλεγεί πηγή"
 msgid "No sources available"
 msgstr "Δεν υπάρχουν διαθέσιμες πηγές"
 
-#: src/misc/EncodingSelect.js:175
+#: src/misc/EncodingSelect.js:176
 msgid "No suitable encoder found."
 msgstr "Δεν βρέθηκε κατάλληλος κωδικοποιητής."
 
@@ -2018,6 +2036,7 @@ msgstr "Αφίσα"
 msgid "Poster image URL"
 msgstr "URL εικόνας αφίσας"
 
+#: src/misc/coders/Encoders/video/av1_qsv.js:76
 #: src/misc/coders/Encoders/video/h264_libx264.js:82
 #: src/misc/coders/Encoders/video/h264_nvenc.js:75
 #: src/misc/coders/Encoders/video/hevc_libx265.js:82
@@ -2078,13 +2097,15 @@ msgstr "Αναφορά διαδικασίας"
 msgid "Processing & Control"
 msgstr "Επεξεργασία & έλεγχος"
 
+#: src/misc/coders/Encoders/video/av1_qsv.js:95
+#: src/misc/coders/Encoders/video/av1_vaapi.js:94
 #: src/misc/coders/Encoders/video/h264_nvenc.js:100
 #: src/misc/coders/Encoders/video/h264_vaapi.js:89
-#: src/misc/coders/Encoders/video/hevc_vaapi.js:91
+#: src/misc/coders/Encoders/video/hevc_vaapi.js:101
 #: src/misc/coders/Encoders/video/hevc_videotoolbox.js:64
-#: src/misc/coders/Encoders/video/vp9_vaapi.js:91
+#: src/misc/coders/Encoders/video/vp9_vaapi.js:100
 #: src/misc/coders/settings/Video.js:142
-#: src/views/Edit/Wizard/VideoProfile.js:27
+#: src/views/Edit/Wizard/VideoProfile.js:28
 msgid "Profile"
 msgstr "Προφίλ"
 
@@ -2147,9 +2168,10 @@ msgstr "Τραβήξτε ή λάβετε τα δεδομένα:"
 msgid "QP"
 msgstr "QP"
 
+#: src/misc/coders/Encoders/video/av1_vaapi.js:152
 #: src/misc/coders/Encoders/video/h264_vaapi.js:146
-#: src/misc/coders/Encoders/video/hevc_vaapi.js:148
-#: src/misc/coders/Encoders/video/vp9_vaapi.js:148
+#: src/misc/coders/Encoders/video/hevc_vaapi.js:156
+#: src/misc/coders/Encoders/video/vp9_vaapi.js:155
 #: src/misc/Progress.js:118
 msgid "Quality"
 msgstr "Ποιότητα"
@@ -2159,10 +2181,11 @@ msgstr "Ποιότητα"
 msgid "Raspberry Pi camera"
 msgstr "Κάμερα Raspberry Pi"
 
+#: src/misc/coders/Encoders/video/av1_vaapi.js:75
 #: src/misc/coders/Encoders/video/h264_nvenc.js:152
 #: src/misc/coders/Encoders/video/h264_vaapi.js:70
-#: src/misc/coders/Encoders/video/hevc_vaapi.js:72
-#: src/misc/coders/Encoders/video/vp9_vaapi.js:72
+#: src/misc/coders/Encoders/video/hevc_vaapi.js:82
+#: src/misc/coders/Encoders/video/vp9_vaapi.js:81
 msgid "Rate control"
 msgstr "Έλεγχος ποσοστού"
 
@@ -2468,7 +2491,7 @@ msgstr "Επιλέξτε πηγή βίντεο:"
 msgid "Select whether you pull the stream from a <0>network source</0> (such as a network camera) or the <1>internal RTMP server</1> (e.g., OBS streams to the Restreamer)."
 msgstr "Επιλέξτε αν θα αντλήσετε τη ροή από μια <0>πηγή δικτύου</0> (όπως μια κάμερα δικτύου) ή από τον <1>εσωτερικό διακομιστή RTMP</1> (π.χ. ροές OBS στο Restreamer)."
 
-#: src/misc/EncodingSelect.js:209
+#: src/misc/EncodingSelect.js:210
 msgid "Select your encoding setting:"
 msgstr "Επιλέξτε τη ρύθμιση κωδικοποίησης:"
 
@@ -2834,7 +2857,7 @@ msgid "The deletion of this channel can not be recovered. All publications of th
 msgstr "Η διαγραφή αυτού του καναλιού δεν μπορεί να ανακτηθεί. Όλες οι δημοσιεύσεις αυτού του καναλιού θα αφαιρεθούν."
 
 #: src/views/Edit/index.js:302
-#: src/views/Edit/Wizard/index.js:176
+#: src/views/Edit/Wizard/index.js:177
 #: src/views/Publication/Edit.js:262
 msgid "The input profile is not complete. Please define a video and audio source."
 msgstr "Το προφίλ εισόδου δεν είναι πλήρες. Ορίστε μια πηγή βίντεο και ήχου."
@@ -2911,7 +2934,7 @@ msgstr "Οι ρυθμίσεις για το \"{0}\" έχουν αποθηκευ�
 msgid "The source doesn't provide any audio streams."
 msgstr "Η πηγή δεν παρέχει ροές ήχου."
 
-#: src/views/Edit/Profile.js:696
+#: src/views/Edit/Profile.js:697
 msgid "The source doesn't provide any audio streams. Please check the <0>probe details</0>."
 msgstr "Η πηγή δεν παρέχει ροές ήχου. Ελέγξτε τις λεπτομέρειες του <0>δοκιμίου</0>."
 
@@ -2923,7 +2946,7 @@ msgstr "Η πηγή δεν παρέχει συμβατές ροές ήχου."
 msgid "The source doesn't provide any compatible video streams. Please check the <0>requirements</0>."
 msgstr "Η πηγή δεν παρέχει συμβατές ροές βίντεο. Ελέγξτε τις <0>απαιτήσεις</0>."
 
-#: src/views/Edit/Profile.js:537
+#: src/views/Edit/Profile.js:538
 msgid "The source doesn't provide any video streams. Please check the <0>probe details</0>."
 msgstr "Η πηγή δεν παρέχει ροές βίντεο. Ελέγξτε τις λεπτομέρειες του <0>δοκιμίου</0>."
 
@@ -2939,7 +2962,7 @@ msgstr "Η έξοδος SRT απαιτεί τον διακομιστή SRT."
 msgid "The video source doesn't provide any compatible audio stream. <0>Silence audio</0> is recommended. Services e.g. YouTube, Facebook & Co. require an audio channel."
 msgstr "Η πηγή βίντεο δεν παρέχει καμία συμβατή ροή ήχου. Συνιστάται η επιλογή <0>ήχος σιωπής</0>. Οι υπηρεσίες π.χ. YouTube, Facebook & Co. απαιτούν ένα κανάλι ήχου."
 
-#: src/views/Edit/Wizard/VideoProfile.js:23
+#: src/views/Edit/Wizard/VideoProfile.js:24
 msgid "The video source is compatible. Select the desired resolution:"
 msgstr "Η πηγή βίντεο είναι συμβατή. Επιλέξτε την επιθυμητή ανάλυση:"
 
@@ -3345,7 +3368,7 @@ msgstr "Βίντεο"
 msgid "Video device"
 msgstr "Συσκευή βίντεο"
 
-#: src/views/Edit/Profile.js:490
+#: src/views/Edit/Profile.js:491
 #: src/views/Edit/ProfileSummary.js:66
 #: src/views/Publication/Edit.js:540
 msgid "Video settings"
@@ -3353,7 +3376,7 @@ msgstr "Ρυθμίσεις βίντεο"
 
 #: src/views/Edit/Wizard/Source.js:15
 #: src/views/Edit/Wizard/Video.js:19
-#: src/views/Edit/Wizard/VideoProfile.js:16
+#: src/views/Edit/Wizard/VideoProfile.js:17
 msgid "Video setup"
 msgstr "Ρύθμιση βίντεο"
 
@@ -3380,6 +3403,10 @@ msgstr "Εικονική πηγή"
 #: src/misc/filters/audio/Volume.js:44
 msgid "Volume"
 msgstr "Τόμος"
+
+#: src/misc/coders/CodecNotice.js:36
+msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
+msgstr ""
 
 #: src/views/Publication/Services/Livespotting.js:88
 msgid "VPU ID"
@@ -3438,11 +3465,11 @@ msgstr "Πρέπει να επανασυνδεθείτε χειροκίνητα"
 msgid "You have unsaved changes. Please save them before you can control the service again."
 msgstr "Έχετε μη αποθηκευμένες αλλαγές. Παρακαλούμε αποθηκεύστε τις πριν μπορέσετε να ελέγξετε ξανά την υπηρεσία."
 
-#: src/views/Edit/Wizard/VideoProfile.js:36
+#: src/views/Edit/Wizard/VideoProfile.js:37
 msgid "Your stream needs to be encoded, but there's no suitable encoder available."
 msgstr "Η ροή σας πρέπει να κωδικοποιηθεί, αλλά δεν υπάρχει διαθέσιμος κατάλληλος κωδικοποιητής."
 
-#: src/views/Edit/Wizard/VideoProfile.js:43
+#: src/views/Edit/Wizard/VideoProfile.js:44
 msgid "Your stream needs to be encoded. Choose the desired encoder:"
 msgstr "Η ροή σας πρέπει να κωδικοποιηθεί. Επιλέξτε τον επιθυμητό κωδικοποιητή:"
 

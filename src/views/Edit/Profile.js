@@ -13,6 +13,7 @@ import WarningIcon from '@mui/icons-material/Warning';
 import * as M from '../../utils/metadata';
 import BoxText from '../../misc/BoxText';
 import EncodingSelect from '../../misc/EncodingSelect';
+import { targetCodecs } from '../../misc/coders/targets';
 import PaperFooter from '../../misc/PaperFooter';
 import ProbeModal from '../../misc/modals/Probe';
 import HintModal from '../../misc/modals/Hint';
@@ -569,7 +570,7 @@ export default function Profile(props) {
 												type="video"
 												streams={$sources.video.streams}
 												profile={$profile.video}
-												codecs={['copy', 'h264', 'av1']}
+												codecs={['copy', ...targetCodecs]}
 												skills={props.skills}
 												onChange={handleEncoding('video')}
 											/>
