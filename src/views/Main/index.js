@@ -15,6 +15,7 @@ import { anonymize } from '../../utils/anonymizer';
 import useInterval from '../../hooks/useInterval';
 import ActionButton from '../../misc/ActionButton';
 import CopyButton from '../../misc/CopyButton';
+import IngestAddressFields from '../../misc/IngestAddressFields';
 import DebugModal from '../../misc/modals/Debug';
 import H from '../../utils/help';
 import Paper from '../../misc/Paper';
@@ -59,29 +60,6 @@ const useStyles = makeStyles((theme) => ({
 		fontSize: 'xxx-large',
 	},
 }));
-
-function AddressField(props) {
-	return (
-		<Grid item xs={12}>
-			<Stack direction="row" spacing={1} alignItems="center">
-				<Typography variant="body2" sx={{ minWidth: '6em', color: 'text.secondary' }}>
-					{props.label}
-				</Typography>
-				<Typography variant="body2" sx={{ fontFamily: 'monospace', wordBreak: 'break-all', flexGrow: 1 }}>
-					{props.value}
-				</Typography>
-				<CopyButton size="small" value={props.value}>
-					<Trans>Copy</Trans>
-				</CopyButton>
-			</Stack>
-		</Grid>
-	);
-}
-
-AddressField.defaultProps = {
-	label: null,
-	value: '',
-};
 
 export default function Main(props) {
 	const classes = useStyles();
@@ -501,28 +479,7 @@ export default function Main(props) {
 									</Stack>
 								</Stack>
 							</Grid>
-							{(addressFields.rtmp.enabled || addressFields.srt.enabled) && (
-								<Grid item xs={12} marginTop=".2em">
-									<Typography variant="body2" sx={{ color: 'text.secondary' }}>
-										<Trans>Or fill these fields instead of the full URL (e.g. for OBS):</Trans>
-									</Typography>
-								</Grid>
-							)}
-							{addressFields.rtmp.enabled && (
-								<React.Fragment>
-									<AddressField label={<Trans>Server</Trans>} value={addressFields.rtmp.server} />
-									<AddressField label={<Trans>Stream key</Trans>} value={addressFields.rtmp.key} />
-								</React.Fragment>
-							)}
-							{addressFields.srt.enabled && (
-								<React.Fragment>
-									<AddressField label={<Trans>Server</Trans>} value={addressFields.srt.server} />
-									<AddressField label={<Trans>Stream ID</Trans>} value={addressFields.srt.streamid} />
-									{addressFields.srt.passphrase.length !== 0 && (
-										<AddressField label={<Trans>Passphrase</Trans>} value={addressFields.srt.passphrase} />
-									)}
-								</React.Fragment>
-							)}
+							<IngestAddressFields fields={addressFields} hint />
 							<Grid item xs={12} marginTop="0em">
 								<ActionButton
 									order={$state.order}

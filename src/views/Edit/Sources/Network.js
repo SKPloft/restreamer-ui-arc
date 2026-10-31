@@ -17,11 +17,13 @@ import RefreshIcon from '@mui/icons-material/Refresh';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import WarningIcon from '@mui/icons-material/Warning';
+import { BuildIngestFields } from '../../../utils/ingest';
 
 import BoxTextarea from '../../../misc/BoxTextarea';
 import BoxText from '../../../misc/BoxText';
 import Checkbox from '../../../misc/Checkbox';
 import FormInlineButton from '../../../misc/FormInlineButton';
+import IngestAddressFields from '../../../misc/IngestAddressFields';
 import MultiSelect from '../../../misc/MultiSelect';
 import MultiSelectOption from '../../../misc/MultiSelectOption';
 import Password from '../../../misc/Password';
@@ -977,6 +979,7 @@ function PushRTMP(props) {
 								<Textarea rows={1} value={RTMP} readOnly allowCopy />
 							</BoxTextarea>
 						</Grid>
+						<IngestAddressFields fields={BuildIngestFields(config.channelid, config.rtmp, config.srt)} only="rtmp" />
 					</React.Fragment>
 				)}
 				<AdvancedSettings {...props} />
@@ -1071,6 +1074,7 @@ function PushSRT(props) {
 								<Textarea rows={1} value={SRT} readOnly allowCopy />
 							</BoxTextarea>
 						</Grid>
+						<IngestAddressFields fields={BuildIngestFields(config.channelid, config.rtmp, config.srt)} only="srt" />
 					</React.Fragment>
 				)}
 				<AdvancedSettings {...props} />

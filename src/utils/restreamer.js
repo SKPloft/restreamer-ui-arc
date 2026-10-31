@@ -10,6 +10,7 @@ import SemverMajor from 'semver/functions/major';
 import SemverMinor from 'semver/functions/minor';
 
 import * as M from './metadata';
+import { BuildIngestFields } from './ingest';
 import { isFmp4OnlyCoder } from '../misc/coders/targets';
 import * as Storage from './storage';
 import * as Version from '../version';
@@ -1110,18 +1111,13 @@ class Restreamer {
 		};
 
 		const rtmp = config.source.network.rtmp;
-		const rtmpApp = rtmp.app.length !== 0 ? rtmp.app : '';
-		const rtmpServer = `rtmp${rtmp.secure ? 's' : ''}://${host}${portOf(rtmp.host)}${rtmpApp}`;
-		const rtmpKey = `${channelid}.stream` + (rtmp.token.length !== 0 ? `?token=${rtmp.token}` : '');
-
 		const srt = config.source.network.srt;
-		const srtServer = `srt://${host}${portOf(srt.host)}`;
-		const srtStreamId = `${channelid},mode:request` + (srt.token.length !== 0 ? `,token:${srt.token}` : '');
 
-		return {
-			rtmp: { enabled: rtmp.enabled, server: rtmpServer, key: rtmpKey },
-			srt: { enabled: srt.enabled, server: srtServer, streamid: srtStreamId, passphrase: srt.passphrase || '' },
-		};
+		return BuildIngestFields(
+			channelid,
+			{ enabled: rtmp.enabled, host: host + portOf(rtmp.host), app: rtmp.app, token: rtmp.token, secure: rtmp.secure },
+			{ enabled: srt.enabled, host: host + portOf(srt.host), token: srt.token, passphrase: srt.passphrase || '' },
+		);
 	}
 
 	// Get the iframe codes for the player
