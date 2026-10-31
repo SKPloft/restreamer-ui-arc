@@ -56,6 +56,12 @@ function createMapping(settings, stream, skills) {
 		local.push('-g', `${Math.round(parseInt(settings.fps) * parseInt(settings.gop)).toFixed(0)}`);
 	}
 
+	// The Intel oneVPL GPU runtime shipped in Ubuntu 24.04 (libmfx-gen 23.2.3)
+	// advertises AV1 encode with B-frames, but encoding then aborts on DG2
+	// (Arc) with ffmpeg's "Invalid FrameType:0" after the first packet.
+	// GopRefDist must be 1, i.e. no B-frames, for AV1 QSV to produce output.
+	local.push('-bf', '0');
+
 	filter.push('format=nv12');
 
 	return {
