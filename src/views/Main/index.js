@@ -501,20 +501,20 @@ export default function Main(props) {
 									</Stack>
 								</Stack>
 							</Grid>
-							{($metadata.control.rtmp.enable || $metadata.control.srt.enable) && (
+							{(addressFields.rtmp.enabled || addressFields.srt.enabled) && (
 								<Grid item xs={12} marginTop=".2em">
 									<Typography variant="body2" sx={{ color: 'text.secondary' }}>
 										<Trans>Or fill these fields instead of the full URL (e.g. for OBS):</Trans>
 									</Typography>
 								</Grid>
 							)}
-							{$metadata.control.rtmp.enable && (
+							{addressFields.rtmp.enabled && (
 								<React.Fragment>
 									<AddressField label={<Trans>Server</Trans>} value={addressFields.rtmp.server} />
 									<AddressField label={<Trans>Stream key</Trans>} value={addressFields.rtmp.key} />
 								</React.Fragment>
 							)}
-							{$metadata.control.srt.enable && (
+							{addressFields.srt.enabled && (
 								<React.Fragment>
 									<AddressField label={<Trans>Server</Trans>} value={addressFields.srt.server} />
 									<AddressField label={<Trans>Stream ID</Trans>} value={addressFields.srt.streamid} />
