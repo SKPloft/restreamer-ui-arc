@@ -280,7 +280,11 @@ msgid "Autoplay"
 msgstr "Autoplay"
 
 #: src/misc/coders/CodecNotice.js:28
-msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
+#~ msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
+#~ msgstr ""
+
+#: src/misc/coders/CodecNotice.js:31
+msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
 msgstr ""
 
 #: src/views/Playersite.js:477
@@ -526,7 +530,7 @@ msgid "Connected since <0/>"
 msgstr "Conectado desde <0/>"
 
 #: src/misc/ActionButton.js:12
-#: src/views/Main/index.js:337
+#: src/views/Main/index.js:347
 #: src/views/Publication/Process.js:40
 msgid "Connecting ..."
 msgstr "Conectando ..."
@@ -553,7 +557,7 @@ msgstr "Modo Quantizador Constante (-1 a 255)."
 msgid "Content"
 msgstr "Conteúdo"
 
-#: src/views/Main/index.js:397
+#: src/views/Main/index.js:437
 msgid "Content URL"
 msgstr "URL do conteúdo"
 
@@ -983,7 +987,7 @@ msgstr "Erro"
 msgid "Error while copying data to clipboard"
 msgstr "Erro ao copiar dados para a prancheta"
 
-#: src/views/Main/index.js:356
+#: src/views/Main/index.js:366
 #: src/views/Publication/Process.js:64
 msgid "Error: {0}"
 msgstr "Erro: {0}"
@@ -1203,7 +1207,7 @@ msgstr "Nome do Google Analytics Tracker"
 msgid "H.264 can be used for HLS, RTMP publishing and any player."
 msgstr ""
 
-#: src/misc/coders/CodecNotice.js:50
+#: src/misc/coders/CodecNotice.js:56
 msgid "Hardware coders need the matching device and driver (VAAPI: /dev/dri, QSV: oneVPL runtime)."
 msgstr ""
 
@@ -1225,10 +1229,14 @@ msgid "Height"
 msgstr "Altura"
 
 #: src/misc/coders/CodecNotice.js:23
-msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
+#~ msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
+#~ msgstr ""
+
+#: src/misc/coders/CodecNotice.js:23
+msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and browser playback is limited."
 msgstr ""
 
-#: src/views/Main/index.js:406
+#: src/views/Main/index.js:446
 msgid "HLS"
 msgstr "HLS"
 
@@ -1543,7 +1551,7 @@ msgstr "Normalização do ruído"
 msgid "Low latency (Buffer)"
 msgstr "Baixa latência (Buffer)"
 
-#: src/views/Main/index.js:292
+#: src/views/Main/index.js:302
 #: src/views/Playersite.js:367
 msgid "Main channel"
 msgstr "Canal principal"
@@ -1786,7 +1794,7 @@ msgstr "Não foi encontrado nenhum codificador adequado."
 msgid "No suitable filter found."
 msgstr "Não foi encontrado nenhum filtro adequado."
 
-#: src/views/Main/index.js:318
+#: src/views/Main/index.js:328
 #: src/views/Publication/Player.js:356
 msgid "No video"
 msgstr "Nenhum vídeo"
@@ -1855,6 +1863,10 @@ msgstr "Uma referência por linha, por exemplo http://www.example.com"
 #: src/views/Playersite.js:839
 msgid "Open"
 msgstr "Aberto"
+
+#: src/views/Main/index.js:416
+msgid "Open the content URL with an external player, or choose H.264 for the video profile if the preview is required."
+msgstr ""
 
 #: src/misc/coders/Encoders/video/h264_v4l2m2m.js:196
 msgid "Output buffer"
@@ -1962,7 +1974,7 @@ msgstr "Lista de reprodução"
 msgid "Playlist version (M3U8). Version 3 has the best browser/client compatibility."
 msgstr "Versão da lista de reprodução (M3U8). A versão 3 tem a melhor compatibilidade navegador/cliente."
 
-#: src/views/Main/index.js:361
+#: src/views/Main/index.js:371
 msgid "Please check the <0>process log</0>"
 msgstr "Por favor, verifique o <0>log de processo</0>"
 
@@ -2082,15 +2094,15 @@ msgstr "Processo"
 msgid "Process control"
 msgstr "Controle de processo"
 
-#: src/views/Main/index.js:451
-#: src/views/Main/index.js:467
+#: src/views/Main/index.js:491
+#: src/views/Main/index.js:507
 #: src/views/Publication/Edit.js:494
 #: src/views/Publication/Edit.js:613
 msgid "Process details"
 msgstr "Detalhes do processo"
 
-#: src/views/Main/index.js:454
-#: src/views/Main/index.js:475
+#: src/views/Main/index.js:494
+#: src/views/Main/index.js:515
 #: src/views/Publication/Edit.js:497
 #: src/views/Publication/Edit.js:621
 msgid "Process report"
@@ -2219,7 +2231,7 @@ msgstr "Reconecte"
 msgid "Reconnect delay (seconds)"
 msgstr "Retardo de reconexão (segundos)"
 
-#: src/views/Main/index.js:372
+#: src/views/Main/index.js:382
 #: src/views/Publication/Process.js:68
 #: src/views/Publication/Process.js:81
 msgid "Reconnecting in {0}s"
@@ -2321,7 +2333,7 @@ msgstr "Instruções do Restreamer"
 msgid "Restreamer Service"
 msgstr "Serviço de Restreamer"
 
-#: src/views/Main/index.js:276
+#: src/views/Main/index.js:277
 msgid "Retrieving stream data ..."
 msgstr "Recuperando dados do fluxo ..."
 
@@ -2339,7 +2351,7 @@ msgstr "Padrão de teste RGB"
 msgid "Rotate"
 msgstr "Girar"
 
-#: src/views/Main/index.js:415
+#: src/views/Main/index.js:455
 #: src/views/Settings.js:1239
 #: src/views/Settings.js:1920
 msgid "RTMP"
@@ -2635,7 +2647,7 @@ msgid "Size"
 msgstr "Tamanho"
 
 #: src/views/Edit/index.js:543
-#: src/views/Main/index.js:434
+#: src/views/Main/index.js:474
 msgid "Snapshot"
 msgstr "Snapshot"
 
@@ -2674,7 +2686,7 @@ msgstr "Velocidade"
 msgid "Speed Preset"
 msgstr "Velocidade predefinida"
 
-#: src/views/Main/index.js:425
+#: src/views/Main/index.js:465
 #: src/views/Settings.js:1240
 #: src/views/Settings.js:2019
 msgid "SRT"
@@ -2843,6 +2855,10 @@ msgstr "O binário FFmpeg disponível não suporta nenhum dos protocolos necess�
 #: src/misc/coders/settings/Audio.js:40
 msgid "The bitrate of the audio stream."
 msgstr "A taxa de bits do fluxo de áudio."
+
+#: src/views/Main/index.js:411
+msgid "The built-in player cannot decode this channel's video codec."
+msgstr ""
 
 #: src/views/Edit/Sources/VirtualAudio.js:150
 msgid "The carrier frequency"
@@ -3409,7 +3425,11 @@ msgid "Volume"
 msgstr "Volume"
 
 #: src/misc/coders/CodecNotice.js:36
-msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
+#~ msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
+#~ msgstr ""
+
+#: src/misc/coders/CodecNotice.js:39
+msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and Safari cannot play it."
 msgstr ""
 
 #: src/views/Publication/Services/Livespotting.js:88
@@ -3460,7 +3480,7 @@ msgstr "Você não pode abortar o assistente porque pelo menos uma entrada deve 
 msgid "You have changed the configuration. In order for the changes to take effect, you have to restart the application. Do you want to restart now?"
 msgstr "Você mudou a configuração. Para que as mudanças tenham efeito, você tem que reiniciar a aplicação. Você quer reiniciar agora?"
 
-#: src/views/Main/index.js:379
+#: src/views/Main/index.js:389
 #: src/views/Publication/Process.js:73
 msgid "You have to reconnect manually"
 msgstr "Você tem que reconectar manualmente"

@@ -20,20 +20,26 @@ function CodecNotice(props) {
 			break;
 		case 'hevc':
 			text = (
-				<Trans>HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited.</Trans>
+				<Trans>
+					HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview
+					and browser playback is limited.
+				</Trans>
 			);
 			break;
 		case 'av1':
 			text = (
 				<Trans>
-					AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV
-					encoder requires disabled B-frames.
+					AV1 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview,
+					Safari cannot play it and the Intel QSV encoder requires disabled B-frames.
 				</Trans>
 			);
 			break;
 		case 'vp9':
 			text = (
-				<Trans>VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it.</Trans>
+				<Trans>
+					VP9 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview
+					and Safari cannot play it.
+				</Trans>
 			);
 			break;
 		default:
