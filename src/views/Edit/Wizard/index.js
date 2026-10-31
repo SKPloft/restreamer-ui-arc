@@ -493,7 +493,12 @@ export default function Wizard(props) {
 			);
 		}
 
-		const encoders = Encoders.Video.GetCodersForCodec('h264', $skills.encoders.video, 'any');
+		// Offer AV1 coders next to H.264 so the hardware encoders registered for
+		// av1 (VAAPI/QSV) are reachable from the ingest wizard as well.
+		const encoders = [
+			...Encoders.Video.GetCodersForCodec('h264', $skills.encoders.video, 'any'),
+			...Encoders.Video.GetCodersForCodec('av1', $skills.encoders.video, 'any'),
+		];
 
 		let encodersList = [];
 

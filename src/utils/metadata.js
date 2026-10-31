@@ -1086,14 +1086,12 @@ const preselectProfile = (type, streams, profile, encoders, preselectAudio = tru
 			return false;
 		}
 
-		if (streams[video.stream].codec !== 'h264') {
-			if (video.encoder.coder === 'copy') {
-				return false;
-			}
-		} else {
-			if (video.encoder.coder === 'copy') {
-				return true;
-			}
+		const streamCodec = streams[video.stream].codec;
+
+		if (video.encoder.coder === 'copy') {
+			// Copy is only muxable when the output containers accept the codec.
+			// AV1 is allowed because the HLS output is fMP4 (hls_segment_type fmp4).
+			return streamCodec === 'h264' || streamCodec === 'av1';
 		}
 
 		const coder = Coders.Video.Get(video.encoder.coder);
@@ -1101,7 +1099,7 @@ const preselectProfile = (type, streams, profile, encoders, preselectAudio = tru
 			return false;
 		}
 
-		if (coder.codec !== 'h264') {
+		if (coder.codec !== 'h264' && coder.codec !== 'av1') {
 			return false;
 		}
 

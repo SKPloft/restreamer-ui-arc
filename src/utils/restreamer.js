@@ -1675,6 +1675,19 @@ class Restreamer {
 			tee_muxer = true;
 		}
 
+		// AV1 cannot be muxed into MPEG-TS, so AV1 outputs must use the fMP4 HLS
+		// variant. Derive the effective HLS version from the output video coder.
+		const videoCoderIsAV1 = (() => {
+			const options = (outputs[0] && outputs[0].options) || [];
+			for (let i = 0; i < options.length - 1; i++) {
+				if (options[i] === '-c:v' || options[i] === '-codec:v') {
+					return `${options[i + 1]}`.startsWith('av1');
+				}
+			}
+			return false;
+		})();
+		const hls_version = videoCoderIsAV1 ? 7 : control.hls.version;
+
 		// 1.5 Set hls filename vars
 		const hlsStorage = control.hls.storage;
 		let segmentPlaylistPath = `${channel.channelid}` + (control.hls.master_playlist ? `_{outputid}` : '');
@@ -1689,7 +1702,7 @@ class Restreamer {
 		const hls_fmp4_init_filename = `${channel.channelid}.mp4`;
 		const hls_segment_playlist = `{${hlsStorage}}/${segmentPlaylistPath}.m3u8`;
 		const hls_segment_filename =
-			`{${hlsStorage}` + (tee_muxer ? '^:' : '') + `}/${segmentFilePath}.` + (!control.hls.lhls && control.hls.version === 7 ? 'mp4' : 'ts');
+			`{${hlsStorage}` + (tee_muxer ? '^:' : '') + `}/${segmentFilePath}.` + (!control.hls.lhls && hls_version === 7 ? 'mp4' : 'ts');
 
 		// 2. Add output address
 
@@ -1783,7 +1796,7 @@ class Restreamer {
 				}
 			}
 		};
-		const hls_params_raw = getHLSParams(control.hls.lhls, control.hls.version);
+		const hls_params_raw = getHLSParams(control.hls.lhls, hls_version);
 
 		// 3.3 Use strftime for DiskFS
 		if (control.hls.storage && control.hls.storage === 'diskfs') {
@@ -1855,7 +1868,7 @@ class Restreamer {
 		const cleanup_hls_master_playlist = `${hlsStorage}:/${channel.channelid}.m3u8`;
 		const cleanup_hls_fmp4_init_filename = `${hlsStorage}:/${channel.channelid}.mp4`;
 		const cleanup_hls_segment_playlist = `${hlsStorage}:/${segmentPlaylistPath}.m3u8`;
-		const cleanup_hls_segment_filename = `${hlsStorage}:/${cleanupSegmentFilePath}.` + (!control.hls.lhls && control.hls.version === 7 ? 'mp4' : 'ts');
+		const cleanup_hls_segment_filename = `${hlsStorage}:/${cleanupSegmentFilePath}.` + (!control.hls.lhls && hls_version === 7 ? 'mp4' : 'ts');
 
 		// 4.3 Cleanup id* (process is deleted) + continuously hls_segment_playlist and hls_segment_filename
 		output.cleanup.push(
@@ -1886,7 +1899,7 @@ class Restreamer {
 		}
 
 		// 4.5 Cleanup hls_fmp4_init_filename
-		if (!control.hls.lhls && control.hls.version === 7) {
+		if (!control.hls.lhls && hls_version === 7) {
 			output.cleanup.push({
 				pattern: cleanup_hls_fmp4_init_filename,
 				max_file_age_seconds: control.hls.cleanup ? parseInt(control.hls.segmentDuration) * (parseInt(control.hls.listSize) + 6) : 0,
