@@ -530,7 +530,7 @@ msgid "Connected since <0/>"
 msgstr "<0/> 부터 연결됨"
 
 #: src/misc/ActionButton.js:12
-#: src/views/Main/index.js:347
+#: src/views/Main/index.js:372
 #: src/views/Publication/Process.js:40
 msgid "Connecting ..."
 msgstr "연결 중..."
@@ -557,9 +557,13 @@ msgstr "상수 퀀타이저 모드(-1~255)."
 msgid "Content"
 msgstr "내용"
 
-#: src/views/Main/index.js:437
+#: src/views/Main/index.js:462
 msgid "Content URL"
 msgstr "내용 URL"
+
+#: src/views/Main/index.js:74
+msgid "Copy"
+msgstr ""
 
 #: src/views/Edit/Sources/Network.js:715
 msgid "copyts"
@@ -983,7 +987,7 @@ msgstr "오류"
 msgid "Error while copying data to clipboard"
 msgstr "데이터를 클립보드로 복사하는 중 오류 발생"
 
-#: src/views/Main/index.js:366
+#: src/views/Main/index.js:391
 #: src/views/Publication/Process.js:64
 msgid "Error: {0}"
 msgstr "오류: {0}"
@@ -1232,7 +1236,7 @@ msgstr "높이"
 msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and browser playback is limited."
 msgstr ""
 
-#: src/views/Main/index.js:446
+#: src/views/Main/index.js:471
 msgid "HLS"
 msgstr "HLS"
 
@@ -1547,7 +1551,7 @@ msgstr "소리 크기 평균화"
 msgid "Low latency (Buffer)"
 msgstr "낮은 지연시간 (버퍼)"
 
-#: src/views/Main/index.js:302
+#: src/views/Main/index.js:327
 #: src/views/Playersite.js:367
 msgid "Main channel"
 msgstr "주 채널"
@@ -1790,7 +1794,7 @@ msgstr "적절한 인코더가 없습니다."
 msgid "No suitable filter found."
 msgstr "적절한 필터를 찾을 수 없습니다."
 
-#: src/views/Main/index.js:328
+#: src/views/Main/index.js:353
 #: src/views/Publication/Player.js:356
 msgid "No video"
 msgstr "비디오 없음"
@@ -1860,8 +1864,12 @@ msgstr "한 줄에 하나의 리퍼러만 입력합니다. 예) http://www.examp
 msgid "Open"
 msgstr "열기"
 
-#: src/views/Main/index.js:416
+#: src/views/Main/index.js:441
 msgid "Open the content URL with an external player, or choose H.264 for the video profile if the preview is required."
+msgstr ""
+
+#: src/views/Main/index.js:507
+msgid "Or fill these fields instead of the full URL (e.g. for OBS):"
 msgstr ""
 
 #: src/misc/coders/Encoders/video/h264_v4l2m2m.js:196
@@ -1872,6 +1880,7 @@ msgstr "출력 버퍼"
 msgid "Pan"
 msgstr "좌/우"
 
+#: src/views/Main/index.js:522
 #: src/views/Publication/Services/Core.js:238
 #: src/views/Settings.js:2064
 msgid "Passphrase"
@@ -1970,7 +1979,7 @@ msgstr "재생목록"
 msgid "Playlist version (M3U8). Version 3 has the best browser/client compatibility."
 msgstr "M3U8 버전입니다. 버전 3이  가장 좋은 브라우저와 클라이언트 사이의 호환성을 보장합니다."
 
-#: src/views/Main/index.js:371
+#: src/views/Main/index.js:396
 msgid "Please check the <0>process log</0>"
 msgstr "<0>프로세스 기록</0>을 검토해주세요."
 
@@ -2090,15 +2099,15 @@ msgstr "프로세스"
 msgid "Process control"
 msgstr "프로세스 조절"
 
-#: src/views/Main/index.js:491
-#: src/views/Main/index.js:507
+#: src/views/Main/index.js:538
+#: src/views/Main/index.js:554
 #: src/views/Publication/Edit.js:494
 #: src/views/Publication/Edit.js:613
 msgid "Process details"
 msgstr "프로세스 상세"
 
-#: src/views/Main/index.js:494
-#: src/views/Main/index.js:515
+#: src/views/Main/index.js:541
+#: src/views/Main/index.js:562
 #: src/views/Publication/Edit.js:497
 #: src/views/Publication/Edit.js:621
 msgid "Process report"
@@ -2227,7 +2236,7 @@ msgstr "재연결"
 msgid "Reconnect delay (seconds)"
 msgstr "재연결 지연시간 (초)"
 
-#: src/views/Main/index.js:382
+#: src/views/Main/index.js:407
 #: src/views/Publication/Process.js:68
 #: src/views/Publication/Process.js:81
 msgid "Reconnecting in {0}s"
@@ -2329,7 +2338,7 @@ msgstr "Restreamer 사용법"
 msgid "Restreamer Service"
 msgstr "Restreamer 서비스"
 
-#: src/views/Main/index.js:277
+#: src/views/Main/index.js:300
 msgid "Retrieving stream data ..."
 msgstr "스트림 데이터 검색중..."
 
@@ -2347,7 +2356,7 @@ msgstr "RGB 테스트 패턴"
 msgid "Rotate"
 msgstr "회전"
 
-#: src/views/Main/index.js:455
+#: src/views/Main/index.js:480
 #: src/views/Settings.js:1239
 #: src/views/Settings.js:1920
 msgid "RTMP"
@@ -2543,6 +2552,8 @@ msgstr "스트림을 전달할 주소:"
 msgid "Send video to Framebuffer"
 msgstr "영상을 프레임버퍼로 전송"
 
+#: src/views/Main/index.js:513
+#: src/views/Main/index.js:519
 #: src/views/Publication/Services/DaCast.js:120
 msgid "Server"
 msgstr "서버"
@@ -2643,7 +2654,7 @@ msgid "Size"
 msgstr "크기"
 
 #: src/views/Edit/index.js:543
-#: src/views/Main/index.js:474
+#: src/views/Main/index.js:499
 msgid "Snapshot"
 msgstr "스냅샷"
 
@@ -2682,7 +2693,7 @@ msgstr "속도"
 msgid "Speed Preset"
 msgstr "속도 프리셋"
 
-#: src/views/Main/index.js:465
+#: src/views/Main/index.js:490
 #: src/views/Settings.js:1240
 #: src/views/Settings.js:2019
 msgid "SRT"
@@ -2739,10 +2750,12 @@ msgstr "시청자 통계를 디스크에 저장합니다."
 msgid "Stream"
 msgstr "스트림"
 
+#: src/views/Main/index.js:520
 #: src/views/Publication/Services/Wettercom.js:90
 msgid "Stream ID"
 msgstr ""
 
+#: src/views/Main/index.js:514
 #: src/views/Publication/Services/CDN77.js:113
 #: src/views/Publication/Services/DaCast.js:153
 #: src/views/Publication/Services/Dailymotion.js:98
@@ -2852,7 +2865,7 @@ msgstr "현재 FFmpeg 바이너리는 필요한 프로토콜을 지원하지 않
 msgid "The bitrate of the audio stream."
 msgstr "소리 스트림의 비트율입니다."
 
-#: src/views/Main/index.js:411
+#: src/views/Main/index.js:436
 msgid "The built-in player cannot decode this channel's video codec."
 msgstr ""
 
@@ -3476,7 +3489,7 @@ msgstr "설정 마법사를 취소할 수 없습니다. 적어도 하나의 입�
 msgid "You have changed the configuration. In order for the changes to take effect, you have to restart the application. Do you want to restart now?"
 msgstr "변경된 구성이 반영되려면 애플리케이션을 다시 시작해야 합니다. 지금 하시겠습니까?"
 
-#: src/views/Main/index.js:389
+#: src/views/Main/index.js:414
 #: src/views/Publication/Process.js:73
 msgid "You have to reconnect manually"
 msgstr "수동으로 재연결해야 합니다"

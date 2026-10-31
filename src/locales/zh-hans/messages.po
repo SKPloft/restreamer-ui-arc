@@ -530,7 +530,7 @@ msgid "Connected since <0/>"
 msgstr "连接建立于"
 
 #: src/misc/ActionButton.js:12
-#: src/views/Main/index.js:347
+#: src/views/Main/index.js:372
 #: src/views/Publication/Process.js:40
 msgid "Connecting ..."
 msgstr "连接中 ..."
@@ -557,9 +557,13 @@ msgstr "常数量化器模式（-1 至 255）。"
 msgid "Content"
 msgstr "内容"
 
-#: src/views/Main/index.js:437
+#: src/views/Main/index.js:462
 msgid "Content URL"
 msgstr "内容 URL"
+
+#: src/views/Main/index.js:74
+msgid "Copy"
+msgstr "复制"
 
 #: src/views/Edit/Sources/Network.js:715
 msgid "copyts"
@@ -983,7 +987,7 @@ msgstr "错误"
 msgid "Error while copying data to clipboard"
 msgstr "复制到剪贴板时出现错误"
 
-#: src/views/Main/index.js:366
+#: src/views/Main/index.js:391
 #: src/views/Publication/Process.js:64
 msgid "Error: {0}"
 msgstr "错误：{0}"
@@ -1232,7 +1236,7 @@ msgstr "高度"
 msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and browser playback is limited."
 msgstr "HEVC 会输出为 fMP4 HLS。RTMP 发布不支持，内置播放器无法预览，浏览器播放支持有限。"
 
-#: src/views/Main/index.js:446
+#: src/views/Main/index.js:471
 msgid "HLS"
 msgstr "HLS"
 
@@ -1547,7 +1551,7 @@ msgstr "响度归一化"
 msgid "Low latency (Buffer)"
 msgstr "低延迟（缓冲）"
 
-#: src/views/Main/index.js:302
+#: src/views/Main/index.js:327
 #: src/views/Playersite.js:367
 msgid "Main channel"
 msgstr "主频道"
@@ -1790,7 +1794,7 @@ msgstr "未找到合适的编码器。"
 msgid "No suitable filter found."
 msgstr "没有合适的过滤器。"
 
-#: src/views/Main/index.js:328
+#: src/views/Main/index.js:353
 #: src/views/Publication/Player.js:356
 msgid "No video"
 msgstr "没有视频"
@@ -1860,9 +1864,13 @@ msgstr "每行一个来源，例如 http://www.example.com"
 msgid "Open"
 msgstr "打开"
 
-#: src/views/Main/index.js:416
+#: src/views/Main/index.js:441
 msgid "Open the content URL with an external player, or choose H.264 for the video profile if the preview is required."
 msgstr "请用外部播放器打开内容 URL；若需要内置预览，请为视频配置选择 H.264。"
+
+#: src/views/Main/index.js:507
+msgid "Or fill these fields instead of the full URL (e.g. for OBS):"
+msgstr "或直接填写以下字段（例如 OBS），无需使用完整 URL："
 
 #: src/misc/coders/Encoders/video/h264_v4l2m2m.js:196
 msgid "Output buffer"
@@ -1872,6 +1880,7 @@ msgstr "输出缓冲区"
 msgid "Pan"
 msgstr "平移"
 
+#: src/views/Main/index.js:522
 #: src/views/Publication/Services/Core.js:238
 #: src/views/Settings.js:2064
 msgid "Passphrase"
@@ -1970,7 +1979,7 @@ msgstr "播放列表"
 msgid "Playlist version (M3U8). Version 3 has the best browser/client compatibility."
 msgstr "Playlist 版本（M3U8）。版本 3 有最好的浏览器/客户端兼容性。"
 
-#: src/views/Main/index.js:371
+#: src/views/Main/index.js:396
 msgid "Please check the <0>process log</0>"
 msgstr "请检查 <0>进程日志</0>"
 
@@ -2090,15 +2099,15 @@ msgstr "串流进程"
 msgid "Process control"
 msgstr "进程控制"
 
-#: src/views/Main/index.js:491
-#: src/views/Main/index.js:507
+#: src/views/Main/index.js:538
+#: src/views/Main/index.js:554
 #: src/views/Publication/Edit.js:494
 #: src/views/Publication/Edit.js:613
 msgid "Process details"
 msgstr "进程详情"
 
-#: src/views/Main/index.js:494
-#: src/views/Main/index.js:515
+#: src/views/Main/index.js:541
+#: src/views/Main/index.js:562
 #: src/views/Publication/Edit.js:497
 #: src/views/Publication/Edit.js:621
 msgid "Process report"
@@ -2227,7 +2236,7 @@ msgstr "重连"
 msgid "Reconnect delay (seconds)"
 msgstr "重连延时（秒）"
 
-#: src/views/Main/index.js:382
+#: src/views/Main/index.js:407
 #: src/views/Publication/Process.js:68
 #: src/views/Publication/Process.js:81
 msgid "Reconnecting in {0}s"
@@ -2329,7 +2338,7 @@ msgstr "Restreamer 指南"
 msgid "Restreamer Service"
 msgstr "Restreamer 服务"
 
-#: src/views/Main/index.js:277
+#: src/views/Main/index.js:300
 msgid "Retrieving stream data ..."
 msgstr "正在获取媒体流数据 ..."
 
@@ -2347,7 +2356,7 @@ msgstr "RGB 测试模式"
 msgid "Rotate"
 msgstr "旋转"
 
-#: src/views/Main/index.js:455
+#: src/views/Main/index.js:480
 #: src/views/Settings.js:1239
 #: src/views/Settings.js:1920
 msgid "RTMP"
@@ -2543,6 +2552,8 @@ msgstr "将媒体流发送到该地址："
 msgid "Send video to Framebuffer"
 msgstr "发送视频到帧缓冲"
 
+#: src/views/Main/index.js:513
+#: src/views/Main/index.js:519
 #: src/views/Publication/Services/DaCast.js:120
 msgid "Server"
 msgstr "服务器"
@@ -2643,7 +2654,7 @@ msgid "Size"
 msgstr "大小"
 
 #: src/views/Edit/index.js:543
-#: src/views/Main/index.js:474
+#: src/views/Main/index.js:499
 msgid "Snapshot"
 msgstr "截图"
 
@@ -2682,7 +2693,7 @@ msgstr "速度"
 msgid "Speed Preset"
 msgstr "速度预设"
 
-#: src/views/Main/index.js:465
+#: src/views/Main/index.js:490
 #: src/views/Settings.js:1240
 #: src/views/Settings.js:2019
 msgid "SRT"
@@ -2739,10 +2750,12 @@ msgstr "将观众统计数据保存到硬盘。"
 msgid "Stream"
 msgstr "媒体流"
 
+#: src/views/Main/index.js:520
 #: src/views/Publication/Services/Wettercom.js:90
 msgid "Stream ID"
-msgstr ""
+msgstr "Stream ID"
 
+#: src/views/Main/index.js:514
 #: src/views/Publication/Services/CDN77.js:113
 #: src/views/Publication/Services/DaCast.js:153
 #: src/views/Publication/Services/Dailymotion.js:98
@@ -2852,7 +2865,7 @@ msgstr "可用的 FFmpeg 不支持任何一种要求的协议。"
 msgid "The bitrate of the audio stream."
 msgstr "音频流的比特率。"
 
-#: src/views/Main/index.js:411
+#: src/views/Main/index.js:436
 msgid "The built-in player cannot decode this channel's video codec."
 msgstr "内置播放器无法解码该频道的视频编码。"
 
@@ -3476,7 +3489,7 @@ msgstr "现在不能中止向导，因为至少必须定义一个输入。"
 msgid "You have changed the configuration. In order for the changes to take effect, you have to restart the application. Do you want to restart now?"
 msgstr "配置已更改。请重启应用以使更改生效。要立刻重启吗？"
 
-#: src/views/Main/index.js:389
+#: src/views/Main/index.js:414
 #: src/views/Publication/Process.js:73
 msgid "You have to reconnect manually"
 msgstr "需要手动重连"

@@ -1098,6 +1098,32 @@ class Restreamer {
 		return address;
 	}
 
+	// Get the RTMP/SRT ingest address broken down into the fields that clients
+	// such as OBS expect, instead of handing out one opaque URL.
+	GetIngestAddressFields(channelid) {
+		const config = this.ConfigActive();
+		const host = config.hostname;
+
+		const portOf = (servicePort) => {
+			const port = `${servicePort || ''}`.split(/:([0-9]+)$/)[1];
+			return port && !port.includes(':') ? `:${port}` : '';
+		};
+
+		const rtmp = config.source.network.rtmp;
+		const rtmpApp = rtmp.app.length !== 0 ? rtmp.app : '';
+		const rtmpServer = `rtmp${rtmp.secure ? 's' : ''}://${host}${portOf(rtmp.host)}${rtmpApp}`;
+		const rtmpKey = `${channelid}.stream` + (rtmp.token.length !== 0 ? `?token=${rtmp.token}` : '');
+
+		const srt = config.source.network.srt;
+		const srtServer = `srt://${host}${portOf(srt.host)}`;
+		const srtStreamId = `${channelid},mode:request` + (srt.token.length !== 0 ? `,token:${srt.token}` : '');
+
+		return {
+			rtmp: { enabled: rtmp.enabled, server: rtmpServer, key: rtmpKey },
+			srt: { enabled: srt.enabled, server: srtServer, streamid: srtStreamId, passphrase: srt.passphrase || '' },
+		};
+	}
+
 	// Get the iframe codes for the player
 	GetPublicIframeCode(channelid) {
 		const channel = this.GetChannel(channelid);

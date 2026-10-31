@@ -530,7 +530,7 @@ msgid "Connected since <0/>"
 msgstr "Συνδεδεμένος από <0/>"
 
 #: src/misc/ActionButton.js:12
-#: src/views/Main/index.js:347
+#: src/views/Main/index.js:372
 #: src/views/Publication/Process.js:40
 msgid "Connecting ..."
 msgstr "Σύνδεση ..."
@@ -557,9 +557,13 @@ msgstr "Λειτουργία σταθερού κβαντιστή (-1 έως 255)
 msgid "Content"
 msgstr "Περιεχόμενο"
 
-#: src/views/Main/index.js:437
+#: src/views/Main/index.js:462
 msgid "Content URL"
 msgstr "URL περιεχομένου"
+
+#: src/views/Main/index.js:74
+msgid "Copy"
+msgstr ""
 
 #: src/views/Edit/Sources/Network.js:715
 msgid "copyts"
@@ -983,7 +987,7 @@ msgstr "Σφάλμα"
 msgid "Error while copying data to clipboard"
 msgstr "Σφάλμα κατά την αντιγραφή δεδομένων στο πρόχειρο"
 
-#: src/views/Main/index.js:366
+#: src/views/Main/index.js:391
 #: src/views/Publication/Process.js:64
 msgid "Error: {0}"
 msgstr "Σφάλμα: {0}"
@@ -1232,7 +1236,7 @@ msgstr "Ύψος"
 msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and browser playback is limited."
 msgstr ""
 
-#: src/views/Main/index.js:446
+#: src/views/Main/index.js:471
 msgid "HLS"
 msgstr "HLS"
 
@@ -1547,7 +1551,7 @@ msgstr "Κανονικοποίηση ηχηρότητας"
 msgid "Low latency (Buffer)"
 msgstr "Χαμηλή καθυστέρηση (Buffer)"
 
-#: src/views/Main/index.js:302
+#: src/views/Main/index.js:327
 #: src/views/Playersite.js:367
 msgid "Main channel"
 msgstr "Κύριο κανάλι"
@@ -1790,7 +1794,7 @@ msgstr "Δεν βρέθηκε κατάλληλος κωδικοποιητής."
 msgid "No suitable filter found."
 msgstr "Δεν βρέθηκε κατάλληλο φίλτρο."
 
-#: src/views/Main/index.js:328
+#: src/views/Main/index.js:353
 #: src/views/Publication/Player.js:356
 msgid "No video"
 msgstr "Δεν υπάρχει βίντεο"
@@ -1860,8 +1864,12 @@ msgstr "Ένας παραπομπός ανά γραμμή, π.χ. http://www.exa
 msgid "Open"
 msgstr "Ανοίξτε το"
 
-#: src/views/Main/index.js:416
+#: src/views/Main/index.js:441
 msgid "Open the content URL with an external player, or choose H.264 for the video profile if the preview is required."
+msgstr ""
+
+#: src/views/Main/index.js:507
+msgid "Or fill these fields instead of the full URL (e.g. for OBS):"
 msgstr ""
 
 #: src/misc/coders/Encoders/video/h264_v4l2m2m.js:196
@@ -1872,6 +1880,7 @@ msgstr "Απομονωτής εξόδου"
 msgid "Pan"
 msgstr "Pan"
 
+#: src/views/Main/index.js:522
 #: src/views/Publication/Services/Core.js:238
 #: src/views/Settings.js:2064
 msgid "Passphrase"
@@ -1970,7 +1979,7 @@ msgstr "Λίστα αναπαραγωγής"
 msgid "Playlist version (M3U8). Version 3 has the best browser/client compatibility."
 msgstr "Έκδοση λίστας αναπαραγωγής (M3U8). Η έκδοση 3 έχει την καλύτερη συμβατότητα προγράμματος περιήγησης/πελάτη."
 
-#: src/views/Main/index.js:371
+#: src/views/Main/index.js:396
 msgid "Please check the <0>process log</0>"
 msgstr "Ελέγξτε το αρχείο καταγραφής <0>διεργασίας</0>"
 
@@ -2090,15 +2099,15 @@ msgstr "Διαδικασία"
 msgid "Process control"
 msgstr "Έλεγχος διεργασιών"
 
-#: src/views/Main/index.js:491
-#: src/views/Main/index.js:507
+#: src/views/Main/index.js:538
+#: src/views/Main/index.js:554
 #: src/views/Publication/Edit.js:494
 #: src/views/Publication/Edit.js:613
 msgid "Process details"
 msgstr "Λεπτομέρειες διαδικασίας"
 
-#: src/views/Main/index.js:494
-#: src/views/Main/index.js:515
+#: src/views/Main/index.js:541
+#: src/views/Main/index.js:562
 #: src/views/Publication/Edit.js:497
 #: src/views/Publication/Edit.js:621
 msgid "Process report"
@@ -2227,7 +2236,7 @@ msgstr "Επανασύνδεση"
 msgid "Reconnect delay (seconds)"
 msgstr "Καθυστέρηση επανασύνδεσης (δευτερόλεπτα)"
 
-#: src/views/Main/index.js:382
+#: src/views/Main/index.js:407
 #: src/views/Publication/Process.js:68
 #: src/views/Publication/Process.js:81
 msgid "Reconnecting in {0}s"
@@ -2329,7 +2338,7 @@ msgstr "Οδηγίες Restreamer"
 msgid "Restreamer Service"
 msgstr "Υπηρεσία Restreamer"
 
-#: src/views/Main/index.js:277
+#: src/views/Main/index.js:300
 msgid "Retrieving stream data ..."
 msgstr "Ανάκτηση δεδομένων ροής ..."
 
@@ -2347,7 +2356,7 @@ msgstr "Μοτίβο δοκιμής RGB"
 msgid "Rotate"
 msgstr "Περιστροφή"
 
-#: src/views/Main/index.js:455
+#: src/views/Main/index.js:480
 #: src/views/Settings.js:1239
 #: src/views/Settings.js:1920
 msgid "RTMP"
@@ -2543,6 +2552,8 @@ msgstr "Στείλτε ρεύμα σε αυτή τη διεύθυνση:"
 msgid "Send video to Framebuffer"
 msgstr "Αποστολή βίντεο σε Framebuffer"
 
+#: src/views/Main/index.js:513
+#: src/views/Main/index.js:519
 #: src/views/Publication/Services/DaCast.js:120
 msgid "Server"
 msgstr "Διακομιστής"
@@ -2643,7 +2654,7 @@ msgid "Size"
 msgstr "Μέγεθος"
 
 #: src/views/Edit/index.js:543
-#: src/views/Main/index.js:474
+#: src/views/Main/index.js:499
 msgid "Snapshot"
 msgstr "Στιγμιότυπο"
 
@@ -2682,7 +2693,7 @@ msgstr "Ταχύτητα"
 msgid "Speed Preset"
 msgstr "Προεπιλογή ταχύτητας"
 
-#: src/views/Main/index.js:465
+#: src/views/Main/index.js:490
 #: src/views/Settings.js:1240
 #: src/views/Settings.js:2019
 msgid "SRT"
@@ -2739,10 +2750,12 @@ msgstr "Αποθηκεύει τα στατιστικά στοιχεία προβ
 msgid "Stream"
 msgstr "Ρεύμα"
 
+#: src/views/Main/index.js:520
 #: src/views/Publication/Services/Wettercom.js:90
 msgid "Stream ID"
 msgstr ""
 
+#: src/views/Main/index.js:514
 #: src/views/Publication/Services/CDN77.js:113
 #: src/views/Publication/Services/DaCast.js:153
 #: src/views/Publication/Services/Dailymotion.js:98
@@ -2852,7 +2865,7 @@ msgstr "Το διαθέσιμο δυαδικό αρχείο FFmpeg δεν υπο
 msgid "The bitrate of the audio stream."
 msgstr "Το bitrate της ροής ήχου."
 
-#: src/views/Main/index.js:411
+#: src/views/Main/index.js:436
 msgid "The built-in player cannot decode this channel's video codec."
 msgstr ""
 
@@ -3476,7 +3489,7 @@ msgstr "Δεν μπορείτε να διακόψετε τον οδηγό, επ�
 msgid "You have changed the configuration. In order for the changes to take effect, you have to restart the application. Do you want to restart now?"
 msgstr "Έχετε αλλάξει τη διαμόρφωση. Για να τεθούν σε ισχύ οι αλλαγές, πρέπει να επανεκκινήσετε την εφαρμογή. Θέλετε να κάνετε επανεκκίνηση τώρα;"
 
-#: src/views/Main/index.js:389
+#: src/views/Main/index.js:414
 #: src/views/Publication/Process.js:73
 msgid "You have to reconnect manually"
 msgstr "Πρέπει να επανασυνδεθείτε χειροκίνητα"

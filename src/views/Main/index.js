@@ -60,6 +60,29 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
+function AddressField(props) {
+	return (
+		<Grid item xs={12}>
+			<Stack direction="row" spacing={1} alignItems="center">
+				<Typography variant="body2" sx={{ minWidth: '6em', color: 'text.secondary' }}>
+					{props.label}
+				</Typography>
+				<Typography variant="body2" sx={{ fontFamily: 'monospace', wordBreak: 'break-all', flexGrow: 1 }}>
+					{props.value}
+				</Typography>
+				<CopyButton size="small" value={props.value}>
+					<Trans>Copy</Trans>
+				</CopyButton>
+			</Stack>
+		</Grid>
+	);
+}
+
+AddressField.defaultProps = {
+	label: null,
+	value: '',
+};
+
 export default function Main(props) {
 	const classes = useStyles();
 	const navigate = useNavigate();
@@ -299,6 +322,8 @@ export default function Main(props) {
 	const previewCodec = previewCoderInfo === null ? null : previewCoderInfo.codec;
 	const previewUnsupported = previewCodec !== null && previewCodec !== 'h264';
 
+	const addressFields = props.restreamer.GetIngestAddressFields(_channelid);
+
 	let title = <Trans>Main channel</Trans>;
 	if (channel && channel.name && channel.name.length !== 0) {
 		title = channel.name;
@@ -476,6 +501,28 @@ export default function Main(props) {
 									</Stack>
 								</Stack>
 							</Grid>
+							{($metadata.control.rtmp.enable || $metadata.control.srt.enable) && (
+								<Grid item xs={12} marginTop=".2em">
+									<Typography variant="body2" sx={{ color: 'text.secondary' }}>
+										<Trans>Or fill these fields instead of the full URL (e.g. for OBS):</Trans>
+									</Typography>
+								</Grid>
+							)}
+							{$metadata.control.rtmp.enable && (
+								<React.Fragment>
+									<AddressField label={<Trans>Server</Trans>} value={addressFields.rtmp.server} />
+									<AddressField label={<Trans>Stream key</Trans>} value={addressFields.rtmp.key} />
+								</React.Fragment>
+							)}
+							{$metadata.control.srt.enable && (
+								<React.Fragment>
+									<AddressField label={<Trans>Server</Trans>} value={addressFields.srt.server} />
+									<AddressField label={<Trans>Stream ID</Trans>} value={addressFields.srt.streamid} />
+									{addressFields.srt.passphrase.length !== 0 && (
+										<AddressField label={<Trans>Passphrase</Trans>} value={addressFields.srt.passphrase} />
+									)}
+								</React.Fragment>
+							)}
 							<Grid item xs={12} marginTop="0em">
 								<ActionButton
 									order={$state.order}
