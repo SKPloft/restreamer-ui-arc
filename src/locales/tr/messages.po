@@ -280,7 +280,11 @@ msgid "Autoplay"
 msgstr "Otomatik Oynatma"
 
 #: src/misc/coders/CodecNotice.js:28
-msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
+#~ msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
+#~ msgstr ""
+
+#: src/misc/coders/CodecNotice.js:31
+msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
 msgstr ""
 
 #: src/views/Playersite.js:477
@@ -526,7 +530,7 @@ msgid "Connected since <0/>"
 msgstr "<0/>'dan beri bağlı"
 
 #: src/misc/ActionButton.js:12
-#: src/views/Main/index.js:337
+#: src/views/Main/index.js:347
 #: src/views/Publication/Process.js:40
 msgid "Connecting ..."
 msgstr "Bağlanıyor ..."
@@ -553,7 +557,7 @@ msgstr "Sabit Quantizer Modu (-1 ila 255)."
 msgid "Content"
 msgstr "İçerik"
 
-#: src/views/Main/index.js:397
+#: src/views/Main/index.js:437
 msgid "Content URL"
 msgstr "İçerik URL'si"
 
@@ -979,7 +983,7 @@ msgstr "Hata"
 msgid "Error while copying data to clipboard"
 msgstr "Veriler panoya kopyalanırken hata oluştu"
 
-#: src/views/Main/index.js:356
+#: src/views/Main/index.js:366
 #: src/views/Publication/Process.js:64
 msgid "Error: {0}"
 msgstr "Hata: {0}"
@@ -1199,7 +1203,7 @@ msgstr "Google Analiz İzleyici Adı"
 msgid "H.264 can be used for HLS, RTMP publishing and any player."
 msgstr ""
 
-#: src/misc/coders/CodecNotice.js:50
+#: src/misc/coders/CodecNotice.js:56
 msgid "Hardware coders need the matching device and driver (VAAPI: /dev/dri, QSV: oneVPL runtime)."
 msgstr ""
 
@@ -1221,10 +1225,14 @@ msgid "Height"
 msgstr "Yükseklik"
 
 #: src/misc/coders/CodecNotice.js:23
-msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
+#~ msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
+#~ msgstr ""
+
+#: src/misc/coders/CodecNotice.js:23
+msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and browser playback is limited."
 msgstr ""
 
-#: src/views/Main/index.js:406
+#: src/views/Main/index.js:446
 msgid "HLS"
 msgstr "HLS"
 
@@ -1539,7 +1547,7 @@ msgstr "Ses Yüksekliği Normalizasyonu"
 msgid "Low latency (Buffer)"
 msgstr "Düşük gecikme süresi (Tampon)"
 
-#: src/views/Main/index.js:292
+#: src/views/Main/index.js:302
 #: src/views/Playersite.js:367
 msgid "Main channel"
 msgstr "Ana kanal"
@@ -1782,7 +1790,7 @@ msgstr "Uygun kodlayıcı bulunamadı."
 msgid "No suitable filter found."
 msgstr "Uygun filtre bulunamadı."
 
-#: src/views/Main/index.js:318
+#: src/views/Main/index.js:328
 #: src/views/Publication/Player.js:356
 msgid "No video"
 msgstr "Video yok"
@@ -1851,6 +1859,10 @@ msgstr "Satır başına bir yönlendirici, örneğin http://www.example.com"
 #: src/views/Playersite.js:839
 msgid "Open"
 msgstr "Açık"
+
+#: src/views/Main/index.js:416
+msgid "Open the content URL with an external player, or choose H.264 for the video profile if the preview is required."
+msgstr ""
 
 #: src/misc/coders/Encoders/video/h264_v4l2m2m.js:196
 msgid "Output buffer"
@@ -1958,7 +1970,7 @@ msgstr "Çalma Listesi"
 msgid "Playlist version (M3U8). Version 3 has the best browser/client compatibility."
 msgstr "Oynatma listesi sürümü (M3U8). Sürüm 3 en iyi tarayıcı/istemci uyumluluğuna sahiptir."
 
-#: src/views/Main/index.js:361
+#: src/views/Main/index.js:371
 msgid "Please check the <0>process log</0>"
 msgstr "Lütfen <0>process log</0> kontrol edin"
 
@@ -2078,15 +2090,15 @@ msgstr "İşlem"
 msgid "Process control"
 msgstr "Süreç kontrolü"
 
-#: src/views/Main/index.js:451
-#: src/views/Main/index.js:467
+#: src/views/Main/index.js:491
+#: src/views/Main/index.js:507
 #: src/views/Publication/Edit.js:494
 #: src/views/Publication/Edit.js:613
 msgid "Process details"
 msgstr "Süreç ayrıntıları"
 
-#: src/views/Main/index.js:454
-#: src/views/Main/index.js:475
+#: src/views/Main/index.js:494
+#: src/views/Main/index.js:515
 #: src/views/Publication/Edit.js:497
 #: src/views/Publication/Edit.js:621
 msgid "Process report"
@@ -2215,7 +2227,7 @@ msgstr "Yeniden Bağlan"
 msgid "Reconnect delay (seconds)"
 msgstr "Yeniden bağlanma gecikmesi (saniye)"
 
-#: src/views/Main/index.js:372
+#: src/views/Main/index.js:382
 #: src/views/Publication/Process.js:68
 #: src/views/Publication/Process.js:81
 msgid "Reconnecting in {0}s"
@@ -2317,7 +2329,7 @@ msgstr "Restreamer talimatları"
 msgid "Restreamer Service"
 msgstr "Restreamer Hizmeti"
 
-#: src/views/Main/index.js:276
+#: src/views/Main/index.js:277
 msgid "Retrieving stream data ..."
 msgstr "Akış verileri alınıyor..."
 
@@ -2335,7 +2347,7 @@ msgstr "RGB test deseni"
 msgid "Rotate"
 msgstr "Döndür"
 
-#: src/views/Main/index.js:415
+#: src/views/Main/index.js:455
 #: src/views/Settings.js:1239
 #: src/views/Settings.js:1920
 msgid "RTMP"
@@ -2631,7 +2643,7 @@ msgid "Size"
 msgstr "Boyut"
 
 #: src/views/Edit/index.js:543
-#: src/views/Main/index.js:434
+#: src/views/Main/index.js:474
 msgid "Snapshot"
 msgstr "Anlık görüntü"
 
@@ -2670,7 +2682,7 @@ msgstr "Hız"
 msgid "Speed Preset"
 msgstr "Hız Ön Ayarı"
 
-#: src/views/Main/index.js:425
+#: src/views/Main/index.js:465
 #: src/views/Settings.js:1240
 #: src/views/Settings.js:2019
 msgid "SRT"
@@ -2839,6 +2851,10 @@ msgstr "Mevcut FFmpeg ikili dosyası gerekli protokollerin hiçbirini desteklemi
 #: src/misc/coders/settings/Audio.js:40
 msgid "The bitrate of the audio stream."
 msgstr "Ses akışının bit hızı."
+
+#: src/views/Main/index.js:411
+msgid "The built-in player cannot decode this channel's video codec."
+msgstr ""
 
 #: src/views/Edit/Sources/VirtualAudio.js:150
 msgid "The carrier frequency"
@@ -3405,7 +3421,11 @@ msgid "Volume"
 msgstr "Ses Düzeyi "
 
 #: src/misc/coders/CodecNotice.js:36
-msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
+#~ msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
+#~ msgstr ""
+
+#: src/misc/coders/CodecNotice.js:39
+msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and Safari cannot play it."
 msgstr ""
 
 #: src/views/Publication/Services/Livespotting.js:88
@@ -3456,7 +3476,7 @@ msgstr "Sihirbazı iptal edemezsiniz çünkü en az bir girdi tanımlanmış olm
 msgid "You have changed the configuration. In order for the changes to take effect, you have to restart the application. Do you want to restart now?"
 msgstr "Yapılandırmayı değiştirdiniz. Değişikliklerin etkili olması için uygulamayı yeniden başlatmanız gerekir. Şimdi yeniden başlatmak istiyor musunuz?"
 
-#: src/views/Main/index.js:379
+#: src/views/Main/index.js:389
 #: src/views/Publication/Process.js:73
 msgid "You have to reconnect manually"
 msgstr "Manuel olarak yeniden bağlanmanız gerekir"

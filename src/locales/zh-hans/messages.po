@@ -280,8 +280,12 @@ msgid "Autoplay"
 msgstr "自动播放"
 
 #: src/misc/coders/CodecNotice.js:28
-msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
-msgstr "AV1 会输出为 fMP4 HLS。RTMP 发布不支持，Safari 无法播放；Intel QSV 编码需关闭 B 帧。"
+#~ msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
+#~ msgstr "AV1 会输出为 fMP4 HLS。RTMP 发布不支持，Safari 无法播放；Intel QSV 编码需关闭 B 帧。"
+
+#: src/misc/coders/CodecNotice.js:31
+msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
+msgstr "AV1 会输出为 fMP4 HLS。RTMP 发布不支持，内置播放器无法预览，Safari 无法播放；Intel QSV 编码需关闭 B 帧。"
 
 #: src/views/Playersite.js:477
 msgid "Available"
@@ -526,7 +530,7 @@ msgid "Connected since <0/>"
 msgstr "连接建立于"
 
 #: src/misc/ActionButton.js:12
-#: src/views/Main/index.js:337
+#: src/views/Main/index.js:347
 #: src/views/Publication/Process.js:40
 msgid "Connecting ..."
 msgstr "连接中 ..."
@@ -553,7 +557,7 @@ msgstr "常数量化器模式（-1 至 255）。"
 msgid "Content"
 msgstr "内容"
 
-#: src/views/Main/index.js:397
+#: src/views/Main/index.js:437
 msgid "Content URL"
 msgstr "内容 URL"
 
@@ -979,7 +983,7 @@ msgstr "错误"
 msgid "Error while copying data to clipboard"
 msgstr "复制到剪贴板时出现错误"
 
-#: src/views/Main/index.js:356
+#: src/views/Main/index.js:366
 #: src/views/Publication/Process.js:64
 msgid "Error: {0}"
 msgstr "错误：{0}"
@@ -1199,7 +1203,7 @@ msgstr "Google Analytics Tracker Name"
 msgid "H.264 can be used for HLS, RTMP publishing and any player."
 msgstr "H.264 通用：HLS、RTMP 发布和各类播放器都支持。"
 
-#: src/misc/coders/CodecNotice.js:50
+#: src/misc/coders/CodecNotice.js:56
 msgid "Hardware coders need the matching device and driver (VAAPI: /dev/dri, QSV: oneVPL runtime)."
 msgstr "硬件编码器需要对应设备与驱动（VAAPI：/dev/dri；QSV：oneVPL 运行时）。"
 
@@ -1221,10 +1225,14 @@ msgid "Height"
 msgstr "高度"
 
 #: src/misc/coders/CodecNotice.js:23
-msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
-msgstr "HEVC 会输出为 fMP4 HLS。RTMP 发布不支持，浏览器播放支持有限。"
+#~ msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
+#~ msgstr "HEVC 会输出为 fMP4 HLS。RTMP 发布不支持，浏览器播放支持有限。"
 
-#: src/views/Main/index.js:406
+#: src/misc/coders/CodecNotice.js:23
+msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and browser playback is limited."
+msgstr "HEVC 会输出为 fMP4 HLS。RTMP 发布不支持，内置播放器无法预览，浏览器播放支持有限。"
+
+#: src/views/Main/index.js:446
 msgid "HLS"
 msgstr "HLS"
 
@@ -1539,7 +1547,7 @@ msgstr "响度归一化"
 msgid "Low latency (Buffer)"
 msgstr "低延迟（缓冲）"
 
-#: src/views/Main/index.js:292
+#: src/views/Main/index.js:302
 #: src/views/Playersite.js:367
 msgid "Main channel"
 msgstr "主频道"
@@ -1782,7 +1790,7 @@ msgstr "未找到合适的编码器。"
 msgid "No suitable filter found."
 msgstr "没有合适的过滤器。"
 
-#: src/views/Main/index.js:318
+#: src/views/Main/index.js:328
 #: src/views/Publication/Player.js:356
 msgid "No video"
 msgstr "没有视频"
@@ -1851,6 +1859,10 @@ msgstr "每行一个来源，例如 http://www.example.com"
 #: src/views/Playersite.js:839
 msgid "Open"
 msgstr "打开"
+
+#: src/views/Main/index.js:416
+msgid "Open the content URL with an external player, or choose H.264 for the video profile if the preview is required."
+msgstr "请用外部播放器打开内容 URL；若需要内置预览，请为视频配置选择 H.264。"
 
 #: src/misc/coders/Encoders/video/h264_v4l2m2m.js:196
 msgid "Output buffer"
@@ -1958,7 +1970,7 @@ msgstr "播放列表"
 msgid "Playlist version (M3U8). Version 3 has the best browser/client compatibility."
 msgstr "Playlist 版本（M3U8）。版本 3 有最好的浏览器/客户端兼容性。"
 
-#: src/views/Main/index.js:361
+#: src/views/Main/index.js:371
 msgid "Please check the <0>process log</0>"
 msgstr "请检查 <0>进程日志</0>"
 
@@ -2078,15 +2090,15 @@ msgstr "串流进程"
 msgid "Process control"
 msgstr "进程控制"
 
-#: src/views/Main/index.js:451
-#: src/views/Main/index.js:467
+#: src/views/Main/index.js:491
+#: src/views/Main/index.js:507
 #: src/views/Publication/Edit.js:494
 #: src/views/Publication/Edit.js:613
 msgid "Process details"
 msgstr "进程详情"
 
-#: src/views/Main/index.js:454
-#: src/views/Main/index.js:475
+#: src/views/Main/index.js:494
+#: src/views/Main/index.js:515
 #: src/views/Publication/Edit.js:497
 #: src/views/Publication/Edit.js:621
 msgid "Process report"
@@ -2215,7 +2227,7 @@ msgstr "重连"
 msgid "Reconnect delay (seconds)"
 msgstr "重连延时（秒）"
 
-#: src/views/Main/index.js:372
+#: src/views/Main/index.js:382
 #: src/views/Publication/Process.js:68
 #: src/views/Publication/Process.js:81
 msgid "Reconnecting in {0}s"
@@ -2317,7 +2329,7 @@ msgstr "Restreamer 指南"
 msgid "Restreamer Service"
 msgstr "Restreamer 服务"
 
-#: src/views/Main/index.js:276
+#: src/views/Main/index.js:277
 msgid "Retrieving stream data ..."
 msgstr "正在获取媒体流数据 ..."
 
@@ -2335,7 +2347,7 @@ msgstr "RGB 测试模式"
 msgid "Rotate"
 msgstr "旋转"
 
-#: src/views/Main/index.js:415
+#: src/views/Main/index.js:455
 #: src/views/Settings.js:1239
 #: src/views/Settings.js:1920
 msgid "RTMP"
@@ -2631,7 +2643,7 @@ msgid "Size"
 msgstr "大小"
 
 #: src/views/Edit/index.js:543
-#: src/views/Main/index.js:434
+#: src/views/Main/index.js:474
 msgid "Snapshot"
 msgstr "截图"
 
@@ -2670,7 +2682,7 @@ msgstr "速度"
 msgid "Speed Preset"
 msgstr "速度预设"
 
-#: src/views/Main/index.js:425
+#: src/views/Main/index.js:465
 #: src/views/Settings.js:1240
 #: src/views/Settings.js:2019
 msgid "SRT"
@@ -2839,6 +2851,10 @@ msgstr "可用的 FFmpeg 不支持任何一种要求的协议。"
 #: src/misc/coders/settings/Audio.js:40
 msgid "The bitrate of the audio stream."
 msgstr "音频流的比特率。"
+
+#: src/views/Main/index.js:411
+msgid "The built-in player cannot decode this channel's video codec."
+msgstr "内置播放器无法解码该频道的视频编码。"
 
 #: src/views/Edit/Sources/VirtualAudio.js:150
 msgid "The carrier frequency"
@@ -3405,8 +3421,12 @@ msgid "Volume"
 msgstr "音量"
 
 #: src/misc/coders/CodecNotice.js:36
-msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
-msgstr "VP9 会输出为 fMP4 HLS。RTMP 发布不支持，Safari 无法播放。"
+#~ msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
+#~ msgstr "VP9 会输出为 fMP4 HLS。RTMP 发布不支持，Safari 无法播放。"
+
+#: src/misc/coders/CodecNotice.js:39
+msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and Safari cannot play it."
+msgstr "VP9 会输出为 fMP4 HLS。RTMP 发布不支持，内置播放器无法预览，Safari 无法播放。"
 
 #: src/views/Publication/Services/Livespotting.js:88
 msgid "VPU ID"
@@ -3456,7 +3476,7 @@ msgstr "现在不能中止向导，因为至少必须定义一个输入。"
 msgid "You have changed the configuration. In order for the changes to take effect, you have to restart the application. Do you want to restart now?"
 msgstr "配置已更改。请重启应用以使更改生效。要立刻重启吗？"
 
-#: src/views/Main/index.js:379
+#: src/views/Main/index.js:389
 #: src/views/Publication/Process.js:73
 msgid "You have to reconnect manually"
 msgstr "需要手动重连"
