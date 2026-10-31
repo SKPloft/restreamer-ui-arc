@@ -12,8 +12,10 @@ import Typography from '@mui/material/Typography';
 
 import * as S from '../../Sources/Network';
 import BoxTextarea from '../../../../misc/BoxTextarea';
+import IngestAddressFields from '../../../../misc/IngestAddressFields';
 import Select from '../../../../misc/Select';
 import Textarea from '../../../../misc/Textarea';
+import { BuildIngestFields } from '../../../../utils/ingest';
 
 const initSettings = (initialSettings, config) => {
 	const settings = {
@@ -127,6 +129,7 @@ function Source(props) {
 								<Textarea rows={1} value={RTMP} readOnly allowCopy />
 							</BoxTextarea>
 						</Grid>
+						<IngestAddressFields fields={BuildIngestFields(config.channelid, config.rtmp, config.srt)} only="rtmp" />
 					</React.Fragment>
 				)}
 			</React.Fragment>
