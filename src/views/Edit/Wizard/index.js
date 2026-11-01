@@ -14,6 +14,7 @@ import * as Decoders from '../../../misc/coders/Decoders';
 import * as Encoders from '../../../misc/coders/Encoders';
 import { targetCodecs } from '../../../misc/coders/targets';
 import * as M from '../../../utils/metadata';
+import { FfmpegSatisfies } from '../../../utils/ffmpeg';
 import FullSources from '../Sources';
 import H from '../../../utils/help';
 import NotifyContext from '../../../contexts/Notify';
@@ -263,6 +264,10 @@ export default function Wizard(props) {
 
 		for (let s of Sources.List()) {
 			if (knownSources.indexOf(s.id) === -1) {
+				continue;
+			}
+
+			if (!FfmpegSatisfies($skills.ffmpeg.version, s.ffversion)) {
 				continue;
 			}
 

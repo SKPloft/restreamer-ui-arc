@@ -1,5 +1,4 @@
 import React from 'react';
-import SemverSatisfies from 'semver/functions/satisfies';
 
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
@@ -8,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import { Trans } from '@lingui/macro';
 
 import Sources from './Sources';
+import { FfmpegSatisfies } from '../../utils/ffmpeg';
 
 function initConfig(initialConfig) {
 	let config = {};
@@ -91,7 +91,7 @@ export default function SourceSelect(props) {
 	if (s !== null) {
 		const Component = s.component;
 
-		if (SemverSatisfies(props.skills.ffmpeg.version, s.ffversion)) {
+		if (FfmpegSatisfies(props.skills.ffmpeg.version, s.ffversion)) {
 			sourceControl = (
 				<Component
 					knownDevices={props.skills.sources[$source]}
@@ -143,6 +143,7 @@ function Select(props) {
 	};
 
 	let availableSources = [];
+	let blockedByVersion = [];
 
 	for (let s of Sources.List()) {
 		if (!(s.id in props.availableSources)) {
@@ -153,7 +154,8 @@ function Select(props) {
 			continue;
 		}
 
-		if (!SemverSatisfies(props.ffversion, s.ffversion)) {
+		if (!FfmpegSatisfies(props.ffversion, s.ffversion)) {
+			blockedByVersion.push(s);
 			continue;
 		}
 
@@ -177,7 +179,13 @@ function Select(props) {
 			<Grid container spacing={1}>
 				<Grid item xs={12}>
 					<Typography variant="body1">
-						<Trans>No sources available</Trans>
+						{blockedByVersion.length !== 0 ? (
+							<Trans>
+								No source is compatible with ffmpeg {props.ffversion} (requires {blockedByVersion[0].ffversion})
+							</Trans>
+						) : (
+							<Trans>No sources available</Trans>
+						)}
 					</Typography>
 				</Grid>
 			</Grid>

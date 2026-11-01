@@ -98,7 +98,7 @@ msgstr ""
 msgid "Additional channels to display on the playersite."
 msgstr ""
 
-#: src/views/Edit/Sources/Network.js:767
+#: src/views/Edit/Sources/Network.js:768
 #: src/views/Edit/Wizard/Sources/Network.js:66
 #: src/views/Publication/Services/Azure.js:98
 #: src/views/Publication/Services/Brightcove.js:95
@@ -131,8 +131,8 @@ msgstr "Naslov za sprejem HTTP zahtev."
 msgid "Address to listen on for HTTPS requests."
 msgstr "Naslov za sprejem HTTPS zahtev."
 
-#: src/views/Edit/Sources/Network.js:974
-#: src/views/Edit/Sources/Network.js:1069
+#: src/views/Edit/Sources/Network.js:975
+#: src/views/Edit/Sources/Network.js:1070
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:124
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:124
 msgid "Address:"
@@ -146,7 +146,7 @@ msgstr "Barve in ozadje mesta za objavo prilagodite po želji."
 msgid "Advanced monitoring"
 msgstr "Napredno spremljanje"
 
-#: src/views/Edit/Sources/Network.js:520
+#: src/views/Edit/Sources/Network.js:521
 #: src/views/Publication/Services/DASH.js:204
 #: src/views/Publication/Services/HLS.js:193
 #: src/views/Publication/Services/Icecast.js:172
@@ -192,11 +192,11 @@ msgstr "Dovolite vse napotitelje"
 msgid "Allow counting how many viewers the stream has."
 msgstr "Omogoča štetje, koliko gledalcev ima tok."
 
-#: src/views/Edit/Sources/ALSA.js:156
+#: src/views/Edit/Sources/ALSA.js:157
 msgid "ALSA"
 msgstr "ALSA"
 
-#: src/views/Edit/Sources/VirtualAudio.js:126
+#: src/views/Edit/Sources/VirtualAudio.js:127
 msgid "Amplitude"
 msgstr "Zvočna amplituda"
 
@@ -226,8 +226,8 @@ msgstr "Ali ste prepričani, da želite prekiniti čarovnika?"
 msgid "Audio"
 msgstr "Zvok"
 
-#: src/views/Edit/Sources/ALSA.js:114
-#: src/views/Edit/Sources/AVFoundation.js:159
+#: src/views/Edit/Sources/ALSA.js:115
+#: src/views/Edit/Sources/AVFoundation.js:160
 msgid "Audio device"
 msgstr "Zvočna naprava"
 
@@ -295,11 +295,11 @@ msgstr ""
 msgid "Available"
 msgstr "Na voljo"
 
-#: src/views/Edit/Sources/AVFoundation.js:221
+#: src/views/Edit/Sources/AVFoundation.js:222
 msgid "AVFoundation"
 msgstr "AVFoundation"
 
-#: src/views/Edit/Sources/Network.js:732
+#: src/views/Edit/Sources/Network.js:733
 msgid "avoid_negative_ts"
 msgstr "avoid_negative_ts"
 
@@ -356,7 +356,7 @@ msgstr "Baner"
 msgid "Basic"
 msgstr "Osnovni"
 
-#: src/views/Edit/Sources/VirtualAudio.js:157
+#: src/views/Edit/Sources/VirtualAudio.js:158
 msgid "Beep factor"
 msgstr "Dejavnik piskanja"
 
@@ -369,7 +369,7 @@ msgstr "Bitrate"
 msgid "Block cache types"
 msgstr "Vrste blokovnega predpomnilnika"
 
-#: src/views/Edit/Sources/VirtualAudio.js:114
+#: src/views/Edit/Sources/VirtualAudio.js:115
 msgid "blue"
 msgstr "modra"
 
@@ -382,7 +382,7 @@ msgstr "Spodnje polje"
 msgid "Briefly describe what the audience will see during the live stream."
 msgstr "Na kratko opišite, kaj bodo gledalci videli med prenosom v živo."
 
-#: src/views/Edit/Sources/VirtualAudio.js:113
+#: src/views/Edit/Sources/VirtualAudio.js:114
 msgid "brown"
 msgstr "rjava"
 
@@ -418,11 +418,11 @@ msgstr ""
 msgid "Capture buffer"
 msgstr "Buffer za zajemanje"
 
-#: src/views/Edit/Sources/AVFoundation.js:197
+#: src/views/Edit/Sources/AVFoundation.js:198
 msgid "Capture clicks"
 msgstr "Zajem klikov"
 
-#: src/views/Edit/Sources/AVFoundation.js:194
+#: src/views/Edit/Sources/AVFoundation.js:195
 msgid "Capture cursor"
 msgstr "Kazalec za zajemanje"
 
@@ -430,7 +430,7 @@ msgstr "Kazalec za zajemanje"
 msgid "Channel \"{0}\" saved"
 msgstr "Kanal \"{0}\" shranjen"
 
-#: src/views/Edit/Sources/ALSA.js:129
+#: src/views/Edit/Sources/ALSA.js:130
 msgid "Channels"
 msgstr "Kanali"
 
@@ -450,15 +450,15 @@ msgstr "Izberi video vir"
 msgid "Choose an audio stream"
 msgstr "Izberi zvočni vir"
 
-#: src/views/Edit/Sources/ALSA.js:96
-#: src/views/Edit/Sources/Framebuffer.js:80
-#: src/views/Edit/Sources/Raspicam.js:93
-#: src/views/Edit/Sources/V4L.js:93
+#: src/views/Edit/Sources/ALSA.js:97
+#: src/views/Edit/Sources/Framebuffer.js:81
+#: src/views/Edit/Sources/Raspicam.js:94
+#: src/views/Edit/Sources/V4L.js:94
 msgid "Choose an input device ..."
 msgstr "Izberi vhodno napravo ..."
 
-#: src/views/Edit/Sources/Network.js:950
-#: src/views/Edit/Sources/Network.js:1045
+#: src/views/Edit/Sources/Network.js:951
+#: src/views/Edit/Sources/Network.js:1046
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:98
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:98
 msgid "Choose an input stream ..."
@@ -509,7 +509,7 @@ msgstr "Vbrizgavanje kode"
 msgid "Codec"
 msgstr "Kodek"
 
-#: src/views/Edit/Sources/VirtualAudio.js:110
+#: src/views/Edit/Sources/VirtualAudio.js:111
 msgid "Color"
 msgstr "Barva"
 
@@ -573,7 +573,7 @@ msgstr "URL vsebine"
 msgid "Copy"
 msgstr ""
 
-#: src/views/Edit/Sources/Network.js:717
+#: src/views/Edit/Sources/Network.js:718
 msgid "copyts"
 msgstr "copyts"
 
@@ -613,18 +613,18 @@ msgstr "Creative Commons"
 #: src/misc/filters/audio/Resample.js:114
 #: src/misc/filters/audio/Volume.js:58
 #: src/misc/filters/video/Framerate.js:48
-#: src/views/Edit/Sources/ALSA.js:101
-#: src/views/Edit/Sources/AVFoundation.js:120
-#: src/views/Edit/Sources/AVFoundation.js:153
-#: src/views/Edit/Sources/V4L.js:99
+#: src/views/Edit/Sources/ALSA.js:102
+#: src/views/Edit/Sources/AVFoundation.js:121
+#: src/views/Edit/Sources/AVFoundation.js:154
+#: src/views/Edit/Sources/V4L.js:100
 msgid "Custom ..."
 msgstr "Po meri ..."
 
-#: src/views/Edit/Sources/ALSA.js:115
+#: src/views/Edit/Sources/ALSA.js:116
 msgid "Custom audio device"
 msgstr "Zvočna naprava po meri"
 
-#: src/views/Edit/Sources/AVFoundation.js:160
+#: src/views/Edit/Sources/AVFoundation.js:161
 msgid "Custom audio index"
 msgstr "Zvočni indeks po meri"
 
@@ -641,7 +641,7 @@ msgstr "Vbrizgavanje kode po meri"
 msgid "Custom delay"
 msgstr "Zakasnitev po meri"
 
-#: src/views/Edit/Sources/Framebuffer.js:88
+#: src/views/Edit/Sources/Framebuffer.js:89
 msgid "Custom device"
 msgstr "Naprava po meri"
 
@@ -673,7 +673,7 @@ msgstr "Postavitev po meri"
 msgid "Custom sampling (Hz)"
 msgstr "Vzorčenje po meri (Hz)"
 
-#: src/views/Edit/Sources/VirtualVideo.js:149
+#: src/views/Edit/Sources/VirtualVideo.js:150
 msgid "Custom scale"
 msgstr "Lestvica po meri"
 
@@ -683,11 +683,11 @@ msgstr "Lestvica po meri"
 msgid "Custom size"
 msgstr "Velikost po meri"
 
-#: src/views/Edit/Sources/V4L.js:113
+#: src/views/Edit/Sources/V4L.js:114
 msgid "Custom video device"
 msgstr "Video naprava po meri"
 
-#: src/views/Edit/Sources/AVFoundation.js:127
+#: src/views/Edit/Sources/AVFoundation.js:128
 msgid "Custom video index"
 msgstr "Indeks videoposnetkov po meri"
 
@@ -701,7 +701,7 @@ msgstr ""
 msgid "Data copied to clipboard"
 msgstr "Podatki, kopirani v odložišče"
 
-#: src/views/Edit/Sources/VirtualVideo.js:167
+#: src/views/Edit/Sources/VirtualVideo.js:168
 msgid "Death color"
 msgstr "Barva smrti"
 
@@ -714,8 +714,8 @@ msgstr "Decibeli (dB)"
 msgid "Decoder"
 msgstr "Dekoder"
 
-#: src/views/Edit/Sources/AVFoundation.js:115
-#: src/views/Edit/Sources/AVFoundation.js:149
+#: src/views/Edit/Sources/AVFoundation.js:116
+#: src/views/Edit/Sources/AVFoundation.js:150
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:76
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:105
 #: src/views/Playersite.js:483
@@ -724,11 +724,11 @@ msgstr "Dekoder"
 msgid "Default"
 msgstr "Privzeto"
 
-#: src/views/Edit/Sources/Network.js:658
+#: src/views/Edit/Sources/Network.js:659
 msgid "Default {0}"
 msgstr "Privzeto {0}"
 
-#: src/views/Edit/Sources/Network.js:698
+#: src/views/Edit/Sources/Network.js:699
 msgid "Default {0} ({1} seconds)"
 msgstr "Privzeto {0} ({1} sekund)"
 
@@ -752,7 +752,7 @@ msgstr "Odprava prepletanja paritete"
 msgid "Delay"
 msgstr "Zakasnitev"
 
-#: src/views/Edit/Sources/ALSA.js:132
+#: src/views/Edit/Sources/ALSA.js:133
 msgid "Delay (ms)"
 msgstr "Zakasnitev (ms)"
 
@@ -785,7 +785,7 @@ msgstr "Oblikovanje"
 
 #: src/misc/coders/Encoders/video/av1_qsv.js:153
 #: src/misc/coders/Encoders/video/av1_vaapi.js:155
-#: src/views/Edit/Sources/Framebuffer.js:87
+#: src/views/Edit/Sources/Framebuffer.js:88
 #: src/views/Edit/Wizard/Audio.js:87
 #: src/views/Publication/Services/Framebuffer.js:93
 msgid "Device"
@@ -899,7 +899,7 @@ msgstr "Vdelaj"
 msgid "Enable"
 msgstr "Omogočite"
 
-#: src/views/Edit/Sources/VirtualAudio.js:162
+#: src/views/Edit/Sources/VirtualAudio.js:163
 msgid "Enable a periodic beep every second with this value times the carrier frequency"
 msgstr "Omogočite periodični zvočni signal vsako sekundo s to vrednostjo, pomnoženo z nosilno frekvenco."
 
@@ -922,7 +922,7 @@ msgstr "Omogoči zdaj"
 msgid "Enable primary stream"
 msgstr "Omogočite primarni tok"
 
-#: src/views/Edit/Sources/Network.js:931
+#: src/views/Edit/Sources/Network.js:932
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:81
 msgid "Enable RTMP server ..."
 msgstr "Omogoči strežnik RTMP ..."
@@ -935,7 +935,7 @@ msgstr "Omogoči prenos RTMPS"
 msgid "Enable snapshots"
 msgstr "Omogočanje posnetkov"
 
-#: src/views/Edit/Sources/Network.js:1026
+#: src/views/Edit/Sources/Network.js:1027
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:81
 msgid "Enable SRT server ..."
 msgstr "Omogočite strežnik SRT ..."
@@ -972,7 +972,7 @@ msgstr "Vnesite ime novega kanala."
 msgid "Enter password"
 msgstr "Vnesite geslo"
 
-#: src/views/Edit/Sources/Network.js:760
+#: src/views/Edit/Sources/Network.js:761
 #: src/views/Edit/Wizard/Sources/Network.js:59
 msgid "Enter the address of your network source:"
 msgstr "Vnesite naslov vira omrežja:"
@@ -1094,8 +1094,8 @@ msgstr "Ni uspelo preveriti vira. Preverite naslov."
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: src/views/Edit/Sources/AudioLoop.js:142
-#: src/views/Edit/Sources/VideoLoop.js:150
+#: src/views/Edit/Sources/AudioLoop.js:143
+#: src/views/Edit/Sources/VideoLoop.js:151
 msgid "File path"
 msgstr "Pot do datoteke"
 
@@ -1115,7 +1115,7 @@ msgstr "Določite velikost"
 msgid "Fixed by the deployment configuration and cannot be changed here."
 msgstr ""
 
-#: src/views/Edit/Sources/VirtualVideo.js:182
+#: src/views/Edit/Sources/VirtualVideo.js:183
 msgid "Flags"
 msgstr "Zastave"
 
@@ -1127,7 +1127,7 @@ msgstr "Za Javascripts."
 msgid "For Stylesheets."
 msgstr "Za slogovne liste."
 
-#: src/views/Edit/Sources/Network.js:563
+#: src/views/Edit/Sources/Network.js:564
 msgid "Force input framerate"
 msgstr "Vsilite vhodno frekvenco sličic"
 
@@ -1152,13 +1152,13 @@ msgstr "Padci okvirjev"
 msgid "Frame is passed through (Passthrough)"
 msgstr "Okvir je posredovan (Passthrough)"
 
-#: src/views/Edit/Sources/Framebuffer.js:129
+#: src/views/Edit/Sources/Framebuffer.js:130
 msgid "Framebuffer"
 msgstr "Framebuffer"
 
 #: src/misc/coders/settings/Video.js:135
 #: src/misc/filters/video/Framerate.js:65
-#: src/views/Edit/Sources/Network.js:576
+#: src/views/Edit/Sources/Network.js:577
 msgid "Framerate"
 msgstr "Frammerate"
 
@@ -1170,13 +1170,13 @@ msgstr "Pretvarjanje hitrosti posnetkov (interpolacija posnetkov)"
 msgid "Framerate mode"
 msgstr "Način hitrosti posnetka"
 
-#: src/views/Edit/Sources/VirtualAudio.js:145
+#: src/views/Edit/Sources/VirtualAudio.js:146
 msgid "Frequency (Hz)"
 msgstr "Frekvenca (Hz)"
 
 #: src/views/Edit/index.js:418
 #: src/views/Edit/index.js:430
-#: src/views/Edit/Sources/Network.js:614
+#: src/views/Edit/Sources/Network.js:615
 #: src/views/Playersite.js:328
 #: src/views/Playersite.js:341
 #: src/views/Publication/Add.js:414
@@ -1227,7 +1227,7 @@ msgstr ""
 msgid "Hardware coders need the matching device and driver (VAAPI: /dev/dri, QSV: oneVPL runtime)."
 msgstr ""
 
-#: src/views/Edit/Sources/V4L.js:154
+#: src/views/Edit/Sources/V4L.js:155
 #: src/views/Edit/Wizard/Sources/V4L.js:140
 msgid "Hardware device"
 msgstr "Strojna naprava"
@@ -1280,7 +1280,7 @@ msgstr "Gostovani vmesnik Restreamer"
 msgid "Hostname(s) used in the ingest and playback addresses, separated by a comma. This is written to the core configuration and applies to every visitor of this panel. It is not stored in the deployment, so keep the deployment configuration in sync if the container is recreated."
 msgstr ""
 
-#: src/views/Edit/Sources/Network.js:553
+#: src/views/Edit/Sources/Network.js:554
 msgid "HTTP and HTTPS"
 msgstr "HTTP in HTTPS"
 
@@ -1373,8 +1373,8 @@ msgstr "Vbrizgavanje 3"
 msgid "Inject 4"
 msgstr "Vbrizgavanje 4"
 
-#: src/views/Edit/Sources/Network.js:963
-#: src/views/Edit/Sources/Network.js:1058
+#: src/views/Edit/Sources/Network.js:964
+#: src/views/Edit/Sources/Network.js:1059
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:113
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:113
 msgid "Input stream"
@@ -1434,7 +1434,7 @@ msgstr "Raven sistemskega protokola."
 msgid "License"
 msgstr "Licenca"
 
-#: src/views/Edit/Sources/VirtualVideo.js:176
+#: src/views/Edit/Sources/VirtualVideo.js:177
 msgid "Life color"
 msgstr "Barva življenja"
 
@@ -1558,8 +1558,8 @@ msgstr "Logotip"
 msgid "Logout"
 msgstr "Odjava"
 
-#: src/views/Edit/Sources/AudioLoop.js:194
-#: src/views/Edit/Sources/VideoLoop.js:202
+#: src/views/Edit/Sources/AudioLoop.js:195
+#: src/views/Edit/Sources/VideoLoop.js:203
 msgid "Loop"
 msgstr "Zanka"
 
@@ -1580,7 +1580,7 @@ msgstr "Glavni kanal"
 msgid "Main channel not found"
 msgstr "Glavni kanal ni najden"
 
-#: src/views/Edit/Wizard/index.js:201
+#: src/views/Edit/Wizard/index.js:202
 msgid "Main channel saved"
 msgstr "Shranjen glavni kanal"
 
@@ -1689,11 +1689,11 @@ msgstr "Meta informacije"
 msgid "Metadata"
 msgstr "Metapodatki"
 
-#: src/views/Edit/Sources/Network.js:641
+#: src/views/Edit/Sources/Network.js:642
 msgid "Mininum {0}, default {1}"
 msgstr "Mininum {0}, privzeto {1}"
 
-#: src/views/Edit/Sources/VirtualVideo.js:158
+#: src/views/Edit/Sources/VirtualVideo.js:159
 msgid "Mold"
 msgstr "Plesni"
 
@@ -1756,7 +1756,7 @@ msgstr "Ime predloge. Če ime že obstaja, se prepiše."
 msgid "Network"
 msgstr "Omrežje"
 
-#: src/views/Edit/Sources/Network.js:1194
+#: src/views/Edit/Sources/Network.js:1195
 #: src/views/Edit/Wizard/Sources/Network.js:123
 msgid "Network source"
 msgstr "Vir omrežja"
@@ -1780,7 +1780,7 @@ msgstr "Naslednji: Nastavitev videoposnetka"
 msgid "No"
 msgstr "Ne"
 
-#: src/views/Edit/Sources/NoAudio.js:45
+#: src/views/Edit/Sources/NoAudio.js:46
 #: src/views/Edit/Wizard/Audio.js:98
 msgid "No audio"
 msgstr "Brez zvoka"
@@ -1798,11 +1798,15 @@ msgstr "Vhodna naprava ni na voljo"
 msgid "No live stream was detected. Please check the software that sends the stream."
 msgstr "Tok v živo ni bil zaznan. Preverite programsko opremo, ki pošilja tok."
 
+#: src/views/Edit/SourceSelect.js:183
+msgid "No source is compatible with ffmpeg {0} (requires {1})"
+msgstr ""
+
 #: src/views/Edit/Summary.js:29
 msgid "No source selected"
 msgstr "Ni izbran noben vir"
 
-#: src/views/Edit/SourceSelect.js:180
+#: src/views/Edit/SourceSelect.js:187
 msgid "No sources available"
 msgstr "Viri niso na voljo"
 
@@ -1827,12 +1831,12 @@ msgstr "Video tok ni na voljo"
 msgid "Node ID"
 msgstr "ID vozlišča"
 
-#: src/views/Edit/Sources/VirtualAudio.js:90
+#: src/views/Edit/Sources/VirtualAudio.js:91
 msgid "Noise"
 msgstr "Hrup"
 
 #: src/misc/filters/video/Scale.js:45
-#: src/views/Edit/Sources/AVFoundation.js:145
+#: src/views/Edit/Sources/AVFoundation.js:146
 #: src/views/Edit/Summary.js:31
 #: src/views/Edit/Summary.js:107
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:98
@@ -1869,8 +1873,8 @@ msgstr "Število ploščic za kodiranje."
 msgid "Number of tiles rows to encode with."
 msgstr "Število vrstic ploščic za kodiranje."
 
-#: src/views/Edit/Sources/AudioLoop.js:168
-#: src/views/Edit/Sources/VideoLoop.js:176
+#: src/views/Edit/Sources/AudioLoop.js:169
+#: src/views/Edit/Sources/VideoLoop.js:177
 #: src/views/Playersite.js:854
 #: src/views/Publication/Player.js:567
 msgid "OK"
@@ -1918,7 +1922,7 @@ msgstr "geslo mora biti dolgo od 10 do 79 znakov."
 msgid "Passthrough (copy) should only be disabled if necessary. Each encoding requires additional CPU/GPU resources."
 msgstr "Prepust (kopiranje) lahko onemogočite le, če je to potrebno. Vsako kodiranje zahteva dodatne vire CPU/GPU."
 
-#: src/views/Edit/Sources/Network.js:807
+#: src/views/Edit/Sources/Network.js:808
 #: src/views/Edit/Wizard/Sources/Network.js:97
 #: src/views/Login.js:282
 #: src/views/Publication/Services/Akamai.js:134
@@ -1938,7 +1942,7 @@ msgstr "Geslo"
 msgid "Password for authorization."
 msgstr "Geslo za avtorizacijo."
 
-#: src/views/Edit/Sources/Network.js:812
+#: src/views/Edit/Sources/Network.js:813
 #: src/views/Edit/Wizard/Sources/Network.js:103
 msgid "Password for the device."
 msgstr "Geslo za napravo."
@@ -1947,7 +1951,7 @@ msgstr "Geslo za napravo."
 msgid "Persist viewer statistics"
 msgstr "Ohranite statistiko gledalcev"
 
-#: src/views/Edit/Sources/VirtualAudio.js:112
+#: src/views/Edit/Sources/VirtualAudio.js:113
 msgid "pink"
 msgstr "roza"
 
@@ -2042,8 +2046,8 @@ msgstr "Vnesite svoj e-poštni naslov, da se strinjate s pogoji uporabe storitve
 msgid "Please get in touch with the operator of the service and check what happens."
 msgstr "Stopite v stik z operaterjem storitve in preverite, kaj se bo zgodilo."
 
-#: src/views/Edit/Sources/AudioLoop.js:84
-#: src/views/Edit/Sources/VideoLoop.js:92
+#: src/views/Edit/Sources/AudioLoop.js:85
+#: src/views/Edit/Sources/VideoLoop.js:93
 #: src/views/Playersite.js:220
 #: src/views/Publication/Player.js:195
 msgid "Please select a file to upload."
@@ -2092,19 +2096,19 @@ msgstr "Primarni tok"
 msgid "Primary stream key"
 msgstr "Ključ primarnega toka"
 
-#: src/views/Edit/Sources/ALSA.js:136
-#: src/views/Edit/Sources/AudioLoop.js:155
-#: src/views/Edit/Sources/AVFoundation.js:201
-#: src/views/Edit/Sources/Framebuffer.js:110
-#: src/views/Edit/Sources/Network.js:824
-#: src/views/Edit/Sources/Network.js:906
-#: src/views/Edit/Sources/Network.js:988
-#: src/views/Edit/Sources/Network.js:1083
-#: src/views/Edit/Sources/Raspicam.js:125
-#: src/views/Edit/Sources/V4L.js:134
-#: src/views/Edit/Sources/VideoLoop.js:163
-#: src/views/Edit/Sources/VirtualAudio.js:169
-#: src/views/Edit/Sources/VirtualVideo.js:188
+#: src/views/Edit/Sources/ALSA.js:137
+#: src/views/Edit/Sources/AudioLoop.js:156
+#: src/views/Edit/Sources/AVFoundation.js:202
+#: src/views/Edit/Sources/Framebuffer.js:111
+#: src/views/Edit/Sources/Network.js:825
+#: src/views/Edit/Sources/Network.js:907
+#: src/views/Edit/Sources/Network.js:989
+#: src/views/Edit/Sources/Network.js:1084
+#: src/views/Edit/Sources/Raspicam.js:126
+#: src/views/Edit/Sources/V4L.js:135
+#: src/views/Edit/Sources/VideoLoop.js:164
+#: src/views/Edit/Sources/VirtualAudio.js:170
+#: src/views/Edit/Sources/VirtualVideo.js:189
 msgid "Probe"
 msgstr "Sonda"
 
@@ -2150,7 +2154,7 @@ msgstr "Obdelava in nadzor"
 msgid "Profile"
 msgstr "Profil"
 
-#: src/views/Edit/Sources/Network.js:858
+#: src/views/Edit/Sources/Network.js:859
 #: src/views/Publication/Services/Akamai.js:144
 #: src/views/Publication/Services/Akamai.js:182
 #: src/views/Publication/Services/Azure.js:89
@@ -2202,11 +2206,11 @@ msgstr "Shranjene nastavitve spletnega mesta objave"
 msgid "Publications"
 msgstr "Publikacije"
 
-#: src/views/Edit/Sources/Network.js:1158
+#: src/views/Edit/Sources/Network.js:1159
 msgid "Pull Mode"
 msgstr "Način vlečenja"
 
-#: src/views/Edit/Sources/Network.js:1157
+#: src/views/Edit/Sources/Network.js:1158
 msgid "Pull or recieve the data:"
 msgstr "Izvlecite ali prejmite podatke:"
 
@@ -2222,7 +2226,7 @@ msgstr "QP"
 msgid "Quality"
 msgstr "Kakovost"
 
-#: src/views/Edit/Sources/Raspicam.js:144
+#: src/views/Edit/Sources/Raspicam.js:145
 #: src/views/Edit/Wizard/Sources/Raspicam.js:117
 msgid "Raspberry Pi camera"
 msgstr "Kamera Raspberry Pi"
@@ -2235,7 +2239,7 @@ msgstr "Kamera Raspberry Pi"
 msgid "Rate control"
 msgstr "Nadzor hitrosti"
 
-#: src/views/Edit/Sources/VirtualVideo.js:161
+#: src/views/Edit/Sources/VirtualVideo.js:162
 msgid "Ratio"
 msgstr "Razmerje"
 
@@ -2243,11 +2247,11 @@ msgstr "Razmerje"
 msgid "rav1e Parameters"
 msgstr "rav1e Parametri"
 
-#: src/views/Edit/Sources/Network.js:558
+#: src/views/Edit/Sources/Network.js:559
 msgid "Read input at native speed"
 msgstr "Branje vhodnih podatkov z izvirno hitrostjo"
 
-#: src/views/Edit/Sources/Network.js:1159
+#: src/views/Edit/Sources/Network.js:1160
 msgid "Receive Mode"
 msgstr "Način sprejema"
 
@@ -2275,12 +2279,12 @@ msgstr "Ponovno vzpostavljanje povezave z jedrom Restreamer Core v zadnjih {RETR
 msgid "Reconnecting to Restreamer Core failed."
 msgstr "Ponovno vzpostavljanje povezave z jedrom Restreamer Core ni uspelo."
 
-#: src/views/Edit/Sources/ALSA.js:122
-#: src/views/Edit/Sources/AVFoundation.js:181
-#: src/views/Edit/Sources/Network.js:967
-#: src/views/Edit/Sources/Network.js:1062
-#: src/views/Edit/Sources/Raspicam.js:111
-#: src/views/Edit/Sources/V4L.js:120
+#: src/views/Edit/Sources/ALSA.js:123
+#: src/views/Edit/Sources/AVFoundation.js:182
+#: src/views/Edit/Sources/Network.js:968
+#: src/views/Edit/Sources/Network.js:1063
+#: src/views/Edit/Sources/Raspicam.js:112
+#: src/views/Edit/Sources/V4L.js:121
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:135
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:117
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:117
@@ -2373,7 +2377,7 @@ msgstr "Pridobivanje podatkov o toku ..."
 msgid "Retry"
 msgstr "Ponovitev"
 
-#: src/views/Edit/Sources/VirtualVideo.js:118
+#: src/views/Edit/Sources/VirtualVideo.js:119
 msgid "RGB test pattern"
 msgstr "Preskusni vzorec RGB"
 
@@ -2404,7 +2408,7 @@ msgstr "Pristanišče RTMP"
 msgid "RTMP server"
 msgstr "Strežnik RTMP"
 
-#: src/views/Edit/Sources/Network.js:926
+#: src/views/Edit/Sources/Network.js:927
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:76
 msgid "RTMP server is not enabled"
 msgstr "Strežnik RTMP ni omogočen"
@@ -2429,11 +2433,11 @@ msgstr "Strežnik RTMPS"
 msgid "RTMPS server listen address."
 msgstr "Naslov za poslušanje strežnika RTMPS."
 
-#: src/views/Edit/Sources/Network.js:529
+#: src/views/Edit/Sources/Network.js:530
 msgid "RTSP"
 msgstr "RTSP"
 
-#: src/views/Edit/Sources/VirtualVideo.js:155
+#: src/views/Edit/Sources/VirtualVideo.js:156
 msgid "Rule"
 msgstr "Pravilo"
 
@@ -2455,7 +2459,7 @@ msgid "Save"
 msgstr "Shrani"
 
 #: src/misc/filters/video/Scale.js:43
-#: src/views/Edit/Sources/VirtualVideo.js:148
+#: src/views/Edit/Sources/VirtualVideo.js:149
 msgid "Scale"
 msgstr "Lestvica"
 
@@ -2506,18 +2510,18 @@ msgstr "Segment bo po preteku tega časa prekinjen na naslednjem ključnem okvir
 msgid "Segmentation"
 msgstr "Segmentacija"
 
-#: src/views/Edit/Sources/ALSA.js:108
-#: src/views/Edit/Sources/AVFoundation.js:172
-#: src/views/Edit/Sources/Framebuffer.js:99
-#: src/views/Edit/Sources/Raspicam.js:105
-#: src/views/Edit/Sources/V4L.js:106
+#: src/views/Edit/Sources/ALSA.js:109
+#: src/views/Edit/Sources/AVFoundation.js:173
+#: src/views/Edit/Sources/Framebuffer.js:100
+#: src/views/Edit/Sources/Raspicam.js:106
+#: src/views/Edit/Sources/V4L.js:107
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:120
 #: src/views/Edit/Wizard/Sources/Raspicam.js:95
 #: src/views/Edit/Wizard/Sources/V4L.js:114
 msgid "Select a device:"
 msgstr "Izberite napravo:"
 
-#: src/views/Edit/Sources/VirtualAudio.js:84
+#: src/views/Edit/Sources/VirtualAudio.js:85
 msgid "Select audio source:"
 msgstr "Izberite vir zvoka:"
 
@@ -2526,11 +2530,11 @@ msgstr "Izberite vir zvoka:"
 msgid "Select RTMP or SRT (if enabled) for less latency."
 msgstr "Izberite RTMP ali SRT (če je omogočeno) za manjšo zakasnitev."
 
-#: src/views/Edit/Sources/VirtualVideo.js:114
+#: src/views/Edit/Sources/VirtualVideo.js:115
 msgid "Select source ..."
 msgstr "Izberite vir ..."
 
-#: src/views/Edit/Sources/VirtualVideo.js:108
+#: src/views/Edit/Sources/VirtualVideo.js:109
 msgid "Select video source:"
 msgstr "Izberite vir videoposnetka:"
 
@@ -2562,14 +2566,14 @@ msgstr "Izbor"
 msgid "Send anonymous metrics (helps us for future development)"
 msgstr "Pošljite anonimne metrike (pomagajo nam pri prihodnjem razvoju)"
 
-#: src/views/Edit/Sources/Network.js:956
-#: src/views/Edit/Sources/Network.js:1051
+#: src/views/Edit/Sources/Network.js:957
+#: src/views/Edit/Sources/Network.js:1052
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:104
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:104
 msgid "Send stream to address ..."
 msgstr "Pošlji tok na naslov ..."
 
-#: src/views/Edit/Sources/Network.js:895
+#: src/views/Edit/Sources/Network.js:896
 #: src/views/Edit/Wizard/Sources/InternalHLS.js:48
 msgid "Send stream to this address:"
 msgstr "Pošljite tok na ta naslov:"
@@ -2659,7 +2663,7 @@ msgstr "Prikaže referenco na projekt."
 msgid "Sign up (free)"
 msgstr "Prijavite se (brezplačno)"
 
-#: src/views/Edit/Sources/VirtualAudio.js:89
+#: src/views/Edit/Sources/VirtualAudio.js:90
 msgid "Silence"
 msgstr "Tišina"
 
@@ -2667,7 +2671,7 @@ msgstr "Tišina"
 msgid "Silence Audio"
 msgstr "Tišina zvoka"
 
-#: src/views/Edit/Sources/VirtualAudio.js:91
+#: src/views/Edit/Sources/VirtualAudio.js:92
 msgid "Sine"
 msgstr "Sine"
 
@@ -2688,7 +2692,7 @@ msgstr "Posnetek"
 msgid "Social-login (OAuth2, 2FA)"
 msgstr "Prijava v družabnem omrežju (OAuth2, 2FA)"
 
-#: src/views/Edit/Sources/Network.js:542
+#: src/views/Edit/Sources/Network.js:543
 msgid "Socket timeout (microseconds)"
 msgstr "Časovna omejitev vtičnice (mikrosekunde)"
 
@@ -2697,8 +2701,8 @@ msgid "Software"
 msgstr "Programska oprema"
 
 #: src/misc/controls/Source.js:74
-#: src/views/Edit/Sources/VirtualAudio.js:88
-#: src/views/Edit/Sources/VirtualVideo.js:112
+#: src/views/Edit/Sources/VirtualAudio.js:89
+#: src/views/Edit/Sources/VirtualVideo.js:113
 #: src/views/Publication/Add.js:475
 #: src/views/Publication/Edit.js:515
 msgid "Source"
@@ -2734,7 +2738,7 @@ msgstr "Izhod SRT"
 msgid "SRT server"
 msgstr "Strežnik SRT"
 
-#: src/views/Edit/Sources/Network.js:1021
+#: src/views/Edit/Sources/Network.js:1022
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:76
 msgid "SRT server is not enabled"
 msgstr "Strežnik SRT ni omogočen"
@@ -2751,7 +2755,7 @@ msgstr "Žeton SRT za objavo in predvajanje. Token je vrednost parametra streami
 msgid "Stale timeout (seconds)"
 msgstr "Časovna omejitev za zastaranje (sekunde)"
 
-#: src/views/Edit/Sources/Network.js:719
+#: src/views/Edit/Sources/Network.js:720
 msgid "start_at_zero"
 msgstr "start_at_zero"
 
@@ -2843,7 +2847,7 @@ msgstr "URL toka"
 msgid "Support datarhei Restreamer"
 msgstr "Podpora datarhei Restreamer"
 
-#: src/views/Edit/Sources/Network.js:773
+#: src/views/Edit/Sources/Network.js:774
 #: src/views/Edit/Wizard/Sources/Network.js:72
 msgid "Supports HTTP (HLS, DASH), RTP, RTSP, RTMP, SRT and more."
 msgstr "Podpira HTTP (HLS, DASH), RTP, RTSP, RTMP, SRT in druge."
@@ -2871,11 +2875,11 @@ msgstr "Predloga, ki se uporablja za ustvarjanje spletnega mesta publikacije. Gu
 msgid "Terms"
 msgstr "Pogoji"
 
-#: src/views/Edit/Sources/VirtualVideo.js:116
+#: src/views/Edit/Sources/VirtualVideo.js:117
 msgid "Test pattern"
 msgstr "Preskusni vzorec"
 
-#: src/views/Edit/Sources/VirtualVideo.js:117
+#: src/views/Edit/Sources/VirtualVideo.js:118
 msgid "Test pattern (extended)"
 msgstr "Preskusni vzorec (razširjen)"
 
@@ -2883,7 +2887,7 @@ msgstr "Preskusni vzorec (razširjen)"
 msgid "Text colors"
 msgstr "Barve besedila"
 
-#: src/views/Edit/Sources/VirtualAudio.js:131
+#: src/views/Edit/Sources/VirtualAudio.js:132
 msgid "The amplitude (0.0 - 1.0) of the generated audio stream"
 msgstr "Amplituda (0,0 - 1,0) ustvarjenega zvočnega toka"
 
@@ -2891,7 +2895,7 @@ msgstr "Amplituda (0,0 - 1,0) ustvarjenega zvočnega toka"
 msgid "The application is using an older version of the settings."
 msgstr "Aplikacija uporablja starejšo različico nastavitev."
 
-#: src/views/Edit/Sources/Network.js:846
+#: src/views/Edit/Sources/Network.js:847
 msgid "The available FFmpeg binary doesn't support any of the required protocols."
 msgstr "Razpoložljivi binarni program FFmpeg ne podpira nobenega od zahtevanih protokolov."
 
@@ -2903,7 +2907,7 @@ msgstr "Bitna hitrost zvočnega toka."
 msgid "The built-in player cannot decode this channel's video codec."
 msgstr ""
 
-#: src/views/Edit/Sources/VirtualAudio.js:150
+#: src/views/Edit/Sources/VirtualAudio.js:151
 msgid "The carrier frequency"
 msgstr "Nosilna frekvenca"
 
@@ -2920,7 +2924,7 @@ msgid "The deletion of this channel can not be recovered. All publications of th
 msgstr "Izbrisa tega kanala ni mogoče obnoviti. Vse objave tega kanala bodo odstranjene."
 
 #: src/views/Edit/index.js:302
-#: src/views/Edit/Wizard/index.js:177
+#: src/views/Edit/Wizard/index.js:178
 #: src/views/Publication/Edit.js:262
 msgid "The input profile is not complete. Please define a video and audio source."
 msgstr "Vhodni profil ni popoln. Opredelite vir videa in zvoka."
@@ -2938,7 +2942,7 @@ msgstr "Postavitev zvočnega toka."
 msgid "The maximum number of playlist segments. 0 will contain all the segments. 6 is recommended."
 msgstr "Največje število segmentov seznama predvajanja. 0 vsebuje vse segmente. Priporočljivo je 6."
 
-#: src/views/Edit/Sources/VirtualAudio.js:119
+#: src/views/Edit/Sources/VirtualAudio.js:120
 msgid "The noise color"
 msgstr "Barva šuma"
 
@@ -2975,15 +2979,15 @@ msgstr "Za izhod RTMP je potreben strežnik RTMP."
 msgid "The sample rate of the audio stream."
 msgstr "Vzorčna frekvenca zvočnega toka."
 
-#: src/views/Edit/Sources/AudioLoop.js:95
-#: src/views/Edit/Sources/VideoLoop.js:103
+#: src/views/Edit/Sources/AudioLoop.js:96
+#: src/views/Edit/Sources/VideoLoop.js:104
 #: src/views/Playersite.js:231
 #: src/views/Publication/Player.js:206
 msgid "The selected file is too big (<0/>). Only <1/> are allowed."
 msgstr "Izbrana datoteka je prevelika (<0/>). Dovoljene so samo <1/>."
 
-#: src/views/Edit/Sources/AudioLoop.js:88
-#: src/views/Edit/Sources/VideoLoop.js:96
+#: src/views/Edit/Sources/AudioLoop.js:89
+#: src/views/Edit/Sources/VideoLoop.js:97
 #: src/views/Playersite.js:224
 #: src/views/Publication/Player.js:199
 msgid "The selected file type ({0}) is not allowed. Allowed file types are {1}"
@@ -3041,8 +3045,8 @@ msgstr "Pri shranjevanju nastavitev je prišlo do težave. Nastavitve niso shran
 msgid "There was an error connecting to Restreamer Core at {0}."
 msgstr "Pri povezovanju z jedrom Restreamer Core je prišlo do napake na naslovu {0}."
 
-#: src/views/Edit/Sources/AudioLoop.js:102
-#: src/views/Edit/Sources/VideoLoop.js:110
+#: src/views/Edit/Sources/AudioLoop.js:103
+#: src/views/Edit/Sources/VideoLoop.js:111
 #: src/views/Playersite.js:238
 #: src/views/Publication/Player.js:213
 msgid "There was an error during upload: {0}"
@@ -3096,7 +3100,7 @@ msgstr "Ta licenca omogoča ponovni uporabi, da gradivo distribuirajo, remiksira
 msgid "This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
 msgstr "Ta licenca omogoča ponovni uporabi, da gradivo distribuirajo, remiksirajo, prilagajajo in nadgrajujejo v katerem koli mediju ali formatu, če navedejo avtorja. Licenca dovoljuje komercialno uporabo. Če gradivo remiksirate, prilagodite ali gradite na njem, morate spremenjeno gradivo licencirati pod enakimi pogoji."
 
-#: src/views/Edit/Sources/Network.js:783
+#: src/views/Edit/Sources/Network.js:784
 msgid "This protocol is unknown or not supported by the available FFmpeg binary."
 msgstr "Ta protokol je neznan ali ga razpoložljivi binarni program FFmpeg ne podpira."
 
@@ -3285,7 +3289,7 @@ msgstr "Uglaševanje"
 #~ msgid "Type"
 #~ msgstr ""
 
-#: src/views/Edit/Sources/Network.js:533
+#: src/views/Edit/Sources/Network.js:534
 #: src/views/Edit/Wizard/Sources/Network.js:77
 msgid "UDP transport"
 msgstr "Prenos UDP"
@@ -3302,8 +3306,8 @@ msgstr "Edinstvena identiteta storitve."
 msgid "Unknown"
 msgstr "Neznano"
 
-#: src/views/Edit/Sources/AudioLoop.js:105
-#: src/views/Edit/Sources/VideoLoop.js:113
+#: src/views/Edit/Sources/AudioLoop.js:106
+#: src/views/Edit/Sources/VideoLoop.js:114
 #: src/views/Playersite.js:241
 #: src/views/Publication/Player.js:216
 msgid "Unknown upload error"
@@ -3317,8 +3321,8 @@ msgstr "Neizbrano"
 msgid "Update details (Changelog)"
 msgstr "Podrobnosti posodobitve (Changelog)"
 
-#: src/views/Edit/Sources/AudioLoop.js:146
-#: src/views/Edit/Sources/VideoLoop.js:154
+#: src/views/Edit/Sources/AudioLoop.js:147
+#: src/views/Edit/Sources/VideoLoop.js:155
 #: src/views/Playersite.js:514
 #: src/views/Playersite.js:534
 #: src/views/Playersite.js:672
@@ -3327,16 +3331,16 @@ msgstr "Podrobnosti posodobitve (Changelog)"
 msgid "Upload"
 msgstr "Naložite"
 
-#: src/views/Edit/Sources/AudioLoop.js:138
+#: src/views/Edit/Sources/AudioLoop.js:139
 msgid "Upload an audio file ({0}) in order to loop it."
 msgstr "Naložite zvočno datoteko ({0}), da bi jo zazankali."
 
-#: src/views/Edit/Sources/VideoLoop.js:146
+#: src/views/Edit/Sources/VideoLoop.js:147
 msgid "Upload an image or video file ({0}) in order to loop it."
 msgstr "Naložite sliko ali videoposnetek ({0}), če želite ustvariti zanko."
 
-#: src/views/Edit/Sources/AudioLoop.js:149
-#: src/views/Edit/Sources/VideoLoop.js:157
+#: src/views/Edit/Sources/AudioLoop.js:150
+#: src/views/Edit/Sources/VideoLoop.js:158
 #: src/views/Playersite.js:537
 #: src/views/Playersite.js:675
 msgid "Uploading the file failed"
@@ -3372,7 +3376,7 @@ msgstr "Uporabite svoje avtorske pravice in izberite pravilno licenco za slike. 
 msgid "Use your copyright and choose the right image licence. Whether free for all or highly restricted. Briefly discuss what others are allowed to do with your image."
 msgstr "Uporabite svoje avtorske pravice in izberite pravo licenco za slike. Ne glede na to, ali je brezplačna za vse ali zelo omejena. Na kratko razpravljajte o tem, kaj lahko drugi počnejo z vašo sliko."
 
-#: src/views/Edit/Sources/Network.js:724
+#: src/views/Edit/Sources/Network.js:725
 msgid "use_wallclock_as_timestamps"
 msgstr "use_wallclock_as_timestamps"
 
@@ -3380,7 +3384,7 @@ msgstr "use_wallclock_as_timestamps"
 msgid "User registration"
 msgstr "Registracija uporabnika"
 
-#: src/views/Edit/Sources/Network.js:795
+#: src/views/Edit/Sources/Network.js:796
 #: src/views/Edit/Wizard/Sources/Network.js:84
 #: src/views/Login.js:272
 #: src/views/Publication/Services/DaCast.js:131
@@ -3399,7 +3403,7 @@ msgstr "Uporabniško ime"
 msgid "Username for authorization."
 msgstr "Uporabniško ime za avtorizacijo."
 
-#: src/views/Edit/Sources/Network.js:800
+#: src/views/Edit/Sources/Network.js:801
 #: src/views/Edit/Wizard/Sources/Network.js:90
 msgid "Username for the device."
 msgstr "Uporabniško ime za napravo."
@@ -3412,7 +3416,7 @@ msgstr "V4L2_M2M je eksperimentalen."
 msgid "Variable frame rate (VFR)"
 msgstr "Spremenljiva hitrost sličic (VFR)"
 
-#: src/views/Edit/Sources/VirtualAudio.js:116
+#: src/views/Edit/Sources/VirtualAudio.js:117
 msgid "velvet"
 msgstr "žamet"
 
@@ -3424,9 +3428,9 @@ msgstr "Navpični flip"
 msgid "Video"
 msgstr "Videoposnetek"
 
-#: src/views/Edit/Sources/AVFoundation.js:126
-#: src/views/Edit/Sources/Raspicam.js:98
-#: src/views/Edit/Sources/V4L.js:112
+#: src/views/Edit/Sources/AVFoundation.js:127
+#: src/views/Edit/Sources/Raspicam.js:99
+#: src/views/Edit/Sources/V4L.js:113
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:82
 #: src/views/Edit/Wizard/Sources/Raspicam.js:86
 #: src/views/Edit/Wizard/Sources/V4L.js:105
@@ -3445,7 +3449,7 @@ msgstr "Nastavitve videoposnetkov"
 msgid "Video setup"
 msgstr "Nastavitev videoposnetka"
 
-#: src/views/Edit/Sources/VideoAudio.js:45
+#: src/views/Edit/Sources/VideoAudio.js:46
 msgid "Video source"
 msgstr "Vir videoposnetka"
 
@@ -3456,12 +3460,12 @@ msgstr "Vir videoposnetka"
 msgid "Viewer"
 msgstr "Pregledovalnik"
 
-#: src/views/Edit/Sources/VirtualAudio.js:115
+#: src/views/Edit/Sources/VirtualAudio.js:116
 msgid "violet"
 msgstr "vijolična"
 
-#: src/views/Edit/Sources/VirtualAudio.js:187
-#: src/views/Edit/Sources/VirtualVideo.js:206
+#: src/views/Edit/Sources/VirtualAudio.js:188
+#: src/views/Edit/Sources/VirtualVideo.js:207
 msgid "Virtual source"
 msgstr "Virtualni vir"
 
@@ -3497,7 +3501,7 @@ msgstr "Katero prednastavitev hitrosti uporabiti."
 msgid "Where to store the HLS playlist and segments. In-Memory is recommended."
 msgstr "Kam shraniti seznam predvajanja HLS in segmente. Priporočljivo je v pomnilniku."
 
-#: src/views/Edit/Sources/VirtualAudio.js:111
+#: src/views/Edit/Sources/VirtualAudio.js:112
 msgid "white"
 msgstr "bela"
 
@@ -3542,6 +3546,6 @@ msgstr "Vaš tok je treba kodirati, vendar ni na voljo ustreznega kodirnika."
 msgid "Your stream needs to be encoded. Choose the desired encoder:"
 msgstr "Vaš tok je treba kodirati. Izberite želeni kodirnik:"
 
-#: src/views/Edit/Sources/VirtualVideo.js:119
+#: src/views/Edit/Sources/VirtualVideo.js:120
 msgid "YUV test pattern"
 msgstr "Preskusni vzorec YUV"
