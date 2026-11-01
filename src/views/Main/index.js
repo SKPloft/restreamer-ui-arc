@@ -16,6 +16,7 @@ import useInterval from '../../hooks/useInterval';
 import ActionButton from '../../misc/ActionButton';
 import CopyButton from '../../misc/CopyButton';
 import IngestAddressFields from '../../misc/IngestAddressFields';
+import PublicAddress from '../../misc/PublicAddress';
 import DebugModal from '../../misc/modals/Debug';
 import H from '../../utils/help';
 import Paper from '../../misc/Paper';
@@ -480,6 +481,7 @@ export default function Main(props) {
 								</Stack>
 							</Grid>
 							<IngestAddressFields fields={addressFields} hint />
+							<PublicAddress restreamer={props.restreamer} />
 							<Grid item xs={12} marginTop="0em">
 								<ActionButton
 									order={$state.order}

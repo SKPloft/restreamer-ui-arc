@@ -59,12 +59,24 @@ export default function IngestAddressFields(props) {
 				<React.Fragment>
 					<AddressField label={<Trans>Server</Trans>} value={fields.rtmp.server} />
 					<AddressField label={<Trans>Stream key</Trans>} value={fields.rtmp.key} />
+					{fields.rtmp.token.length !== 0 && (
+						<React.Fragment>
+							<AddressField label={<Trans>Token</Trans>} value={fields.rtmp.token} />
+							<AddressField label={<Trans>Stream key (with token)</Trans>} value={fields.rtmp.keywithtoken} />
+						</React.Fragment>
+					)}
 				</React.Fragment>
 			)}
 			{showSRT && (
 				<React.Fragment>
 					<AddressField label={<Trans>Server</Trans>} value={fields.srt.server} />
 					<AddressField label={<Trans>Stream ID</Trans>} value={fields.srt.streamid} />
+					{fields.srt.token.length !== 0 && (
+						<React.Fragment>
+							<AddressField label={<Trans>Token</Trans>} value={fields.srt.token} />
+							<AddressField label={<Trans>Stream ID (with token)</Trans>} value={fields.srt.streamidwithtoken} />
+						</React.Fragment>
+					)}
 					{fields.srt.passphrase.length !== 0 && (
 						<AddressField label={<Trans>Passphrase</Trans>} value={fields.srt.passphrase} />
 					)}
