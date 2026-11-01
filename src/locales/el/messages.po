@@ -98,7 +98,7 @@ msgstr ""
 msgid "Additional channels to display on the playersite."
 msgstr ""
 
-#: src/views/Edit/Sources/Network.js:767
+#: src/views/Edit/Sources/Network.js:768
 #: src/views/Edit/Wizard/Sources/Network.js:66
 #: src/views/Publication/Services/Azure.js:98
 #: src/views/Publication/Services/Brightcove.js:95
@@ -131,8 +131,8 @@ msgstr "Διεύθυνση για ακρόαση για αιτήσεις HTTP."
 msgid "Address to listen on for HTTPS requests."
 msgstr "Διεύθυνση για ακρόαση για αιτήσεις HTTPS."
 
-#: src/views/Edit/Sources/Network.js:974
-#: src/views/Edit/Sources/Network.js:1069
+#: src/views/Edit/Sources/Network.js:975
+#: src/views/Edit/Sources/Network.js:1070
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:124
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:124
 msgid "Address:"
@@ -146,7 +146,7 @@ msgstr "Προσαρμόστε τα χρώματα και το φόντο του
 msgid "Advanced monitoring"
 msgstr "Προηγμένη παρακολούθηση"
 
-#: src/views/Edit/Sources/Network.js:520
+#: src/views/Edit/Sources/Network.js:521
 #: src/views/Publication/Services/DASH.js:204
 #: src/views/Publication/Services/HLS.js:193
 #: src/views/Publication/Services/Icecast.js:172
@@ -192,11 +192,11 @@ msgstr "Επιτρέψτε όλους τους παραπέμποντες"
 msgid "Allow counting how many viewers the stream has."
 msgstr "Επιτρέπει την καταμέτρηση του αριθμού των θεατών που έχει η ροή."
 
-#: src/views/Edit/Sources/ALSA.js:156
+#: src/views/Edit/Sources/ALSA.js:157
 msgid "ALSA"
 msgstr "ALSA"
 
-#: src/views/Edit/Sources/VirtualAudio.js:126
+#: src/views/Edit/Sources/VirtualAudio.js:127
 msgid "Amplitude"
 msgstr "Πλάτος"
 
@@ -226,8 +226,8 @@ msgstr "Είστε σίγουροι ότι θέλετε να διακόψετε 
 msgid "Audio"
 msgstr "Ήχος"
 
-#: src/views/Edit/Sources/ALSA.js:114
-#: src/views/Edit/Sources/AVFoundation.js:159
+#: src/views/Edit/Sources/ALSA.js:115
+#: src/views/Edit/Sources/AVFoundation.js:160
 msgid "Audio device"
 msgstr "Συσκευή ήχου"
 
@@ -295,11 +295,11 @@ msgstr ""
 msgid "Available"
 msgstr "Διαθέσιμο"
 
-#: src/views/Edit/Sources/AVFoundation.js:221
+#: src/views/Edit/Sources/AVFoundation.js:222
 msgid "AVFoundation"
 msgstr "Ίδρυμα AVFoundation"
 
-#: src/views/Edit/Sources/Network.js:732
+#: src/views/Edit/Sources/Network.js:733
 msgid "avoid_negative_ts"
 msgstr "avoid_negative_ts"
 
@@ -356,7 +356,7 @@ msgstr "Πανό"
 msgid "Basic"
 msgstr "Βασικό"
 
-#: src/views/Edit/Sources/VirtualAudio.js:157
+#: src/views/Edit/Sources/VirtualAudio.js:158
 msgid "Beep factor"
 msgstr "Παράγοντας μπιπ"
 
@@ -369,7 +369,7 @@ msgstr "Bitrate"
 msgid "Block cache types"
 msgstr "Τύποι κρυφής μνήμης μπλοκ"
 
-#: src/views/Edit/Sources/VirtualAudio.js:114
+#: src/views/Edit/Sources/VirtualAudio.js:115
 msgid "blue"
 msgstr "μπλε"
 
@@ -382,7 +382,7 @@ msgstr "Κάτω πεδίο"
 msgid "Briefly describe what the audience will see during the live stream."
 msgstr "Περιγράψτε εν συντομία τι θα δει το κοινό κατά τη διάρκεια της ζωντανής ροής."
 
-#: src/views/Edit/Sources/VirtualAudio.js:113
+#: src/views/Edit/Sources/VirtualAudio.js:114
 msgid "brown"
 msgstr "καφέ"
 
@@ -418,11 +418,11 @@ msgstr ""
 msgid "Capture buffer"
 msgstr "Απομονωτής σύλληψης"
 
-#: src/views/Edit/Sources/AVFoundation.js:197
+#: src/views/Edit/Sources/AVFoundation.js:198
 msgid "Capture clicks"
 msgstr "Λήψη κλικ"
 
-#: src/views/Edit/Sources/AVFoundation.js:194
+#: src/views/Edit/Sources/AVFoundation.js:195
 msgid "Capture cursor"
 msgstr "Δρομέας σύλληψης"
 
@@ -430,7 +430,7 @@ msgstr "Δρομέας σύλληψης"
 msgid "Channel \"{0}\" saved"
 msgstr "Το κανάλι \"{0}\" αποθηκεύτηκε"
 
-#: src/views/Edit/Sources/ALSA.js:129
+#: src/views/Edit/Sources/ALSA.js:130
 msgid "Channels"
 msgstr "Κανάλια"
 
@@ -450,15 +450,15 @@ msgstr "Επιλέξτε μια ροή βίντεο"
 msgid "Choose an audio stream"
 msgstr "Επιλέξτε μια ροή ήχου"
 
-#: src/views/Edit/Sources/ALSA.js:96
-#: src/views/Edit/Sources/Framebuffer.js:80
-#: src/views/Edit/Sources/Raspicam.js:93
-#: src/views/Edit/Sources/V4L.js:93
+#: src/views/Edit/Sources/ALSA.js:97
+#: src/views/Edit/Sources/Framebuffer.js:81
+#: src/views/Edit/Sources/Raspicam.js:94
+#: src/views/Edit/Sources/V4L.js:94
 msgid "Choose an input device ..."
 msgstr "Επιλέξτε μια συσκευή εισόδου ..."
 
-#: src/views/Edit/Sources/Network.js:950
-#: src/views/Edit/Sources/Network.js:1045
+#: src/views/Edit/Sources/Network.js:951
+#: src/views/Edit/Sources/Network.js:1046
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:98
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:98
 msgid "Choose an input stream ..."
@@ -509,7 +509,7 @@ msgstr "Έγχυση κώδικα"
 msgid "Codec"
 msgstr "Κωδικοποιητής"
 
-#: src/views/Edit/Sources/VirtualAudio.js:110
+#: src/views/Edit/Sources/VirtualAudio.js:111
 msgid "Color"
 msgstr "Χρώμα"
 
@@ -573,7 +573,7 @@ msgstr "URL περιεχομένου"
 msgid "Copy"
 msgstr ""
 
-#: src/views/Edit/Sources/Network.js:717
+#: src/views/Edit/Sources/Network.js:718
 msgid "copyts"
 msgstr "copyts"
 
@@ -613,18 +613,18 @@ msgstr "Creative Commons"
 #: src/misc/filters/audio/Resample.js:114
 #: src/misc/filters/audio/Volume.js:58
 #: src/misc/filters/video/Framerate.js:48
-#: src/views/Edit/Sources/ALSA.js:101
-#: src/views/Edit/Sources/AVFoundation.js:120
-#: src/views/Edit/Sources/AVFoundation.js:153
-#: src/views/Edit/Sources/V4L.js:99
+#: src/views/Edit/Sources/ALSA.js:102
+#: src/views/Edit/Sources/AVFoundation.js:121
+#: src/views/Edit/Sources/AVFoundation.js:154
+#: src/views/Edit/Sources/V4L.js:100
 msgid "Custom ..."
 msgstr "Προσαρμοσμένη ..."
 
-#: src/views/Edit/Sources/ALSA.js:115
+#: src/views/Edit/Sources/ALSA.js:116
 msgid "Custom audio device"
 msgstr "Προσαρμοσμένη συσκευή ήχου"
 
-#: src/views/Edit/Sources/AVFoundation.js:160
+#: src/views/Edit/Sources/AVFoundation.js:161
 msgid "Custom audio index"
 msgstr "Προσαρμοσμένο ευρετήριο ήχου"
 
@@ -641,7 +641,7 @@ msgstr "Έγχυση προσαρμοσμένου κώδικα"
 msgid "Custom delay"
 msgstr "Προσαρμοσμένη καθυστέρηση"
 
-#: src/views/Edit/Sources/Framebuffer.js:88
+#: src/views/Edit/Sources/Framebuffer.js:89
 msgid "Custom device"
 msgstr "Προσαρμοσμένη συσκευή"
 
@@ -673,7 +673,7 @@ msgstr "Προσαρμοσμένη διάταξη"
 msgid "Custom sampling (Hz)"
 msgstr "Προσαρμοσμένη δειγματοληψία (Hz)"
 
-#: src/views/Edit/Sources/VirtualVideo.js:149
+#: src/views/Edit/Sources/VirtualVideo.js:150
 msgid "Custom scale"
 msgstr "Προσαρμοσμένη κλίμακα"
 
@@ -683,11 +683,11 @@ msgstr "Προσαρμοσμένη κλίμακα"
 msgid "Custom size"
 msgstr "Προσαρμοσμένο μέγεθος"
 
-#: src/views/Edit/Sources/V4L.js:113
+#: src/views/Edit/Sources/V4L.js:114
 msgid "Custom video device"
 msgstr "Προσαρμοσμένη συσκευή βίντεο"
 
-#: src/views/Edit/Sources/AVFoundation.js:127
+#: src/views/Edit/Sources/AVFoundation.js:128
 msgid "Custom video index"
 msgstr "Προσαρμοσμένο ευρετήριο βίντεο"
 
@@ -701,7 +701,7 @@ msgstr ""
 msgid "Data copied to clipboard"
 msgstr "Αντιγραφή δεδομένων στο πρόχειρο"
 
-#: src/views/Edit/Sources/VirtualVideo.js:167
+#: src/views/Edit/Sources/VirtualVideo.js:168
 msgid "Death color"
 msgstr "Χρώμα θανάτου"
 
@@ -714,8 +714,8 @@ msgstr "Ντεσιμπέλ (dB)"
 msgid "Decoder"
 msgstr "Αποκωδικοποιητής"
 
-#: src/views/Edit/Sources/AVFoundation.js:115
-#: src/views/Edit/Sources/AVFoundation.js:149
+#: src/views/Edit/Sources/AVFoundation.js:116
+#: src/views/Edit/Sources/AVFoundation.js:150
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:76
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:105
 #: src/views/Playersite.js:483
@@ -724,11 +724,11 @@ msgstr "Αποκωδικοποιητής"
 msgid "Default"
 msgstr "Προεπιλογή"
 
-#: src/views/Edit/Sources/Network.js:658
+#: src/views/Edit/Sources/Network.js:659
 msgid "Default {0}"
 msgstr "Προεπιλογή {0}"
 
-#: src/views/Edit/Sources/Network.js:698
+#: src/views/Edit/Sources/Network.js:699
 msgid "Default {0} ({1} seconds)"
 msgstr "Προεπιλογή {0} ({1} δευτερόλεπτα)"
 
@@ -752,7 +752,7 @@ msgstr "Deinterlace parity"
 msgid "Delay"
 msgstr "Καθυστέρηση"
 
-#: src/views/Edit/Sources/ALSA.js:132
+#: src/views/Edit/Sources/ALSA.js:133
 msgid "Delay (ms)"
 msgstr "Καθυστέρηση (ms)"
 
@@ -785,7 +785,7 @@ msgstr "Σχεδιασμός"
 
 #: src/misc/coders/Encoders/video/av1_qsv.js:153
 #: src/misc/coders/Encoders/video/av1_vaapi.js:155
-#: src/views/Edit/Sources/Framebuffer.js:87
+#: src/views/Edit/Sources/Framebuffer.js:88
 #: src/views/Edit/Wizard/Audio.js:87
 #: src/views/Publication/Services/Framebuffer.js:93
 msgid "Device"
@@ -899,7 +899,7 @@ msgstr "Ενσωματώστε το"
 msgid "Enable"
 msgstr "Ενεργοποίηση"
 
-#: src/views/Edit/Sources/VirtualAudio.js:162
+#: src/views/Edit/Sources/VirtualAudio.js:163
 msgid "Enable a periodic beep every second with this value times the carrier frequency"
 msgstr "Ενεργοποίηση ενός περιοδικού ηχητικού σήματος κάθε δευτερόλεπτο με αυτή την τιμή επί τη συχνότητα του φέροντος."
 
@@ -922,7 +922,7 @@ msgstr "Ενεργοποίηση τώρα"
 msgid "Enable primary stream"
 msgstr "Ενεργοποίηση πρωτεύουσας ροής"
 
-#: src/views/Edit/Sources/Network.js:931
+#: src/views/Edit/Sources/Network.js:932
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:81
 msgid "Enable RTMP server ..."
 msgstr "Ενεργοποίηση διακομιστή RTMP ..."
@@ -935,7 +935,7 @@ msgstr "Ενεργοποίηση μεταφοράς RTMPS"
 msgid "Enable snapshots"
 msgstr "Ενεργοποίηση στιγμιότυπων"
 
-#: src/views/Edit/Sources/Network.js:1026
+#: src/views/Edit/Sources/Network.js:1027
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:81
 msgid "Enable SRT server ..."
 msgstr "Ενεργοποίηση διακομιστή SRT ..."
@@ -972,7 +972,7 @@ msgstr "Εισάγετε ένα όνομα για το νέο κανάλι."
 msgid "Enter password"
 msgstr "Εισάγετε τον κωδικό πρόσβασης"
 
-#: src/views/Edit/Sources/Network.js:760
+#: src/views/Edit/Sources/Network.js:761
 #: src/views/Edit/Wizard/Sources/Network.js:59
 msgid "Enter the address of your network source:"
 msgstr "Εισάγετε τη διεύθυνση της πηγής δικτύου σας:"
@@ -1094,8 +1094,8 @@ msgstr "Απέτυχε η επαλήθευση της πηγής. Ελέγξτε
 msgid "FFmpeg"
 msgstr "FFmpeg"
 
-#: src/views/Edit/Sources/AudioLoop.js:142
-#: src/views/Edit/Sources/VideoLoop.js:150
+#: src/views/Edit/Sources/AudioLoop.js:143
+#: src/views/Edit/Sources/VideoLoop.js:151
 msgid "File path"
 msgstr "Διαδρομή αρχείου"
 
@@ -1115,7 +1115,7 @@ msgstr "Μέγεθος στερέωσης"
 msgid "Fixed by the deployment configuration and cannot be changed here."
 msgstr ""
 
-#: src/views/Edit/Sources/VirtualVideo.js:182
+#: src/views/Edit/Sources/VirtualVideo.js:183
 msgid "Flags"
 msgstr "Σημαίες"
 
@@ -1127,7 +1127,7 @@ msgstr "Για Javascripts."
 msgid "For Stylesheets."
 msgstr "Για Φύλλα στυλ."
 
-#: src/views/Edit/Sources/Network.js:563
+#: src/views/Edit/Sources/Network.js:564
 msgid "Force input framerate"
 msgstr "Αναγκαστική εισαγωγή καρέ"
 
@@ -1152,13 +1152,13 @@ msgstr "Πτώσεις πλαισίων"
 msgid "Frame is passed through (Passthrough)"
 msgstr "Το πλαίσιο περνάει (Passthrough)"
 
-#: src/views/Edit/Sources/Framebuffer.js:129
+#: src/views/Edit/Sources/Framebuffer.js:130
 msgid "Framebuffer"
 msgstr "Framebuffer"
 
 #: src/misc/coders/settings/Video.js:135
 #: src/misc/filters/video/Framerate.js:65
-#: src/views/Edit/Sources/Network.js:576
+#: src/views/Edit/Sources/Network.js:577
 msgid "Framerate"
 msgstr "Ταχύτητα καρέ"
 
@@ -1170,13 +1170,13 @@ msgstr "Μετατροπή καρέ (παρεμβολή καρέ)"
 msgid "Framerate mode"
 msgstr "Λειτουργία καρέ"
 
-#: src/views/Edit/Sources/VirtualAudio.js:145
+#: src/views/Edit/Sources/VirtualAudio.js:146
 msgid "Frequency (Hz)"
 msgstr "Συχνότητα (Hz)"
 
 #: src/views/Edit/index.js:418
 #: src/views/Edit/index.js:430
-#: src/views/Edit/Sources/Network.js:614
+#: src/views/Edit/Sources/Network.js:615
 #: src/views/Playersite.js:328
 #: src/views/Playersite.js:341
 #: src/views/Publication/Add.js:414
@@ -1227,7 +1227,7 @@ msgstr ""
 msgid "Hardware coders need the matching device and driver (VAAPI: /dev/dri, QSV: oneVPL runtime)."
 msgstr ""
 
-#: src/views/Edit/Sources/V4L.js:154
+#: src/views/Edit/Sources/V4L.js:155
 #: src/views/Edit/Wizard/Sources/V4L.js:140
 msgid "Hardware device"
 msgstr "Συσκευή υλικού"
@@ -1280,7 +1280,7 @@ msgstr "Διασύνδεση Restreamer με φιλοξενία"
 msgid "Hostname(s) used in the ingest and playback addresses, separated by a comma. This is written to the core configuration and applies to every visitor of this panel. It is not stored in the deployment, so keep the deployment configuration in sync if the container is recreated."
 msgstr ""
 
-#: src/views/Edit/Sources/Network.js:553
+#: src/views/Edit/Sources/Network.js:554
 msgid "HTTP and HTTPS"
 msgstr "HTTP και HTTPS"
 
@@ -1373,8 +1373,8 @@ msgstr "Έγχυση 3"
 msgid "Inject 4"
 msgstr "Ένεση 4"
 
-#: src/views/Edit/Sources/Network.js:963
-#: src/views/Edit/Sources/Network.js:1058
+#: src/views/Edit/Sources/Network.js:964
+#: src/views/Edit/Sources/Network.js:1059
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:113
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:113
 msgid "Input stream"
@@ -1434,7 +1434,7 @@ msgstr "Επίπεδο πρωτοκόλλου συστήματος."
 msgid "License"
 msgstr "Άδεια"
 
-#: src/views/Edit/Sources/VirtualVideo.js:176
+#: src/views/Edit/Sources/VirtualVideo.js:177
 msgid "Life color"
 msgstr "Χρώμα ζωής"
 
@@ -1558,8 +1558,8 @@ msgstr "Λογότυπο"
 msgid "Logout"
 msgstr "Αποσύνδεση"
 
-#: src/views/Edit/Sources/AudioLoop.js:194
-#: src/views/Edit/Sources/VideoLoop.js:202
+#: src/views/Edit/Sources/AudioLoop.js:195
+#: src/views/Edit/Sources/VideoLoop.js:203
 msgid "Loop"
 msgstr "Βρόχος"
 
@@ -1580,7 +1580,7 @@ msgstr "Κύριο κανάλι"
 msgid "Main channel not found"
 msgstr "Το κύριο κανάλι δεν βρέθηκε"
 
-#: src/views/Edit/Wizard/index.js:201
+#: src/views/Edit/Wizard/index.js:202
 msgid "Main channel saved"
 msgstr "Κύριο κανάλι αποθηκευμένο"
 
@@ -1689,11 +1689,11 @@ msgstr "Μεταπληροφορίες"
 msgid "Metadata"
 msgstr "Μεταδεδομένα"
 
-#: src/views/Edit/Sources/Network.js:641
+#: src/views/Edit/Sources/Network.js:642
 msgid "Mininum {0}, default {1}"
 msgstr "Ελάχιστο {0}, προεπιλογή {1}"
 
-#: src/views/Edit/Sources/VirtualVideo.js:158
+#: src/views/Edit/Sources/VirtualVideo.js:159
 msgid "Mold"
 msgstr "Μούχλα"
 
@@ -1756,7 +1756,7 @@ msgstr "Όνομα για το πρότυπο. Εάν το όνομα υπάρχ
 msgid "Network"
 msgstr "Δίκτυο"
 
-#: src/views/Edit/Sources/Network.js:1194
+#: src/views/Edit/Sources/Network.js:1195
 #: src/views/Edit/Wizard/Sources/Network.js:123
 msgid "Network source"
 msgstr "Πηγή δικτύου"
@@ -1780,7 +1780,7 @@ msgstr "Επόμενος: Ρύθμιση βίντεο"
 msgid "No"
 msgstr "Όχι"
 
-#: src/views/Edit/Sources/NoAudio.js:45
+#: src/views/Edit/Sources/NoAudio.js:46
 #: src/views/Edit/Wizard/Audio.js:98
 msgid "No audio"
 msgstr "Χωρίς ήχο"
@@ -1798,11 +1798,15 @@ msgstr "Δεν υπάρχει διαθέσιμη συσκευή εισόδου"
 msgid "No live stream was detected. Please check the software that sends the stream."
 msgstr "Δεν εντοπίστηκε ζωντανή ροή. Ελέγξτε το λογισμικό που στέλνει τη ροή."
 
+#: src/views/Edit/SourceSelect.js:183
+msgid "No source is compatible with ffmpeg {0} (requires {1})"
+msgstr ""
+
 #: src/views/Edit/Summary.js:29
 msgid "No source selected"
 msgstr "Δεν έχει επιλεγεί πηγή"
 
-#: src/views/Edit/SourceSelect.js:180
+#: src/views/Edit/SourceSelect.js:187
 msgid "No sources available"
 msgstr "Δεν υπάρχουν διαθέσιμες πηγές"
 
@@ -1827,12 +1831,12 @@ msgstr "Δεν υπάρχει διαθέσιμη ροή βίντεο"
 msgid "Node ID"
 msgstr "Αναγνωριστικό κόμβου"
 
-#: src/views/Edit/Sources/VirtualAudio.js:90
+#: src/views/Edit/Sources/VirtualAudio.js:91
 msgid "Noise"
 msgstr "Θόρυβος"
 
 #: src/misc/filters/video/Scale.js:45
-#: src/views/Edit/Sources/AVFoundation.js:145
+#: src/views/Edit/Sources/AVFoundation.js:146
 #: src/views/Edit/Summary.js:31
 #: src/views/Edit/Summary.js:107
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:98
@@ -1869,8 +1873,8 @@ msgstr "Αριθμός πλακιδίων που κωδικοποιούνται 
 msgid "Number of tiles rows to encode with."
 msgstr "Αριθμός σειρών πλακιδίων για κωδικοποίηση."
 
-#: src/views/Edit/Sources/AudioLoop.js:168
-#: src/views/Edit/Sources/VideoLoop.js:176
+#: src/views/Edit/Sources/AudioLoop.js:169
+#: src/views/Edit/Sources/VideoLoop.js:177
 #: src/views/Playersite.js:854
 #: src/views/Publication/Player.js:567
 msgid "OK"
@@ -1918,7 +1922,7 @@ msgstr "Η φράση πρόσβασης πρέπει να έχει μήκος �
 msgid "Passthrough (copy) should only be disabled if necessary. Each encoding requires additional CPU/GPU resources."
 msgstr "Το Passthrough (αντιγραφή) θα πρέπει να απενεργοποιείται μόνο εάν είναι απαραίτητο. Κάθε κωδικοποίηση απαιτεί πρόσθετους πόρους CPU/GPU."
 
-#: src/views/Edit/Sources/Network.js:807
+#: src/views/Edit/Sources/Network.js:808
 #: src/views/Edit/Wizard/Sources/Network.js:97
 #: src/views/Login.js:282
 #: src/views/Publication/Services/Akamai.js:134
@@ -1938,7 +1942,7 @@ msgstr "Κωδικός πρόσβασης"
 msgid "Password for authorization."
 msgstr "Κωδικός πρόσβασης για εξουσιοδότηση."
 
-#: src/views/Edit/Sources/Network.js:812
+#: src/views/Edit/Sources/Network.js:813
 #: src/views/Edit/Wizard/Sources/Network.js:103
 msgid "Password for the device."
 msgstr "Κωδικός πρόσβασης για τη συσκευή."
@@ -1947,7 +1951,7 @@ msgstr "Κωδικός πρόσβασης για τη συσκευή."
 msgid "Persist viewer statistics"
 msgstr "Στατιστικά στοιχεία θεατών που παραμένουν"
 
-#: src/views/Edit/Sources/VirtualAudio.js:112
+#: src/views/Edit/Sources/VirtualAudio.js:113
 msgid "pink"
 msgstr "ροζ"
 
@@ -2042,8 +2046,8 @@ msgstr "Παρακαλούμε εισάγετε τη διεύθυνση ηλεκ
 msgid "Please get in touch with the operator of the service and check what happens."
 msgstr "Παρακαλούμε επικοινωνήστε με τον φορέα εκμετάλλευσης της υπηρεσίας και ελέγξτε τι συμβαίνει."
 
-#: src/views/Edit/Sources/AudioLoop.js:84
-#: src/views/Edit/Sources/VideoLoop.js:92
+#: src/views/Edit/Sources/AudioLoop.js:85
+#: src/views/Edit/Sources/VideoLoop.js:93
 #: src/views/Playersite.js:220
 #: src/views/Publication/Player.js:195
 msgid "Please select a file to upload."
@@ -2092,19 +2096,19 @@ msgstr "Πρωτογενής ροή"
 msgid "Primary stream key"
 msgstr "Πρωτεύον κλειδί ροής"
 
-#: src/views/Edit/Sources/ALSA.js:136
-#: src/views/Edit/Sources/AudioLoop.js:155
-#: src/views/Edit/Sources/AVFoundation.js:201
-#: src/views/Edit/Sources/Framebuffer.js:110
-#: src/views/Edit/Sources/Network.js:824
-#: src/views/Edit/Sources/Network.js:906
-#: src/views/Edit/Sources/Network.js:988
-#: src/views/Edit/Sources/Network.js:1083
-#: src/views/Edit/Sources/Raspicam.js:125
-#: src/views/Edit/Sources/V4L.js:134
-#: src/views/Edit/Sources/VideoLoop.js:163
-#: src/views/Edit/Sources/VirtualAudio.js:169
-#: src/views/Edit/Sources/VirtualVideo.js:188
+#: src/views/Edit/Sources/ALSA.js:137
+#: src/views/Edit/Sources/AudioLoop.js:156
+#: src/views/Edit/Sources/AVFoundation.js:202
+#: src/views/Edit/Sources/Framebuffer.js:111
+#: src/views/Edit/Sources/Network.js:825
+#: src/views/Edit/Sources/Network.js:907
+#: src/views/Edit/Sources/Network.js:989
+#: src/views/Edit/Sources/Network.js:1084
+#: src/views/Edit/Sources/Raspicam.js:126
+#: src/views/Edit/Sources/V4L.js:135
+#: src/views/Edit/Sources/VideoLoop.js:164
+#: src/views/Edit/Sources/VirtualAudio.js:170
+#: src/views/Edit/Sources/VirtualVideo.js:189
 msgid "Probe"
 msgstr "Ανιχνευτής"
 
@@ -2150,7 +2154,7 @@ msgstr "Επεξεργασία & έλεγχος"
 msgid "Profile"
 msgstr "Προφίλ"
 
-#: src/views/Edit/Sources/Network.js:858
+#: src/views/Edit/Sources/Network.js:859
 #: src/views/Publication/Services/Akamai.js:144
 #: src/views/Publication/Services/Akamai.js:182
 #: src/views/Publication/Services/Azure.js:89
@@ -2202,11 +2206,11 @@ msgstr "Αποθήκευση ρυθμίσεων ιστότοπου δημοσί�
 msgid "Publications"
 msgstr "Δημοσιεύσεις"
 
-#: src/views/Edit/Sources/Network.js:1158
+#: src/views/Edit/Sources/Network.js:1159
 msgid "Pull Mode"
 msgstr "Λειτουργία έλξης"
 
-#: src/views/Edit/Sources/Network.js:1157
+#: src/views/Edit/Sources/Network.js:1158
 msgid "Pull or recieve the data:"
 msgstr "Τραβήξτε ή λάβετε τα δεδομένα:"
 
@@ -2222,7 +2226,7 @@ msgstr "QP"
 msgid "Quality"
 msgstr "Ποιότητα"
 
-#: src/views/Edit/Sources/Raspicam.js:144
+#: src/views/Edit/Sources/Raspicam.js:145
 #: src/views/Edit/Wizard/Sources/Raspicam.js:117
 msgid "Raspberry Pi camera"
 msgstr "Κάμερα Raspberry Pi"
@@ -2235,7 +2239,7 @@ msgstr "Κάμερα Raspberry Pi"
 msgid "Rate control"
 msgstr "Έλεγχος ποσοστού"
 
-#: src/views/Edit/Sources/VirtualVideo.js:161
+#: src/views/Edit/Sources/VirtualVideo.js:162
 msgid "Ratio"
 msgstr "Αναλογία"
 
@@ -2243,11 +2247,11 @@ msgstr "Αναλογία"
 msgid "rav1e Parameters"
 msgstr "rav1e Παράμετροι"
 
-#: src/views/Edit/Sources/Network.js:558
+#: src/views/Edit/Sources/Network.js:559
 msgid "Read input at native speed"
 msgstr "Διαβάστε την είσοδο σε εγγενή ταχύτητα"
 
-#: src/views/Edit/Sources/Network.js:1159
+#: src/views/Edit/Sources/Network.js:1160
 msgid "Receive Mode"
 msgstr "Λειτουργία λήψης"
 
@@ -2275,12 +2279,12 @@ msgstr "Η επανασύνδεση με τον πυρήνα Restreamer απέτ
 msgid "Reconnecting to Restreamer Core failed."
 msgstr "Η επανασύνδεση με το Restreamer Core απέτυχε."
 
-#: src/views/Edit/Sources/ALSA.js:122
-#: src/views/Edit/Sources/AVFoundation.js:181
-#: src/views/Edit/Sources/Network.js:967
-#: src/views/Edit/Sources/Network.js:1062
-#: src/views/Edit/Sources/Raspicam.js:111
-#: src/views/Edit/Sources/V4L.js:120
+#: src/views/Edit/Sources/ALSA.js:123
+#: src/views/Edit/Sources/AVFoundation.js:182
+#: src/views/Edit/Sources/Network.js:968
+#: src/views/Edit/Sources/Network.js:1063
+#: src/views/Edit/Sources/Raspicam.js:112
+#: src/views/Edit/Sources/V4L.js:121
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:135
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:117
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:117
@@ -2373,7 +2377,7 @@ msgstr "Ανάκτηση δεδομένων ροής ..."
 msgid "Retry"
 msgstr "Επανάληψη"
 
-#: src/views/Edit/Sources/VirtualVideo.js:118
+#: src/views/Edit/Sources/VirtualVideo.js:119
 msgid "RGB test pattern"
 msgstr "Μοτίβο δοκιμής RGB"
 
@@ -2404,7 +2408,7 @@ msgstr "Θύρα RTMP"
 msgid "RTMP server"
 msgstr "Διακομιστής RTMP"
 
-#: src/views/Edit/Sources/Network.js:926
+#: src/views/Edit/Sources/Network.js:927
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:76
 msgid "RTMP server is not enabled"
 msgstr "Ο διακομιστής RTMP δεν είναι ενεργοποιημένος"
@@ -2429,11 +2433,11 @@ msgstr "Διακομιστής RTMPS"
 msgid "RTMPS server listen address."
 msgstr "Διεύθυνση ακρόασης διακομιστή RTMPS."
 
-#: src/views/Edit/Sources/Network.js:529
+#: src/views/Edit/Sources/Network.js:530
 msgid "RTSP"
 msgstr "RTSP"
 
-#: src/views/Edit/Sources/VirtualVideo.js:155
+#: src/views/Edit/Sources/VirtualVideo.js:156
 msgid "Rule"
 msgstr "Κανόνας"
 
@@ -2455,7 +2459,7 @@ msgid "Save"
 msgstr "Αποθήκευση"
 
 #: src/misc/filters/video/Scale.js:43
-#: src/views/Edit/Sources/VirtualVideo.js:148
+#: src/views/Edit/Sources/VirtualVideo.js:149
 msgid "Scale"
 msgstr "Κλίμακα"
 
@@ -2506,18 +2510,18 @@ msgstr "Το τμήμα θα αποκοπεί στο επόμενο καρέ π�
 msgid "Segmentation"
 msgstr "Τμηματοποίηση"
 
-#: src/views/Edit/Sources/ALSA.js:108
-#: src/views/Edit/Sources/AVFoundation.js:172
-#: src/views/Edit/Sources/Framebuffer.js:99
-#: src/views/Edit/Sources/Raspicam.js:105
-#: src/views/Edit/Sources/V4L.js:106
+#: src/views/Edit/Sources/ALSA.js:109
+#: src/views/Edit/Sources/AVFoundation.js:173
+#: src/views/Edit/Sources/Framebuffer.js:100
+#: src/views/Edit/Sources/Raspicam.js:106
+#: src/views/Edit/Sources/V4L.js:107
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:120
 #: src/views/Edit/Wizard/Sources/Raspicam.js:95
 #: src/views/Edit/Wizard/Sources/V4L.js:114
 msgid "Select a device:"
 msgstr "Επιλέξτε μια συσκευή:"
 
-#: src/views/Edit/Sources/VirtualAudio.js:84
+#: src/views/Edit/Sources/VirtualAudio.js:85
 msgid "Select audio source:"
 msgstr "Επιλέξτε πηγή ήχου:"
 
@@ -2526,11 +2530,11 @@ msgstr "Επιλέξτε πηγή ήχου:"
 msgid "Select RTMP or SRT (if enabled) for less latency."
 msgstr "Επιλέξτε RTMP ή SRT (αν είναι ενεργοποιημένο) για μικρότερη καθυστέρηση."
 
-#: src/views/Edit/Sources/VirtualVideo.js:114
+#: src/views/Edit/Sources/VirtualVideo.js:115
 msgid "Select source ..."
 msgstr "Επιλέξτε πηγή ..."
 
-#: src/views/Edit/Sources/VirtualVideo.js:108
+#: src/views/Edit/Sources/VirtualVideo.js:109
 msgid "Select video source:"
 msgstr "Επιλέξτε πηγή βίντεο:"
 
@@ -2562,14 +2566,14 @@ msgstr "Επιλογή"
 msgid "Send anonymous metrics (helps us for future development)"
 msgstr "Στείλτε ανώνυμες μετρήσεις (μας βοηθά για μελλοντική ανάπτυξη)"
 
-#: src/views/Edit/Sources/Network.js:956
-#: src/views/Edit/Sources/Network.js:1051
+#: src/views/Edit/Sources/Network.js:957
+#: src/views/Edit/Sources/Network.js:1052
 #: src/views/Edit/Wizard/Sources/InternalRTMP.js:104
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:104
 msgid "Send stream to address ..."
 msgstr "Στείλτε ροή στη διεύθυνση ..."
 
-#: src/views/Edit/Sources/Network.js:895
+#: src/views/Edit/Sources/Network.js:896
 #: src/views/Edit/Wizard/Sources/InternalHLS.js:48
 msgid "Send stream to this address:"
 msgstr "Στείλτε ρεύμα σε αυτή τη διεύθυνση:"
@@ -2659,7 +2663,7 @@ msgstr "Εμφανίζει μια αναφορά στο έργο."
 msgid "Sign up (free)"
 msgstr "Εγγραφείτε (δωρεάν)"
 
-#: src/views/Edit/Sources/VirtualAudio.js:89
+#: src/views/Edit/Sources/VirtualAudio.js:90
 msgid "Silence"
 msgstr "Σιωπή"
 
@@ -2667,7 +2671,7 @@ msgstr "Σιωπή"
 msgid "Silence Audio"
 msgstr "Σιωπή ήχου"
 
-#: src/views/Edit/Sources/VirtualAudio.js:91
+#: src/views/Edit/Sources/VirtualAudio.js:92
 msgid "Sine"
 msgstr "Sine"
 
@@ -2688,7 +2692,7 @@ msgstr "Στιγμιότυπο"
 msgid "Social-login (OAuth2, 2FA)"
 msgstr "Κοινωνική σύνδεση (OAuth2, 2FA)"
 
-#: src/views/Edit/Sources/Network.js:542
+#: src/views/Edit/Sources/Network.js:543
 msgid "Socket timeout (microseconds)"
 msgstr "Χρονικό όριο υποδοχής (μικροδευτερόλεπτα)"
 
@@ -2697,8 +2701,8 @@ msgid "Software"
 msgstr "Λογισμικό"
 
 #: src/misc/controls/Source.js:74
-#: src/views/Edit/Sources/VirtualAudio.js:88
-#: src/views/Edit/Sources/VirtualVideo.js:112
+#: src/views/Edit/Sources/VirtualAudio.js:89
+#: src/views/Edit/Sources/VirtualVideo.js:113
 #: src/views/Publication/Add.js:475
 #: src/views/Publication/Edit.js:515
 msgid "Source"
@@ -2734,7 +2738,7 @@ msgstr "Έξοδος SRT"
 msgid "SRT server"
 msgstr "Διακομιστής SRT"
 
-#: src/views/Edit/Sources/Network.js:1021
+#: src/views/Edit/Sources/Network.js:1022
 #: src/views/Edit/Wizard/Sources/InternalSRT.js:76
 msgid "SRT server is not enabled"
 msgstr "Ο διακομιστής SRT δεν είναι ενεργοποιημένος"
@@ -2751,7 +2755,7 @@ msgstr "SRT token για δημοσίευση και αναπαραγωγή. Τ�
 msgid "Stale timeout (seconds)"
 msgstr "Καθυστερημένο χρονικό όριο (δευτερόλεπτα)"
 
-#: src/views/Edit/Sources/Network.js:719
+#: src/views/Edit/Sources/Network.js:720
 msgid "start_at_zero"
 msgstr "start_at_zero"
 
@@ -2843,7 +2847,7 @@ msgstr "URL ροής"
 msgid "Support datarhei Restreamer"
 msgstr "Υποστήριξη datarhei Restreamer"
 
-#: src/views/Edit/Sources/Network.js:773
+#: src/views/Edit/Sources/Network.js:774
 #: src/views/Edit/Wizard/Sources/Network.js:72
 msgid "Supports HTTP (HLS, DASH), RTP, RTSP, RTMP, SRT and more."
 msgstr "Υποστηρίζει HTTP (HLS, DASH), RTP, RTSP, RTMP, SRT και άλλα."
@@ -2871,11 +2875,11 @@ msgstr "Πρότυπο που θα χρησιμοποιηθεί για τη δη
 msgid "Terms"
 msgstr "Όροι"
 
-#: src/views/Edit/Sources/VirtualVideo.js:116
+#: src/views/Edit/Sources/VirtualVideo.js:117
 msgid "Test pattern"
 msgstr "Μοτίβο δοκιμής"
 
-#: src/views/Edit/Sources/VirtualVideo.js:117
+#: src/views/Edit/Sources/VirtualVideo.js:118
 msgid "Test pattern (extended)"
 msgstr "Μοτίβο δοκιμής (εκτεταμένο)"
 
@@ -2883,7 +2887,7 @@ msgstr "Μοτίβο δοκιμής (εκτεταμένο)"
 msgid "Text colors"
 msgstr "Χρώματα κειμένου"
 
-#: src/views/Edit/Sources/VirtualAudio.js:131
+#: src/views/Edit/Sources/VirtualAudio.js:132
 msgid "The amplitude (0.0 - 1.0) of the generated audio stream"
 msgstr "Το πλάτος (0.0 - 1.0) της παραγόμενης ροής ήχου"
 
@@ -2891,7 +2895,7 @@ msgstr "Το πλάτος (0.0 - 1.0) της παραγόμενης ροής ή�
 msgid "The application is using an older version of the settings."
 msgstr "Η εφαρμογή χρησιμοποιεί παλαιότερη έκδοση των ρυθμίσεων."
 
-#: src/views/Edit/Sources/Network.js:846
+#: src/views/Edit/Sources/Network.js:847
 msgid "The available FFmpeg binary doesn't support any of the required protocols."
 msgstr "Το διαθέσιμο δυαδικό αρχείο FFmpeg δεν υποστηρίζει κανένα από τα απαιτούμενα πρωτόκολλα."
 
@@ -2903,7 +2907,7 @@ msgstr "Το bitrate της ροής ήχου."
 msgid "The built-in player cannot decode this channel's video codec."
 msgstr ""
 
-#: src/views/Edit/Sources/VirtualAudio.js:150
+#: src/views/Edit/Sources/VirtualAudio.js:151
 msgid "The carrier frequency"
 msgstr "Η φέρουσα συχνότητα"
 
@@ -2920,7 +2924,7 @@ msgid "The deletion of this channel can not be recovered. All publications of th
 msgstr "Η διαγραφή αυτού του καναλιού δεν μπορεί να ανακτηθεί. Όλες οι δημοσιεύσεις αυτού του καναλιού θα αφαιρεθούν."
 
 #: src/views/Edit/index.js:302
-#: src/views/Edit/Wizard/index.js:177
+#: src/views/Edit/Wizard/index.js:178
 #: src/views/Publication/Edit.js:262
 msgid "The input profile is not complete. Please define a video and audio source."
 msgstr "Το προφίλ εισόδου δεν είναι πλήρες. Ορίστε μια πηγή βίντεο και ήχου."
@@ -2938,7 +2942,7 @@ msgstr "Η διάταξη της ροής ήχου."
 msgid "The maximum number of playlist segments. 0 will contain all the segments. 6 is recommended."
 msgstr "Ο μέγιστος αριθμός τμημάτων λίστας αναπαραγωγής. Το 0 θα περιέχει όλα τα τμήματα. Συνιστάται το 6."
 
-#: src/views/Edit/Sources/VirtualAudio.js:119
+#: src/views/Edit/Sources/VirtualAudio.js:120
 msgid "The noise color"
 msgstr "Το χρώμα του θορύβου"
 
@@ -2975,15 +2979,15 @@ msgstr "Η έξοδος RTMP απαιτεί τον διακομιστή RTMP."
 msgid "The sample rate of the audio stream."
 msgstr "Ο ρυθμός δειγματοληψίας της ροής ήχου."
 
-#: src/views/Edit/Sources/AudioLoop.js:95
-#: src/views/Edit/Sources/VideoLoop.js:103
+#: src/views/Edit/Sources/AudioLoop.js:96
+#: src/views/Edit/Sources/VideoLoop.js:104
 #: src/views/Playersite.js:231
 #: src/views/Publication/Player.js:206
 msgid "The selected file is too big (<0/>). Only <1/> are allowed."
 msgstr "Το επιλεγμένο αρχείο είναι πολύ μεγάλο (<0/>). Επιτρέπονται μόνο <1/>."
 
-#: src/views/Edit/Sources/AudioLoop.js:88
-#: src/views/Edit/Sources/VideoLoop.js:96
+#: src/views/Edit/Sources/AudioLoop.js:89
+#: src/views/Edit/Sources/VideoLoop.js:97
 #: src/views/Playersite.js:224
 #: src/views/Publication/Player.js:199
 msgid "The selected file type ({0}) is not allowed. Allowed file types are {1}"
@@ -3041,8 +3045,8 @@ msgstr "Υπήρξε πρόβλημα με την αποθήκευση των ρ
 msgid "There was an error connecting to Restreamer Core at {0}."
 msgstr "Υπήρξε σφάλμα σύνδεσης με τον πυρήνα Restreamer στο {0}."
 
-#: src/views/Edit/Sources/AudioLoop.js:102
-#: src/views/Edit/Sources/VideoLoop.js:110
+#: src/views/Edit/Sources/AudioLoop.js:103
+#: src/views/Edit/Sources/VideoLoop.js:111
 #: src/views/Playersite.js:238
 #: src/views/Publication/Player.js:213
 msgid "There was an error during upload: {0}"
@@ -3096,7 +3100,7 @@ msgstr "Αυτή η άδεια επιτρέπει στους επαναχρησ�
 msgid "This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
 msgstr "Αυτή η άδεια επιτρέπει στους επαναχρησιμοποιητές να διανέμουν, να αναμειγνύουν, να προσαρμόζουν και να αξιοποιούν το υλικό σε οποιοδήποτε μέσο ή μορφή, αρκεί να γίνεται αναφορά στον δημιουργό. Η άδεια επιτρέπει την εμπορική χρήση. Εάν αναμίξετε, προσαρμόσετε ή βασιστείτε στο υλικό, πρέπει να αδειοδοτήσετε το τροποποιημένο υλικό με τους ίδιους όρους."
 
-#: src/views/Edit/Sources/Network.js:783
+#: src/views/Edit/Sources/Network.js:784
 msgid "This protocol is unknown or not supported by the available FFmpeg binary."
 msgstr "Αυτό το πρωτόκολλο είναι άγνωστο ή δεν υποστηρίζεται από το διαθέσιμο δυαδικό αρχείο FFmpeg."
 
@@ -3285,7 +3289,7 @@ msgstr "Συντονισμός"
 #~ msgid "Type"
 #~ msgstr ""
 
-#: src/views/Edit/Sources/Network.js:533
+#: src/views/Edit/Sources/Network.js:534
 #: src/views/Edit/Wizard/Sources/Network.js:77
 msgid "UDP transport"
 msgstr "Μεταφορά UDP"
@@ -3302,8 +3306,8 @@ msgstr "Μοναδικό αναγνωριστικό στην υπηρεσία."
 msgid "Unknown"
 msgstr "Άγνωστος"
 
-#: src/views/Edit/Sources/AudioLoop.js:105
-#: src/views/Edit/Sources/VideoLoop.js:113
+#: src/views/Edit/Sources/AudioLoop.js:106
+#: src/views/Edit/Sources/VideoLoop.js:114
 #: src/views/Playersite.js:241
 #: src/views/Publication/Player.js:216
 msgid "Unknown upload error"
@@ -3317,8 +3321,8 @@ msgstr "Μη επιλεγμένο"
 msgid "Update details (Changelog)"
 msgstr "Λεπτομέρειες ενημέρωσης (Changelog)"
 
-#: src/views/Edit/Sources/AudioLoop.js:146
-#: src/views/Edit/Sources/VideoLoop.js:154
+#: src/views/Edit/Sources/AudioLoop.js:147
+#: src/views/Edit/Sources/VideoLoop.js:155
 #: src/views/Playersite.js:514
 #: src/views/Playersite.js:534
 #: src/views/Playersite.js:672
@@ -3327,16 +3331,16 @@ msgstr "Λεπτομέρειες ενημέρωσης (Changelog)"
 msgid "Upload"
 msgstr "Ανέβασμα"
 
-#: src/views/Edit/Sources/AudioLoop.js:138
+#: src/views/Edit/Sources/AudioLoop.js:139
 msgid "Upload an audio file ({0}) in order to loop it."
 msgstr "Ανεβάστε ένα αρχείο ήχου ({0}) για να το κάνετε βρόχο."
 
-#: src/views/Edit/Sources/VideoLoop.js:146
+#: src/views/Edit/Sources/VideoLoop.js:147
 msgid "Upload an image or video file ({0}) in order to loop it."
 msgstr "Ανεβάστε ένα αρχείο εικόνας ή βίντεο ({0}) για να το κάνετε βρόχο."
 
-#: src/views/Edit/Sources/AudioLoop.js:149
-#: src/views/Edit/Sources/VideoLoop.js:157
+#: src/views/Edit/Sources/AudioLoop.js:150
+#: src/views/Edit/Sources/VideoLoop.js:158
 #: src/views/Playersite.js:537
 #: src/views/Playersite.js:675
 msgid "Uploading the file failed"
@@ -3372,7 +3376,7 @@ msgstr "Χρησιμοποιήστε τα πνευματικά σας δικαι
 msgid "Use your copyright and choose the right image licence. Whether free for all or highly restricted. Briefly discuss what others are allowed to do with your image."
 msgstr "Χρησιμοποιήστε τα πνευματικά σας δικαιώματα και επιλέξτε τη σωστή άδεια χρήσης εικόνας. Είτε ελεύθερη για όλους είτε με αυστηρούς περιορισμούς. Συζητήστε εν συντομία τι επιτρέπεται να κάνουν οι άλλοι με την εικόνα σας."
 
-#: src/views/Edit/Sources/Network.js:724
+#: src/views/Edit/Sources/Network.js:725
 msgid "use_wallclock_as_timestamps"
 msgstr "use_wallclock_as_timestamps"
 
@@ -3380,7 +3384,7 @@ msgstr "use_wallclock_as_timestamps"
 msgid "User registration"
 msgstr "Εγγραφή χρήστη"
 
-#: src/views/Edit/Sources/Network.js:795
+#: src/views/Edit/Sources/Network.js:796
 #: src/views/Edit/Wizard/Sources/Network.js:84
 #: src/views/Login.js:272
 #: src/views/Publication/Services/DaCast.js:131
@@ -3399,7 +3403,7 @@ msgstr "Όνομα χρήστη"
 msgid "Username for authorization."
 msgstr "Όνομα χρήστη για εξουσιοδότηση."
 
-#: src/views/Edit/Sources/Network.js:800
+#: src/views/Edit/Sources/Network.js:801
 #: src/views/Edit/Wizard/Sources/Network.js:90
 msgid "Username for the device."
 msgstr "Όνομα χρήστη για τη συσκευή."
@@ -3412,7 +3416,7 @@ msgstr "Το V4L2_M2M είναι πειραματικό."
 msgid "Variable frame rate (VFR)"
 msgstr "Μεταβλητός ρυθμός καρέ (VFR)"
 
-#: src/views/Edit/Sources/VirtualAudio.js:116
+#: src/views/Edit/Sources/VirtualAudio.js:117
 msgid "velvet"
 msgstr "βελούδο"
 
@@ -3424,9 +3428,9 @@ msgstr "Κάθετη αναστροφή"
 msgid "Video"
 msgstr "Βίντεο"
 
-#: src/views/Edit/Sources/AVFoundation.js:126
-#: src/views/Edit/Sources/Raspicam.js:98
-#: src/views/Edit/Sources/V4L.js:112
+#: src/views/Edit/Sources/AVFoundation.js:127
+#: src/views/Edit/Sources/Raspicam.js:99
+#: src/views/Edit/Sources/V4L.js:113
 #: src/views/Edit/Wizard/Sources/AVFoundation.js:82
 #: src/views/Edit/Wizard/Sources/Raspicam.js:86
 #: src/views/Edit/Wizard/Sources/V4L.js:105
@@ -3445,7 +3449,7 @@ msgstr "Ρυθμίσεις βίντεο"
 msgid "Video setup"
 msgstr "Ρύθμιση βίντεο"
 
-#: src/views/Edit/Sources/VideoAudio.js:45
+#: src/views/Edit/Sources/VideoAudio.js:46
 msgid "Video source"
 msgstr "Πηγή βίντεο"
 
@@ -3456,12 +3460,12 @@ msgstr "Πηγή βίντεο"
 msgid "Viewer"
 msgstr "Πρόγραμμα προβολής"
 
-#: src/views/Edit/Sources/VirtualAudio.js:115
+#: src/views/Edit/Sources/VirtualAudio.js:116
 msgid "violet"
 msgstr "βιολετί"
 
-#: src/views/Edit/Sources/VirtualAudio.js:187
-#: src/views/Edit/Sources/VirtualVideo.js:206
+#: src/views/Edit/Sources/VirtualAudio.js:188
+#: src/views/Edit/Sources/VirtualVideo.js:207
 msgid "Virtual source"
 msgstr "Εικονική πηγή"
 
@@ -3497,7 +3501,7 @@ msgstr "Ποια προεπιλογή ταχύτητας να χρησιμοπο
 msgid "Where to store the HLS playlist and segments. In-Memory is recommended."
 msgstr "Πού να αποθηκεύσετε τη λίστα αναπαραγωγής HLS και τα τμήματα. Συνιστάται η αποθήκευση στη μνήμη."
 
-#: src/views/Edit/Sources/VirtualAudio.js:111
+#: src/views/Edit/Sources/VirtualAudio.js:112
 msgid "white"
 msgstr "λευκό"
 
@@ -3542,6 +3546,6 @@ msgstr "Η ροή σας πρέπει να κωδικοποιηθεί, αλλά 
 msgid "Your stream needs to be encoded. Choose the desired encoder:"
 msgstr "Η ροή σας πρέπει να κωδικοποιηθεί. Επιλέξτε τον επιθυμητό κωδικοποιητή:"
 
-#: src/views/Edit/Sources/VirtualVideo.js:119
+#: src/views/Edit/Sources/VirtualVideo.js:120
 msgid "YUV test pattern"
 msgstr "Μοτίβο δοκιμής YUV"

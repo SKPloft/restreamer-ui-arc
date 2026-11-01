@@ -1,4 +1,5 @@
 import React from 'react';
+import { SOURCE_FFVERSION } from '../../../utils/ffmpeg';
 import { useNavigate } from 'react-router-dom';
 
 import { useLingui } from '@lingui/react';
@@ -1193,7 +1194,7 @@ function SourceIcon(props) {
 const id = 'network';
 const name = <Trans>Network source</Trans>;
 const capabilities = ['audio', 'video'];
-const ffversion = '^4.1.0 || ^5.0.0 || ^6.1.0 || ^7.0.0 || ^8.0.0 || ^9.0.0';
+const ffversion = SOURCE_FFVERSION;
 
 const func = {
 	initSettings,

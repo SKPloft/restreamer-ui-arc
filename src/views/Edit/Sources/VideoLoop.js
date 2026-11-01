@@ -1,4 +1,5 @@
 import React from 'react';
+import { SOURCE_FFVERSION } from '../../../utils/ffmpeg';
 
 import { Trans } from '@lingui/macro';
 import makeStyles from '@mui/styles/makeStyles';
@@ -201,7 +202,7 @@ function SourceIcon(props) {
 const id = 'videoloop';
 const name = <Trans>Loop</Trans>;
 const capabilities = ['video'];
-const ffversion = '^4.1.0 || ^5.0.0 || ^6.1.0 || ^7.0.0 || ^8.0.0 || ^9.0.0';
+const ffversion = SOURCE_FFVERSION;
 
 const func = {
 	initSettings,

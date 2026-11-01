@@ -1,4 +1,5 @@
 import React from 'react';
+import { SOURCE_FFVERSION } from '../../../utils/ffmpeg';
 
 import { useLingui } from '@lingui/react';
 import { Trans, t } from '@lingui/macro';
@@ -155,7 +156,7 @@ function SourceIcon(props) {
 const id = 'alsa';
 const name = <Trans>ALSA</Trans>;
 const capabilities = ['audio'];
-const ffversion = '^4.1.0 || ^5.0.0 || ^6.1.0 || ^7.0.0 || ^8.0.0 || ^9.0.0';
+const ffversion = SOURCE_FFVERSION;
 
 const func = {
 	initSettings,
