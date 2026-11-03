@@ -1,0 +1,7 @@
+{
+  "firstPlaylist": 200,
+  "initSegment": 200,
+  "activeSessions": 1,
+  "secondPlaylist": 509,
+  "secondResponse": "{\"code\":509,\"message\":\"Bandwith limit exceeded\",\"details\":[\"Number of sessions exceeded\"]}\n"
+}

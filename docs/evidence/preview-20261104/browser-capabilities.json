@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-11-04",
+  "browser": "managed Chromium, UA Chrome/150.0.0.0 Windows NT 10.0 Win64 x64",
+  "environment_limit": "User Chrome relay tab creation failed at Network.enable; managed browser is not proof of user's hardware decoder availability.",
+  "media_source_is_type_supported": {
+    "video/mp4; codecs=avc1.4d401f": true,
+    "video/mp4; codecs=av01": false,
+    "video/mp4; codecs=av01.0.08M.08": true,
+    "video/mp4; codecs=hvc1": false,
+    "video/mp4; codecs=hvc1.1.6.L93.B0": false,
+    "video/mp4; codecs=vp09": false,
+    "video/mp4; codecs=vp09.00.10.08": true
+  }
+}

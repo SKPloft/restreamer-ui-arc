@@ -1,0 +1,98 @@
+{
+ "vhs": {
+  "videojs": "8.17.4",
+  "vhs": "present",
+  "hlsjs": "1.7.4",
+  "chrome": "150.0.0.0",
+  "src": "/fixtures/av1/index.m3u8",
+  "verdict": {
+   "played": false,
+   "frames": false,
+   "error": {
+    "t": 168,
+    "type": "player.error",
+    "code": 3,
+    "message": "Playback cannot continue. No available working or supported playlists."
+   },
+   "label": "FAILS"
+  },
+  "final": {
+   "t": 8120,
+   "currentTime": 0,
+   "readyState": 0,
+   "networkState": 2,
+   "paused": false,
+   "ended": false,
+   "seeking": false,
+   "videoWidth": 0,
+   "videoHeight": 0,
+   "bufferedEnd": 0,
+   "quality": {
+    "total": 0,
+    "dropped": 0,
+    "decoded": 0,
+    "presented": null
+   },
+   "mediaError": null
+  },
+  "errors": [
+   {
+    "t": 168,
+    "type": "player.error",
+    "code": 3,
+    "message": "Playback cannot continue. No available working or supported playlists."
+   }
+  ],
+  "caps": {
+   "video/mp4; codecs=\"av01.0.04M.08\"": true,
+   "video/mp4; codecs=\"av01.0.08M.08\"": true,
+   "video/mp4; codecs=\"av01.0.04M.08,mp4a.40.2\"": true,
+   "video/mp4; codecs=\"hvc1.1.6.L63.B0\"": false,
+   "video/mp4; codecs=\"hvc1.1.6.L93.B0\"": false,
+   "video/mp4; codecs=\"vp09.00.10.08\"": true,
+   "video/mp4; codecs=\"vp09.00.10.08,mp4a.40.2\"": true
+  }
+ },
+ "hlsjs": {
+  "videojs": "8.17.4",
+  "vhs": null,
+  "hlsjs": "1.7.4",
+  "chrome": "150.0.0.0",
+  "src": "/fixtures/av1/index.m3u8",
+  "verdict": {
+   "played": true,
+   "frames": true,
+   "error": null,
+   "label": "PLAYS"
+  },
+  "final": {
+   "t": 8102,
+   "currentTime": 6.021,
+   "readyState": 4,
+   "networkState": 2,
+   "paused": true,
+   "ended": true,
+   "seeking": false,
+   "videoWidth": 640,
+   "videoHeight": 360,
+   "bufferedEnd": 6.021,
+   "quality": {
+    "total": 150,
+    "dropped": 0,
+    "decoded": 150,
+    "presented": null
+   },
+   "mediaError": null
+  },
+  "errors": [],
+  "caps": {
+   "video/mp4; codecs=\"av01.0.04M.08\"": true,
+   "video/mp4; codecs=\"av01.0.08M.08\"": true,
+   "video/mp4; codecs=\"av01.0.04M.08,mp4a.40.2\"": true,
+   "video/mp4; codecs=\"hvc1.1.6.L63.B0\"": false,
+   "video/mp4; codecs=\"hvc1.1.6.L93.B0\"": false,
+   "video/mp4; codecs=\"vp09.00.10.08\"": true,
+   "video/mp4; codecs=\"vp09.00.10.08,mp4a.40.2\"": true
+  }
+ }
+}

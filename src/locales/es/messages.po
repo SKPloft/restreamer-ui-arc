@@ -82,10 +82,6 @@ msgstr "Añadir un nuevo canal"
 msgid "Add Publication"
 msgstr "Añadir publicación"
 
-#: src/misc/modals/Hint.js:158
-#~ msgid "Add Stream"
-#~ msgstr ""
-
 #: src/views/Publication/Add.js:366
 msgid "Add: {0}"
 msgstr "Añadir: {0}"
@@ -282,10 +278,6 @@ msgstr "Limpieza automática de todos los datos de los medios de comunicación"
 #: src/views/Publication/Player.js:524
 msgid "Autoplay"
 msgstr "Reproducción automática"
-
-#: src/misc/coders/CodecNotice.js:28
-#~ msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
-#~ msgstr ""
 
 #: src/misc/coders/CodecNotice.js:31
 msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
@@ -538,7 +530,7 @@ msgid "Connected since <0/>"
 msgstr "Conectado desde <0/>"
 
 #: src/misc/ActionButton.js:12
-#: src/views/Main/index.js:351
+#: src/views/Main/index.js:341
 #: src/views/Publication/Process.js:40
 msgid "Connecting ..."
 msgstr "Conectando ..."
@@ -565,7 +557,7 @@ msgstr "Modo de cuantificador constante (-1 a 255)."
 msgid "Content"
 msgstr "Contenido"
 
-#: src/views/Main/index.js:441
+#: src/views/Main/index.js:401
 msgid "Content URL"
 msgstr "Contenido URL"
 
@@ -999,7 +991,7 @@ msgstr "Error"
 msgid "Error while copying data to clipboard"
 msgstr "Error al copiar datos en el portapapeles"
 
-#: src/views/Main/index.js:370
+#: src/views/Main/index.js:360
 #: src/views/Publication/Process.js:64
 msgid "Error: {0}"
 msgstr "Error: {0}"
@@ -1049,7 +1041,7 @@ msgstr "Fallo en la creación de los archivos del sitio web de la publicación."
 msgid "Failed to probe the source. Please check the <0>probe details</0>."
 msgstr "No se ha podido sondear la fuente. Por favor, compruebe los <0>detalles de la sonda</0>."
 
-#: src/utils/restreamer.js:451
+#: src/utils/restreamer.js:457
 msgid "Failed to refresh token: {0}"
 msgstr "Fallo en la actualización de la ficha: {0}"
 
@@ -1245,14 +1237,10 @@ msgid "Height"
 msgstr "Altura"
 
 #: src/misc/coders/CodecNotice.js:23
-#~ msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
-#~ msgstr ""
-
-#: src/misc/coders/CodecNotice.js:23
 msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and browser playback is limited."
 msgstr ""
 
-#: src/views/Main/index.js:450
+#: src/views/Main/index.js:410
 msgid "HLS"
 msgstr "HLS"
 
@@ -1380,10 +1368,6 @@ msgstr "Inyectar 4"
 msgid "Input stream"
 msgstr "Flujo de entrada"
 
-#: src/views/Publication/Services/Instagram.js:121
-#~ msgid "Instafeed.me"
-#~ msgstr "Instafeed.me"
-
 #: src/views/Publication/Services/PeerTube.js:85
 msgid "Instance domain"
 msgstr "Dominio de la instancia"
@@ -1489,10 +1473,6 @@ msgstr "Transmisión en directo al servicio RTMP de Facebook Live"
 msgid "Live-Streaming to Instagram Live RTMP Service."
 msgstr ""
 
-#: src/views/Publication/Services/Instagram.js:19
-#~ msgid "Live-Streaming to Instagram Live RTMP Service. The stream key requires a service such as <0>Instafeed.me</0> or <1>Yellow Duck</1>."
-#~ msgstr "Transmisión en directo al servicio RTMP de Instagram Live. La clave de transmisión requiere un servicio como <0>Instafeed.me</0> o <1>Yellow Duck</1>."
-
 #: src/views/Publication/Services/MediaNetwork.js:15
 msgid "Live-Streaming to Media Network RTMP Service."
 msgstr "Transmisión en directo al servicio RTMP de la red de medios de comunicación."
@@ -1534,15 +1514,15 @@ msgstr "Registro"
 msgid "Login"
 msgstr "Acceda a"
 
-#: src/utils/restreamer.js:264
-#: src/utils/restreamer.js:298
+#: src/utils/restreamer.js:270
+#: src/utils/restreamer.js:304
 msgid "Login failed: {0}"
 msgstr "El inicio de sesión ha fallado: {0}"
 
-#: src/utils/restreamer.js:273
-#: src/utils/restreamer.js:278
-#: src/utils/restreamer.js:307
-#: src/utils/restreamer.js:312
+#: src/utils/restreamer.js:279
+#: src/utils/restreamer.js:284
+#: src/utils/restreamer.js:313
+#: src/utils/restreamer.js:318
 msgid "Login failed: Couldn't load API details"
 msgstr "El inicio de sesión ha fallado: No se han podido cargar los detalles de la API"
 
@@ -1571,7 +1551,7 @@ msgstr "Normalización de la sonoridad"
 msgid "Low latency (Buffer)"
 msgstr "Baja latencia (Buffer)"
 
-#: src/views/Main/index.js:306
+#: src/views/Main/index.js:296
 #: src/views/Playersite.js:367
 msgid "Main channel"
 msgstr "Canal principal"
@@ -1818,7 +1798,7 @@ msgstr "No se ha encontrado un codificador adecuado."
 msgid "No suitable filter found."
 msgstr "No se ha encontrado ningún filtro adecuado."
 
-#: src/views/Main/index.js:332
+#: src/views/Main/index.js:322
 #: src/views/Publication/Player.js:356
 msgid "No video"
 msgstr "No hay vídeo"
@@ -1887,10 +1867,6 @@ msgstr "Un referente por línea, por ejemplo: http://www.example.com"
 #: src/views/Playersite.js:839
 msgid "Open"
 msgstr "Abrir"
-
-#: src/views/Main/index.js:420
-msgid "Open the content URL with an external player, or choose H.264 for the video profile if the preview is required."
-msgstr ""
 
 #: src/misc/IngestAddressFields.js:54
 msgid "Or fill these fields instead of the full URL (e.g. for OBS):"
@@ -2003,7 +1979,7 @@ msgstr "Lista de reproducción"
 msgid "Playlist version (M3U8). Version 3 has the best browser/client compatibility."
 msgstr "Versión de la lista de reproducción (M3U8). La versión 3 tiene la mejor compatibilidad con el navegador/cliente."
 
-#: src/views/Main/index.js:375
+#: src/views/Main/index.js:365
 msgid "Please check the <0>process log</0>"
 msgstr "Por favor, compruebe el <0>registro del proceso</0>"
 
@@ -2123,15 +2099,15 @@ msgstr "Proceso"
 msgid "Process control"
 msgstr "Control de procesos"
 
-#: src/views/Main/index.js:497
-#: src/views/Main/index.js:513
+#: src/views/Main/index.js:457
+#: src/views/Main/index.js:473
 #: src/views/Publication/Edit.js:494
 #: src/views/Publication/Edit.js:613
 msgid "Process details"
 msgstr "Detalles del proceso"
 
-#: src/views/Main/index.js:500
-#: src/views/Main/index.js:521
+#: src/views/Main/index.js:460
+#: src/views/Main/index.js:481
 #: src/views/Publication/Edit.js:497
 #: src/views/Publication/Edit.js:621
 msgid "Process report"
@@ -2265,7 +2241,7 @@ msgstr "Conecte de nuevo"
 msgid "Reconnect delay (seconds)"
 msgstr "Retraso de reconexión (segundos)"
 
-#: src/views/Main/index.js:386
+#: src/views/Main/index.js:376
 #: src/views/Publication/Process.js:68
 #: src/views/Publication/Process.js:81
 msgid "Reconnecting in {0}s"
@@ -2313,10 +2289,6 @@ msgstr "Recargar"
 #: src/misc/modals/Hint.js:159
 msgid "Remove Audio"
 msgstr ""
-
-#: src/misc/modals/Hint.js:150
-#~ msgid "Remove Stream"
-#~ msgstr ""
 
 #: src/views/Settings.js:1754
 msgid "Remove the oldest entries if the /memfs is full"
@@ -2367,7 +2339,7 @@ msgstr "Instrucciones del Restreamer"
 msgid "Restreamer Service"
 msgstr "Servicio de resemantización"
 
-#: src/views/Main/index.js:279
+#: src/views/Main/index.js:278
 msgid "Retrieving stream data ..."
 msgstr "Recuperación de los datos del flujo ..."
 
@@ -2385,7 +2357,7 @@ msgstr "Patrón de prueba RGB"
 msgid "Rotate"
 msgstr "Girar"
 
-#: src/views/Main/index.js:459
+#: src/views/Main/index.js:419
 #: src/views/Settings.js:1239
 #: src/views/Settings.js:1920
 msgid "RTMP"
@@ -2684,7 +2656,7 @@ msgid "Size"
 msgstr "Tamaño"
 
 #: src/views/Edit/index.js:543
-#: src/views/Main/index.js:478
+#: src/views/Main/index.js:438
 msgid "Snapshot"
 msgstr "Instantánea"
 
@@ -2723,7 +2695,7 @@ msgstr "Velocidad"
 msgid "Speed Preset"
 msgstr "Velocidad preestablecida"
 
-#: src/views/Main/index.js:469
+#: src/views/Main/index.js:429
 #: src/views/Settings.js:1240
 #: src/views/Settings.js:2019
 msgid "SRT"
@@ -2902,10 +2874,6 @@ msgstr "El binario disponible de FFmpeg no soporta ninguno de los protocolos req
 #: src/misc/coders/settings/Audio.js:40
 msgid "The bitrate of the audio stream."
 msgstr "La tasa de bits del flujo de audio."
-
-#: src/views/Main/index.js:415
-msgid "The built-in player cannot decode this channel's video codec."
-msgstr ""
 
 #: src/views/Edit/Sources/VirtualAudio.js:151
 msgid "The carrier frequency"
@@ -3285,10 +3253,6 @@ msgstr "Transmite su flujo de vídeo con la clave requerida, generada en Twitter
 msgid "Tune"
 msgstr "Sintonice"
 
-#: src/misc/modals/Hint.js:60
-#~ msgid "Type"
-#~ msgstr ""
-
 #: src/views/Edit/Sources/Network.js:534
 #: src/views/Edit/Wizard/Sources/Network.js:77
 msgid "UDP transport"
@@ -3473,10 +3437,6 @@ msgstr "Fuente virtual"
 msgid "Volume"
 msgstr "Volumen"
 
-#: src/misc/coders/CodecNotice.js:36
-#~ msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
-#~ msgstr ""
-
 #: src/misc/coders/CodecNotice.js:39
 msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and Safari cannot play it."
 msgstr ""
@@ -3513,10 +3473,6 @@ msgstr "Anchura"
 msgid "Write protection"
 msgstr "Protección de la escritura"
 
-#: src/views/Publication/Services/Instagram.js:127
-#~ msgid "Yellow Duck"
-#~ msgstr "Pato amarillo"
-
 #: src/views/Edit/Wizard/Abort.js:38
 msgid "Yes"
 msgstr "Sí"
@@ -3529,7 +3485,7 @@ msgstr "No puede abortar el asistente porque al menos una entrada debe estar def
 msgid "You have changed the configuration. In order for the changes to take effect, you have to restart the application. Do you want to restart now?"
 msgstr "Ha cambiado la configuración. Para que los cambios surtan efecto, tiene que reiniciar la aplicación. ¿Quiere reiniciar ahora?"
 
-#: src/views/Main/index.js:393
+#: src/views/Main/index.js:383
 #: src/views/Publication/Process.js:73
 msgid "You have to reconnect manually"
 msgstr "Tiene que volver a conectarse manualmente"

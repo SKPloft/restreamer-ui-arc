@@ -82,10 +82,6 @@ msgstr "새로운 채널 추가"
 msgid "Add Publication"
 msgstr "송출 대상 추가하기"
 
-#: src/misc/modals/Hint.js:158
-#~ msgid "Add Stream"
-#~ msgstr ""
-
 #: src/views/Publication/Add.js:366
 msgid "Add: {0}"
 msgstr "추가: {0}"
@@ -282,10 +278,6 @@ msgstr "모든 미디어 데이터를 자동으로 청소합니다."
 #: src/views/Publication/Player.js:524
 msgid "Autoplay"
 msgstr "자동재생"
-
-#: src/misc/coders/CodecNotice.js:28
-#~ msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
-#~ msgstr ""
 
 #: src/misc/coders/CodecNotice.js:31
 msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
@@ -538,7 +530,7 @@ msgid "Connected since <0/>"
 msgstr "<0/> 부터 연결됨"
 
 #: src/misc/ActionButton.js:12
-#: src/views/Main/index.js:351
+#: src/views/Main/index.js:341
 #: src/views/Publication/Process.js:40
 msgid "Connecting ..."
 msgstr "연결 중..."
@@ -565,7 +557,7 @@ msgstr "상수 퀀타이저 모드(-1~255)."
 msgid "Content"
 msgstr "내용"
 
-#: src/views/Main/index.js:441
+#: src/views/Main/index.js:401
 msgid "Content URL"
 msgstr "내용 URL"
 
@@ -999,7 +991,7 @@ msgstr "오류"
 msgid "Error while copying data to clipboard"
 msgstr "데이터를 클립보드로 복사하는 중 오류 발생"
 
-#: src/views/Main/index.js:370
+#: src/views/Main/index.js:360
 #: src/views/Publication/Process.js:64
 msgid "Error: {0}"
 msgstr "오류: {0}"
@@ -1049,7 +1041,7 @@ msgstr "송출 웹사이트 파일을 만드는데 실패했습니다."
 msgid "Failed to probe the source. Please check the <0>probe details</0>."
 msgstr "원본을 확인하지 못했습니다. <0>확인 결과</0>를 검토해주세요."
 
-#: src/utils/restreamer.js:451
+#: src/utils/restreamer.js:457
 msgid "Failed to refresh token: {0}"
 msgstr "토큰 갱신 실패: {0}"
 
@@ -1245,14 +1237,10 @@ msgid "Height"
 msgstr "높이"
 
 #: src/misc/coders/CodecNotice.js:23
-#~ msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
-#~ msgstr ""
-
-#: src/misc/coders/CodecNotice.js:23
 msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and browser playback is limited."
 msgstr ""
 
-#: src/views/Main/index.js:450
+#: src/views/Main/index.js:410
 msgid "HLS"
 msgstr "HLS"
 
@@ -1380,10 +1368,6 @@ msgstr "삽입 4"
 msgid "Input stream"
 msgstr "입력 스트림"
 
-#: src/views/Publication/Services/Instagram.js:121
-#~ msgid "Instafeed.me"
-#~ msgstr "Instafeed.me"
-
 #: src/views/Publication/Services/PeerTube.js:85
 msgid "Instance domain"
 msgstr "인스턴스 도메인"
@@ -1489,10 +1473,6 @@ msgstr "Facebook Live RTMP 서비스로 송출"
 msgid "Live-Streaming to Instagram Live RTMP Service."
 msgstr ""
 
-#: src/views/Publication/Services/Instagram.js:19
-#~ msgid "Live-Streaming to Instagram Live RTMP Service. The stream key requires a service such as <0>Instafeed.me</0> or <1>Yellow Duck</1>."
-#~ msgstr "Instagram 라이브 RTMP 서비스로 송출합니다. 스트림 키는 <0>Instafeed.me</0>나 <1>Yellow Duck</1>과 같은 서비스를 필요로합니다."
-
 #: src/views/Publication/Services/MediaNetwork.js:15
 msgid "Live-Streaming to Media Network RTMP Service."
 msgstr "Media Network RTMP Service로 송출합니다."
@@ -1534,15 +1514,15 @@ msgstr "기록"
 msgid "Login"
 msgstr "접속"
 
-#: src/utils/restreamer.js:264
-#: src/utils/restreamer.js:298
+#: src/utils/restreamer.js:270
+#: src/utils/restreamer.js:304
 msgid "Login failed: {0}"
 msgstr "접속 실패: {0}"
 
-#: src/utils/restreamer.js:273
-#: src/utils/restreamer.js:278
-#: src/utils/restreamer.js:307
-#: src/utils/restreamer.js:312
+#: src/utils/restreamer.js:279
+#: src/utils/restreamer.js:284
+#: src/utils/restreamer.js:313
+#: src/utils/restreamer.js:318
 msgid "Login failed: Couldn't load API details"
 msgstr "접속 실패: API 세부사항을 불러올 수 없습니다"
 
@@ -1571,7 +1551,7 @@ msgstr "소리 크기 평균화"
 msgid "Low latency (Buffer)"
 msgstr "낮은 지연시간 (버퍼)"
 
-#: src/views/Main/index.js:306
+#: src/views/Main/index.js:296
 #: src/views/Playersite.js:367
 msgid "Main channel"
 msgstr "주 채널"
@@ -1818,7 +1798,7 @@ msgstr "적절한 인코더가 없습니다."
 msgid "No suitable filter found."
 msgstr "적절한 필터를 찾을 수 없습니다."
 
-#: src/views/Main/index.js:332
+#: src/views/Main/index.js:322
 #: src/views/Publication/Player.js:356
 msgid "No video"
 msgstr "비디오 없음"
@@ -1887,10 +1867,6 @@ msgstr "한 줄에 하나의 리퍼러만 입력합니다. 예) http://www.examp
 #: src/views/Playersite.js:839
 msgid "Open"
 msgstr "열기"
-
-#: src/views/Main/index.js:420
-msgid "Open the content URL with an external player, or choose H.264 for the video profile if the preview is required."
-msgstr ""
 
 #: src/misc/IngestAddressFields.js:54
 msgid "Or fill these fields instead of the full URL (e.g. for OBS):"
@@ -2003,7 +1979,7 @@ msgstr "재생목록"
 msgid "Playlist version (M3U8). Version 3 has the best browser/client compatibility."
 msgstr "M3U8 버전입니다. 버전 3이  가장 좋은 브라우저와 클라이언트 사이의 호환성을 보장합니다."
 
-#: src/views/Main/index.js:375
+#: src/views/Main/index.js:365
 msgid "Please check the <0>process log</0>"
 msgstr "<0>프로세스 기록</0>을 검토해주세요."
 
@@ -2123,15 +2099,15 @@ msgstr "프로세스"
 msgid "Process control"
 msgstr "프로세스 조절"
 
-#: src/views/Main/index.js:497
-#: src/views/Main/index.js:513
+#: src/views/Main/index.js:457
+#: src/views/Main/index.js:473
 #: src/views/Publication/Edit.js:494
 #: src/views/Publication/Edit.js:613
 msgid "Process details"
 msgstr "프로세스 상세"
 
-#: src/views/Main/index.js:500
-#: src/views/Main/index.js:521
+#: src/views/Main/index.js:460
+#: src/views/Main/index.js:481
 #: src/views/Publication/Edit.js:497
 #: src/views/Publication/Edit.js:621
 msgid "Process report"
@@ -2265,7 +2241,7 @@ msgstr "재연결"
 msgid "Reconnect delay (seconds)"
 msgstr "재연결 지연시간 (초)"
 
-#: src/views/Main/index.js:386
+#: src/views/Main/index.js:376
 #: src/views/Publication/Process.js:68
 #: src/views/Publication/Process.js:81
 msgid "Reconnecting in {0}s"
@@ -2313,10 +2289,6 @@ msgstr "다시 불러오기"
 #: src/misc/modals/Hint.js:159
 msgid "Remove Audio"
 msgstr ""
-
-#: src/misc/modals/Hint.js:150
-#~ msgid "Remove Stream"
-#~ msgstr ""
 
 #: src/views/Settings.js:1754
 msgid "Remove the oldest entries if the /memfs is full"
@@ -2367,7 +2339,7 @@ msgstr "Restreamer 사용법"
 msgid "Restreamer Service"
 msgstr "Restreamer 서비스"
 
-#: src/views/Main/index.js:279
+#: src/views/Main/index.js:278
 msgid "Retrieving stream data ..."
 msgstr "스트림 데이터 검색중..."
 
@@ -2385,7 +2357,7 @@ msgstr "RGB 테스트 패턴"
 msgid "Rotate"
 msgstr "회전"
 
-#: src/views/Main/index.js:459
+#: src/views/Main/index.js:419
 #: src/views/Settings.js:1239
 #: src/views/Settings.js:1920
 msgid "RTMP"
@@ -2684,7 +2656,7 @@ msgid "Size"
 msgstr "크기"
 
 #: src/views/Edit/index.js:543
-#: src/views/Main/index.js:478
+#: src/views/Main/index.js:438
 msgid "Snapshot"
 msgstr "스냅샷"
 
@@ -2723,7 +2695,7 @@ msgstr "속도"
 msgid "Speed Preset"
 msgstr "속도 프리셋"
 
-#: src/views/Main/index.js:469
+#: src/views/Main/index.js:429
 #: src/views/Settings.js:1240
 #: src/views/Settings.js:2019
 msgid "SRT"
@@ -2902,10 +2874,6 @@ msgstr "현재 FFmpeg 바이너리는 필요한 프로토콜을 지원하지 않
 #: src/misc/coders/settings/Audio.js:40
 msgid "The bitrate of the audio stream."
 msgstr "소리 스트림의 비트율입니다."
-
-#: src/views/Main/index.js:415
-msgid "The built-in player cannot decode this channel's video codec."
-msgstr ""
 
 #: src/views/Edit/Sources/VirtualAudio.js:151
 msgid "The carrier frequency"
@@ -3285,10 +3253,6 @@ msgstr "영상을 Twitter Producer에서 생성한 키로 송출합니다. 자�
 msgid "Tune"
 msgstr "튠"
 
-#: src/misc/modals/Hint.js:60
-#~ msgid "Type"
-#~ msgstr ""
-
 #: src/views/Edit/Sources/Network.js:534
 #: src/views/Edit/Wizard/Sources/Network.js:77
 msgid "UDP transport"
@@ -3473,10 +3437,6 @@ msgstr "가상 입력"
 msgid "Volume"
 msgstr "소리 크기"
 
-#: src/misc/coders/CodecNotice.js:36
-#~ msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
-#~ msgstr ""
-
 #: src/misc/coders/CodecNotice.js:39
 msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and Safari cannot play it."
 msgstr ""
@@ -3513,10 +3473,6 @@ msgstr "폭"
 msgid "Write protection"
 msgstr "쓰기 보호"
 
-#: src/views/Publication/Services/Instagram.js:127
-#~ msgid "Yellow Duck"
-#~ msgstr "Yellow Duck"
-
 #: src/views/Edit/Wizard/Abort.js:38
 msgid "Yes"
 msgstr "네"
@@ -3529,7 +3485,7 @@ msgstr "설정 마법사를 취소할 수 없습니다. 적어도 하나의 입�
 msgid "You have changed the configuration. In order for the changes to take effect, you have to restart the application. Do you want to restart now?"
 msgstr "변경된 구성이 반영되려면 애플리케이션을 다시 시작해야 합니다. 지금 하시겠습니까?"
 
-#: src/views/Main/index.js:393
+#: src/views/Main/index.js:383
 #: src/views/Publication/Process.js:73
 msgid "You have to reconnect manually"
 msgstr "수동으로 재연결해야 합니다"

@@ -1,0 +1,15 @@
+{
+  "exec": "running",
+  "frames": 1209,
+  "fps": 24.5,
+  "time": 48.55,
+  "inputCount": 2,
+  "outputCount": 2,
+  "inputCodecs": [
+    "av1",
+    "aac"
+  ],
+  "prefixedMappingPreserved": true,
+  "prefixedInfoLines": 55,
+  "coreCommit": "c5a5518ea9e131b59bcc1cdf26372f1b51e6edab"
+}

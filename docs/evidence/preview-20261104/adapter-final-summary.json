@@ -1,0 +1,608 @@
+{
+ "generatedAt": "2026-11-03T18:33:43.511Z",
+ "purpose": "after-adapter verification of the production videojs-hlsjs source handler (final dist with reapply fix); harness-only, no repo writes",
+ "build": {
+  "adapter": {
+   "repoPath": "third_party/restreamer-ui/public/_player/videojs/dist/videojs-hlsjs.js",
+   "sha256": "36dd0038cbbd45170f5f66cd8483bd0ab62ab4c7bf8199a578c52ab18d0ff86d",
+   "bytes": 8458,
+   "copiedTo": "/tmp/restreamer-preview-20261104/harness/vendor/videojs-hlsjs.js",
+   "backups": {
+    "pre-fix": "harness/vendor/prev-0135/",
+    "player.error-only": "harness/vendor/prev-11d9d73/"
+   }
+  },
+  "videojs": "8.17.4",
+  "hlsjs": "1.7.4",
+  "harnessVendorSha256": {
+   "hls": "a56a4f0328b16adf3a0a04fcec0968051bf95b327d0fd46b3f5d4f67637e5254",
+   "videojs": "456c126e01c06e586f1addb39c3ce0875b7985289bd4aa7aeedcdd9298a230a0"
+  }
+ },
+ "harness": {
+  "page": "http://127.0.0.1:8765/harness/adapter.html?src=/fixtures/...",
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+  "fixtures": "/tmp/restreamer-preview-20261104/fixtures (ffmpeg 8.0.1 synthetic testsrc2 640x360@25; 6s fMP4 and TS; av1live = 26s; live.m3u8 = playlist copy without EXT-X-ENDLIST)"
+ },
+ "verdictRule": "VIDEO_OK requires time>0.5s AND totalVideoFrames>0 AND videoWidth>0; AUDIO_ONLY when time advances with 0 frames/0 width; FAILS otherwise; a FAILS row with playerError+modalDisplay=block is a correctly surfaced unsupported-codec error",
+ "matrix": [
+  {
+   "case": "dist36-av1-media",
+   "src": "/fixtures/av1/index.m3u8",
+   "label": "VIDEO_OK",
+   "maxTime": 6.021333,
+   "frames": 150,
+   "videoWidth": 640,
+   "duration": "6.021333",
+   "durationIsInfinite": false,
+   "live": {
+    "isLive": false,
+    "atLiveEdge": false
+   },
+   "playerError": null,
+   "modalDisplay": null,
+   "currentSrc": "/fixtures/av1/index.m3u8",
+   "currentSources": [
+    {
+     "src": "/fixtures/av1/index.m3u8",
+     "type": "application/x-mpegURL"
+    }
+   ],
+   "mediaSrcIsBlob": true,
+   "hlsjsHandler": true,
+   "hlsInstances": [
+    {
+     "hasMedia": true,
+     "url": "http://127.0.0.1:8765/fixtures/av1/index.m3u8",
+     "levels": 1
+    }
+   ],
+   "loadstartCount": null,
+   "screenshot": "dist36-av1-media.webp"
+  },
+  {
+   "case": "dist36-av1-master-nocodecs",
+   "src": "/fixtures/master_av1_nocodecs.m3u8",
+   "label": "VIDEO_OK",
+   "maxTime": 6.021333,
+   "frames": 150,
+   "videoWidth": 640,
+   "duration": "6.021333",
+   "durationIsInfinite": false,
+   "live": {
+    "isLive": false,
+    "atLiveEdge": false
+   },
+   "playerError": null,
+   "modalDisplay": null,
+   "currentSrc": "/fixtures/master_av1_nocodecs.m3u8",
+   "currentSources": [
+    {
+     "src": "/fixtures/master_av1_nocodecs.m3u8",
+     "type": "application/x-mpegURL"
+    }
+   ],
+   "mediaSrcIsBlob": true,
+   "hlsjsHandler": true,
+   "hlsInstances": [
+    {
+     "hasMedia": true,
+     "url": "http://127.0.0.1:8765/fixtures/master_av1_nocodecs.m3u8",
+     "levels": 1
+    }
+   ],
+   "loadstartCount": null,
+   "screenshot": "dist36-av1-master-nocodecs.webp"
+  },
+  {
+   "case": "dist36-av1-master-codecs",
+   "src": "/fixtures/master_av1_codecs.m3u8",
+   "label": "VIDEO_OK",
+   "maxTime": 6.021333,
+   "frames": 150,
+   "videoWidth": 640,
+   "duration": "6.021333",
+   "durationIsInfinite": false,
+   "live": {
+    "isLive": false,
+    "atLiveEdge": false
+   },
+   "playerError": null,
+   "modalDisplay": null,
+   "currentSrc": "/fixtures/master_av1_codecs.m3u8",
+   "currentSources": [
+    {
+     "src": "/fixtures/master_av1_codecs.m3u8",
+     "type": "application/x-mpegURL"
+    }
+   ],
+   "mediaSrcIsBlob": true,
+   "hlsjsHandler": true,
+   "hlsInstances": [
+    {
+     "hasMedia": true,
+     "url": "http://127.0.0.1:8765/fixtures/master_av1_codecs.m3u8",
+     "levels": 1
+    }
+   ],
+   "loadstartCount": null,
+   "screenshot": "dist36-av1-master-codecs.webp"
+  },
+  {
+   "case": "dist36-h264-ts",
+   "src": "/fixtures/h264ts/index.m3u8",
+   "label": "VIDEO_OK",
+   "maxTime": 6.095999,
+   "frames": 150,
+   "videoWidth": 640,
+   "duration": "6.095999",
+   "durationIsInfinite": false,
+   "live": {
+    "isLive": false,
+    "atLiveEdge": false
+   },
+   "playerError": null,
+   "modalDisplay": null,
+   "currentSrc": "/fixtures/h264ts/index.m3u8",
+   "currentSources": [
+    {
+     "src": "/fixtures/h264ts/index.m3u8",
+     "type": "application/x-mpegURL"
+    }
+   ],
+   "mediaSrcIsBlob": true,
+   "hlsjsHandler": true,
+   "hlsInstances": [
+    {
+     "hasMedia": true,
+     "url": "http://127.0.0.1:8765/fixtures/h264ts/index.m3u8",
+     "levels": 1
+    }
+   ],
+   "loadstartCount": null,
+   "screenshot": "dist36-h264-ts.webp"
+  },
+  {
+   "case": "dist36-h264-fmp4",
+   "src": "/fixtures/h264/index.m3u8",
+   "label": "VIDEO_OK",
+   "maxTime": 6.08,
+   "frames": 150,
+   "videoWidth": 640,
+   "duration": "6.08",
+   "durationIsInfinite": false,
+   "live": {
+    "isLive": false,
+    "atLiveEdge": false
+   },
+   "playerError": null,
+   "modalDisplay": null,
+   "currentSrc": "/fixtures/h264/index.m3u8",
+   "currentSources": [
+    {
+     "src": "/fixtures/h264/index.m3u8",
+     "type": "application/x-mpegURL"
+    }
+   ],
+   "mediaSrcIsBlob": true,
+   "hlsjsHandler": true,
+   "hlsInstances": [
+    {
+     "hasMedia": true,
+     "url": "http://127.0.0.1:8765/fixtures/h264/index.m3u8",
+     "levels": 1
+    }
+   ],
+   "loadstartCount": null,
+   "screenshot": "dist36-h264-fmp4.webp"
+  },
+  {
+   "case": "dist36-vp9-media",
+   "src": "/fixtures/vp9/index.m3u8",
+   "label": "VIDEO_OK",
+   "maxTime": 6.021333,
+   "frames": 150,
+   "videoWidth": 640,
+   "duration": "6.021333",
+   "durationIsInfinite": false,
+   "live": {
+    "isLive": false,
+    "atLiveEdge": false
+   },
+   "playerError": null,
+   "modalDisplay": null,
+   "currentSrc": "/fixtures/vp9/index.m3u8",
+   "currentSources": [
+    {
+     "src": "/fixtures/vp9/index.m3u8",
+     "type": "application/x-mpegURL"
+    }
+   ],
+   "mediaSrcIsBlob": true,
+   "hlsjsHandler": true,
+   "hlsInstances": [
+    {
+     "hasMedia": true,
+     "url": "http://127.0.0.1:8765/fixtures/vp9/index.m3u8",
+     "levels": 1
+    }
+   ],
+   "loadstartCount": null,
+   "screenshot": "dist36-vp9-media.webp"
+  },
+  {
+   "case": "dist36-av1-live-26s",
+   "src": "/fixtures/av1live/live.m3u8",
+   "label": "VIDEO_OK",
+   "maxTime": 25.968764,
+   "frames": 148,
+   "videoWidth": 640,
+   "duration": "Infinity",
+   "durationIsInfinite": true,
+   "live": {
+    "isLive": true,
+    "atLiveEdge": true
+   },
+   "playerError": null,
+   "modalDisplay": null,
+   "currentSrc": "/fixtures/av1live/live.m3u8",
+   "currentSources": [
+    {
+     "src": "/fixtures/av1live/live.m3u8",
+     "type": "application/x-mpegURL"
+    }
+   ],
+   "mediaSrcIsBlob": true,
+   "hlsjsHandler": true,
+   "hlsInstances": [
+    {
+     "hasMedia": true,
+     "url": "http://127.0.0.1:8765/fixtures/av1live/live.m3u8",
+     "levels": 1
+    }
+   ],
+   "loadstartCount": null,
+   "screenshot": "dist36-av1-live-26s.webp"
+  },
+  {
+   "case": "dist-36dd-hevc-visible",
+   "src": "/fixtures/master_hevc_codecs.m3u8",
+   "label": "FAILS_VISIBLE_ERROR",
+   "maxTime": 0,
+   "frames": 0,
+   "videoWidth": 0,
+   "duration": "NaN",
+   "durationIsInfinite": false,
+   "live": {
+    "isLive": false,
+    "atLiveEdge": false
+   },
+   "playerError": {
+    "code": 3,
+    "message": "HLS: manifestIncompatibleCodecsError: one or more CODECS in variant not supported: [\"hvc1.1.6.L63.B0,mp4a.40.2\"]"
+   },
+   "modalDisplay": "block",
+   "currentSrc": "/fixtures/master_hevc_codecs.m3u8",
+   "currentSources": null,
+   "mediaSrcIsBlob": null,
+   "hlsjsHandler": null,
+   "hlsInstances": null,
+   "loadstartCount": 1,
+   "screenshot": "dist-36dd-hevc-visible.webp",
+   "note": "unsupported codec (HEVC) correctly surfaced: player.error code 3 + .vjs-error-display visible, zero frames"
+  }
+ ],
+ "hevcVisibleError": {
+  "result": "PASS - the reapply fix in dist 36dd0038 makes the fatal error visible",
+  "evidence": "dist-36dd-hevc-visible.json",
+  "playerError": {
+   "code": 3,
+   "message": "HLS: manifestIncompatibleCodecsError: one or more CODECS in variant not supported: [\"hvc1.1.6.L63.B0,mp4a.40.2\"]"
+  },
+  "modalDisplay": "block",
+  "hasVjsErrorClass": true,
+  "frames": 0,
+  "videoWidth": 0,
+  "duration": "NaN",
+  "timeline": [
+   {
+    "t": 57,
+    "k": "wrap.err",
+    "err": "TypeError: Cannot read properties of undefined (reading 'prototype')"
+   },
+   {
+    "t": 123,
+    "k": "hls.on.error"
+   },
+   {
+    "t": 131,
+    "k": "player.evt.error",
+    "err": 3,
+    "src": "/fixtures/master_hevc_codecs.m3u8"
+   },
+   {
+    "t": 132,
+    "k": "player.evt.loadstart",
+    "err": null,
+    "src": "/fixtures/master_hevc_codecs.m3u8"
+   },
+   {
+    "t": 133,
+    "k": "player.evt.error",
+    "err": 3,
+    "src": "/fixtures/master_hevc_codecs.m3u8"
+   },
+   {
+    "t": 134,
+    "k": "player.evt.sourceset",
+    "err": 3,
+    "src": "/fixtures/master_hevc_codecs.m3u8"
+   }
+  ],
+  "loadstartCount": 1,
+  "loadstartBoundaryCheck": "only ONE loadstart on the fatal path (t=132ms); no second loadstart observed, so the one-shot reapply listener is not consumed early",
+  "screenshot": "dist-36dd-hevc-visible.webp",
+  "history": {
+   "preFixTechErrorNoop": "hevc-timeline.json",
+   "playerErrorSetThenCleared": "hevc-fixed-clearing-timeline.json",
+   "harnessPatchValidation": "hevc-reapply-patch-visible.json"
+  }
+ },
+ "liveInfinity": {
+  "evidence": "dist36-av1-live-26s.json",
+  "duration": "Infinity",
+  "isLive": true,
+  "atLiveEdge": true,
+  "liveWindow": 32,
+  "trackingThreshold": 20,
+  "frames": 148,
+  "currentSrc": "/fixtures/av1live/live.m3u8",
+  "smallWindowCase": {
+   "evidence": "av1-live-6s.json",
+   "duration": "Infinity",
+   "isLive": false,
+   "why": "liveWindow 6s < trackingThreshold 20s"
+  }
+ },
+ "switchDestroy": {
+  "av1ToH264ThenDispose": {
+   "evidence": "dist-36dd-switch-av1-h264-instrumented.json",
+   "phaseA": {
+    "currentSrc": "/fixtures/av1/index.m3u8",
+    "time": 4.853339,
+    "frames": 126,
+    "width": 640,
+    "error": null,
+    "loadstarts": 1,
+    "instances": [
+     {
+      "url": "http://127.0.0.1:8765/fixtures/av1/index.m3u8",
+      "media": true,
+      "levels": 1
+     }
+    ]
+   },
+   "afterSwitch": {
+    "currentSrc": "/fixtures/h264/index.m3u8",
+    "time": 5.796003,
+    "frames": 147,
+    "width": 640,
+    "error": null,
+    "loadstarts": 2,
+    "techHandler": true,
+    "instances": [
+     {
+      "url": null,
+      "media": false,
+      "levels": 0
+     },
+     {
+      "url": "http://127.0.0.1:8765/fixtures/h264/index.m3u8",
+      "media": true,
+      "levels": 1
+     }
+    ]
+   },
+   "afterDispose": {
+    "disposed": true,
+    "videoEls": 0,
+    "playerEls": 0,
+    "instances": [
+     {
+      "url": null,
+      "media": false
+     },
+     {
+      "url": null,
+      "media": false
+     }
+    ],
+    "loadstarts": 2
+   },
+   "requestCounts": {
+    "A": 5,
+    "B": 10,
+    "C": 10
+   },
+   "newRequestsAfterDispose": 0
+  },
+  "av1ToHevcFatal": {
+   "evidence": "dist-36dd-switch-av1-hevc.json",
+   "phaseA": {
+    "currentSrc": "/fixtures/av1/index.m3u8",
+    "time": 4.864108,
+    "frames": 126
+   },
+   "afterSwitch": {
+    "currentSrc": "/fixtures/master_hevc_codecs.m3u8",
+    "playerError": {
+     "code": 3,
+     "message": "HLS: manifestIncompatibleCodecsError: one or more CODECS in variant not supported: [\"hvc1.1.6.L63.B0,mp4a.40.2\"]"
+    },
+    "modalDisplay": "block",
+    "frames": 0,
+    "loadstarts": 2
+   },
+   "screenshot": "dist-36dd-switch-av1-hevc-second-source.webp"
+  },
+  "conclusion": "switching releases the old hls.js instance (url/media null) and plays the new source; a fatal on the new source is visible (modal block, player.error non-null, loadstart count = 2 total = 1 per source); dispose removes the player element and produces zero further fixture requests in 3.5s"
+ },
+ "untested": [
+  "real hardware HEVC decode (this Chrome: isTypeSupported('hvc1.1.6.L63.B0')=false) - HEVC playback itself unverified",
+  "Safari/iOS native HLS branch",
+  "Chromecast/AirPlay actual casting (currentSources non-blob verified only)",
+  "SPA webpack bundle path (harness loads the UMD dist directly)",
+  "long-running live (multi-minute playlist refresh, discontinuities)"
+ ],
+ "screenshots": [
+  {
+   "file": "av1-live-26s-v2.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "av1-live-26s.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "av1-live-6s.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "av1-live.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "av1-master-codecs.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "av1-master-nocodecs.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "av1-media.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "dist-36dd-hevc-visible.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "dist-36dd-switch-av1-h264-second-source.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "dist-36dd-switch-av1-hevc-second-source.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "dist36-av1-live-26s.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "dist36-av1-master-codecs.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "dist36-av1-master-nocodecs.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "dist36-av1-media.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "dist36-h264-fmp4.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "dist36-h264-ts.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "dist36-vp9-media.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "h264-fmp4.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "h264-ts.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "hevc-fixed-visible-error.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "hevc-master-codecs-instrumented.png",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "hevc-master-codecs-v2.png",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "hevc-master-codecs.png",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "hevc-reapply-after-loadstart.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "hevc-reapply-patch-visible.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "newbuild-av1-live-26s.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "newbuild-av1-master-codecs.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "newbuild-av1-master-nocodecs.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "newbuild-av1-media.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "newbuild-h264-fmp4.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "newbuild-h264-ts.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "newbuild-switch-destroy-after-dispose.png",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "newbuild-switch-destroy-playing-h264.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "newbuild-vp9-media.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "switch-destroy-after-dispose.png",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "switch-destroy-playing-h264.webp",
+   "formatVerifiedByFfprobe": true
+  },
+  {
+   "file": "vp9-media.webp",
+   "formatVerifiedByFfprobe": true
+  }
+ ],
+ "supersededRuns": "all non dist36-* / non dist-36dd-* records belong to earlier adapter builds (pre-fix 0135, player.error-only 11d9d73); kept for the before/after trail"
+}

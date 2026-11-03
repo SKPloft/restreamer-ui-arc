@@ -624,6 +624,35 @@ const validateProfile = (sources, profile, requireVideo = true) => {
 	return complete;
 };
 
+// Codec of an output stream: the codec of the selected source stream for a
+// pass-through, the codec the selected encoder produces otherwise. The source
+// stream codec comes from the probe result, so a pass-through without probe
+// metadata is unresolved (`''`). The ingest HLS variant is derived from the
+// video codec (MPEG-TS cannot be demuxed by browsers for HEVC/AV1/VP9, see
+// `isFmp4OnlyCodec` in restreamer.js), the audio codec gates the AAC-only
+// bitstream filter there.
+const outputCodec = (sources, profile, type) => {
+	const typeProfile = profile[type];
+	const source = sources[typeProfile.source];
+	const stream = source && source.streams[typeProfile.stream];
+
+	if (!stream) {
+		return '';
+	}
+
+	if (typeProfile.encoder.coder === 'copy') {
+		return stream.codec;
+	}
+
+	const coders = type === 'video' ? Coders.Video : Coders.Audio;
+	const encoder = coders.Get(typeProfile.encoder.coder);
+	if (!encoder) {
+		return '';
+	}
+
+	return encoder.codec;
+};
+
 const createInputsOutputs = (sources, profiles, requireVideo = true) => {
 	const source2inputMap = new Map();
 
@@ -721,6 +750,8 @@ const createInputsOutputs = (sources, profiles, requireVideo = true) => {
 		outputs.push({
 			address: '',
 			options: options,
+			videoCodec: outputCodec(sources, profile, 'video'),
+			audioCodec: outputCodec(sources, profile, 'audio'),
 		});
 	}
 
@@ -758,14 +789,7 @@ const createOutputStreams = (sources, profiles, requireVideo = true) => {
 				height: stream.height,
 			});
 
-			if (profile.video.encoder.coder !== 'copy') {
-				const encoder = Coders.Video.Get(profile.video.encoder.coder);
-				if (encoder) {
-					s.codec = encoder.codec;
-				}
-			} else {
-				s.codec = stream.codec;
-			}
+			s.codec = outputCodec(sources, profile, 'video');
 
 			streams.push(s);
 		}
@@ -783,14 +807,7 @@ const createOutputStreams = (sources, profiles, requireVideo = true) => {
 				channels: stream.channels,
 			});
 
-			if (profile.audio.encoder.coder !== 'copy') {
-				const encoder = Coders.Audio.Get(profile.audio.encoder.coder);
-				if (encoder) {
-					s.codec = encoder.codec;
-				}
-			} else {
-				s.codec = stream.codec;
-			}
+			s.codec = outputCodec(sources, profile, 'audio');
 
 			streams.push(s);
 		}

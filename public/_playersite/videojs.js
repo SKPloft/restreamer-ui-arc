@@ -19,6 +19,13 @@ if (chromecast) {
 	};
 }
 
+// Play HLS with hls.js instead of the bundled VHS; browsers with native HLS
+// (Safari/iOS) keep their own stack. Same handler as the SPA and the channel
+// player page.
+if (window.Hls && window.RestreamerHls) {
+	window.RestreamerHls.createHlsSourceHandler(videojs, window.Hls);
+}
+
 var player = videojs('player', config);
 
 player.ready(function () {

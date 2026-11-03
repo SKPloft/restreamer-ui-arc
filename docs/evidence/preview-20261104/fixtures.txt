@@ -1,0 +1,179 @@
+# Synthetic fixtures used by the preview matrix
+#
+# Generated with ffmpeg (lavfi testsrc2 640x360@25 + sine 48k, 6 s, 2 s segments, VOD):
+#
+#   g() { d=$1; vc=$2; shift 2; mkdir -p $d; ( cd $d && ffmpeg -y -v error \
+#     -f lavfi -i testsrc2=size=640x360:rate=25 -f lavfi -i sine=frequency=440:sample_rate=48000 -t 6 \
+#     -c:v $vc "$@" -g 25 -c:a aac -b:a 96k -f hls -hls_time 2 -hls_playlist_type vod \
+#     -hls_segment_type fmp4 index.m3u8 ); }
+#   t() { ... same with -hls_segment_type left at the default (MPEG-TS) ... }
+#
+#   g h264  libx264 -profile:v main -pix_fmt yuv420p -b:v 700k
+#   g av1   libsvtav1 -preset 12 -crf 40 -pix_fmt yuv420p
+#   g hevc  libx265 -tag:v hvc1 -pix_fmt yuv420p -crf 32 -preset ultrafast
+#   g vp9   libvpx-vp9 -b:v 500k -deadline realtime -cpu-used 8 -pix_fmt yuv420p
+#   t h264ts libx264 -profile:v main -pix_fmt yuv420p -b:v 700k
+#   t av1ts  libsvtav1 -preset 12 -crf 40 -pix_fmt yuv420p
+#
+# The master playlists are hand-written wrappers around those variants; they are the
+# only difference between the "-master-codecs" and "-master-nocodecs" matrix rows.
+
+== master_av1_codecs.m3u8
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-STREAM-INF:BANDWIDTH=900000,AVERAGE-BANDWIDTH=800000,RESOLUTION=640x360,CODECS="av01.0.08M.08,mp4a.40.2"
+av1/index.m3u8
+
+== master_av1_nocodecs.m3u8
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-STREAM-INF:BANDWIDTH=900000,AVERAGE-BANDWIDTH=800000,RESOLUTION=640x360
+av1/index.m3u8
+
+== master_h264_codecs.m3u8
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-STREAM-INF:BANDWIDTH=900000,AVERAGE-BANDWIDTH=800000,RESOLUTION=640x360,CODECS="avc1.4d401e,mp4a.40.2"
+h264/index.m3u8
+
+== master_h264_nocodecs.m3u8
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-STREAM-INF:BANDWIDTH=900000,AVERAGE-BANDWIDTH=800000,RESOLUTION=640x360
+h264/index.m3u8
+
+== master_hevc_codecs.m3u8
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-STREAM-INF:BANDWIDTH=900000,RESOLUTION=640x360,CODECS="hvc1.1.6.L63.B0,mp4a.40.2"
+hevc/index.m3u8
+
+== master_vp9_codecs.m3u8
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-STREAM-INF:BANDWIDTH=900000,RESOLUTION=640x360,CODECS="vp09.00.10.08,mp4a.40.2"
+vp9/index.m3u8
+
+== av1/index.m3u8
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-TARGETDURATION:2
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-MAP:URI="init.mp4"
+#EXTINF:2.000000,
+index0.m4s
+#EXTINF:2.000000,
+index1.m4s
+#EXTINF:2.000000,
+index2.m4s
+#EXT-X-ENDLIST
+
+   4b457c1508bfaa9f       226  av1/index.m3u8
+   80b64f931c6bbd07    171524  av1/index0.m4s
+   1af610710cccbdb7    179458  av1/index1.m4s
+   a5f9a2467c51bc9b    186232  av1/index2.m4s
+   7ff9523a536e354b      1326  av1/init.mp4
+   198d3db254c3853e       186  av1/live.m3u8
+
+== av1ts/index.m3u8
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:2
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXTINF:2.000000,
+index0.ts
+#EXTINF:2.000000,
+index1.ts
+#EXTINF:2.000000,
+index2.ts
+#EXT-X-ENDLIST
+
+   5bde29723fa5cc3e       197  av1ts/index.m3u8
+   ea25440e4bdcd8ff    184052  av1ts/index0.ts
+   02ebfdf2fa0bc313    191948  av1ts/index1.ts
+   4e56cc5812740c8d    198528  av1ts/index2.ts
+
+== h264/index.m3u8
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-TARGETDURATION:2
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-MAP:URI="init.mp4"
+#EXTINF:2.000000,
+index0.m4s
+#EXTINF:2.000000,
+index1.m4s
+#EXTINF:2.000000,
+index2.m4s
+#EXT-X-ENDLIST
+
+   4b457c1508bfaa9f       226  h264/index.m3u8
+   95a5cd148d0b0ae9    193892  h264/index0.m4s
+   d82f41a9a5b6c3fc    217970  h264/index1.m4s
+   ad685e9805bdeb3b    187471  h264/index2.m4s
+   6ab77be4ce3f3019      1366  h264/init.mp4
+
+== h264ts/index.m3u8
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-TARGETDURATION:2
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXTINF:2.000000,
+index0.ts
+#EXTINF:2.000000,
+index1.ts
+#EXTINF:2.000000,
+index2.ts
+#EXT-X-ENDLIST
+
+   5bde29723fa5cc3e       197  h264ts/index.m3u8
+   4ab9b6caef79142e    205108  h264ts/index0.ts
+   04dee3d17d25eedb    230112  h264ts/index1.ts
+   e0c0bd2761d26638    198528  h264ts/index2.ts
+
+== hevc/index.m3u8
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-TARGETDURATION:2
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-MAP:URI="init.mp4"
+#EXTINF:2.000000,
+index0.m4s
+#EXTINF:2.000000,
+index1.m4s
+#EXTINF:2.000000,
+index2.m4s
+#EXT-X-ENDLIST
+
+   4b457c1508bfaa9f       226  hevc/index.m3u8
+   0859d0fe14d637bf     84496  hevc/index0.m4s
+   3917228c399fa772     95873  hevc/index1.m4s
+   a4cf0d468e62c5ba    102007  hevc/index2.m4s
+   fdbcf97268e4cb7b      3754  hevc/init.mp4
+
+== vp9/index.m3u8
+#EXTM3U
+#EXT-X-VERSION:7
+#EXT-X-TARGETDURATION:2
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-MAP:URI="init.mp4"
+#EXTINF:2.000000,
+index0.m4s
+#EXTINF:2.000000,
+index1.m4s
+#EXTINF:2.000000,
+index2.m4s
+#EXT-X-ENDLIST
+
+   4b457c1508bfaa9f       226  vp9/index.m3u8
+   185cf06883351086    160027  vp9/index0.m4s
+   cfeeef68bd01acce    187351  vp9/index1.m4s
+   83cb80b77270e8b0    171894  vp9/index2.m4s
+   b201badcdc19c7c8      1337  vp9/init.mp4
+

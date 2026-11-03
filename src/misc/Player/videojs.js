@@ -3,11 +3,19 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 
 import videojs from 'video.js';
+import Hls from 'hls.js';
 import 'videojs-overlay';
 import 'video.js/dist/video-js.min.css';
 import './video-js-skin-internal.min.css';
 import './video-js-skin-public.min.css';
 import 'videojs-overlay/dist/videojs-overlay.css';
+import restreamerHls from './hlsSourceHandler';
+
+// HLS is played with hls.js instead of the bundled VHS, which rejects
+// playlists it cannot map (AV1 in fMP4, playlists without CODECS) even when
+// the browser can decode them. Browsers with native HLS keep their own stack.
+// The public player page loads the very same handler.
+restreamerHls.createHlsSourceHandler(videojs, Hls);
 
 export default function VideoJS(props) {
 	const videoRef = React.useRef(null);

@@ -82,10 +82,6 @@ msgstr "添加新频道"
 msgid "Add Publication"
 msgstr "添加串流输出"
 
-#: src/misc/modals/Hint.js:158
-#~ msgid "Add Stream"
-#~ msgstr ""
-
 #: src/views/Publication/Add.js:366
 msgid "Add: {0}"
 msgstr "添加：{0}"
@@ -282,10 +278,6 @@ msgstr "自动清理所有媒体数据"
 #: src/views/Publication/Player.js:524
 msgid "Autoplay"
 msgstr "自动播放"
-
-#: src/misc/coders/CodecNotice.js:28
-#~ msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
-#~ msgstr "AV1 会输出为 fMP4 HLS。RTMP 发布不支持，Safari 无法播放；Intel QSV 编码需关闭 B 帧。"
 
 #: src/misc/coders/CodecNotice.js:31
 msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
@@ -538,7 +530,7 @@ msgid "Connected since <0/>"
 msgstr "连接建立于"
 
 #: src/misc/ActionButton.js:12
-#: src/views/Main/index.js:351
+#: src/views/Main/index.js:341
 #: src/views/Publication/Process.js:40
 msgid "Connecting ..."
 msgstr "连接中 ..."
@@ -565,7 +557,7 @@ msgstr "常数量化器模式（-1 至 255）。"
 msgid "Content"
 msgstr "内容"
 
-#: src/views/Main/index.js:441
+#: src/views/Main/index.js:401
 msgid "Content URL"
 msgstr "内容 URL"
 
@@ -999,7 +991,7 @@ msgstr "错误"
 msgid "Error while copying data to clipboard"
 msgstr "复制到剪贴板时出现错误"
 
-#: src/views/Main/index.js:370
+#: src/views/Main/index.js:360
 #: src/views/Publication/Process.js:64
 msgid "Error: {0}"
 msgstr "错误：{0}"
@@ -1049,7 +1041,7 @@ msgstr "创建发布站点文件失败。"
 msgid "Failed to probe the source. Please check the <0>probe details</0>."
 msgstr "探测媒体信息头失败。请检查 <0>媒体头详情</0>。"
 
-#: src/utils/restreamer.js:451
+#: src/utils/restreamer.js:457
 msgid "Failed to refresh token: {0}"
 msgstr "刷新 token 失败：{0}"
 
@@ -1245,14 +1237,10 @@ msgid "Height"
 msgstr "高度"
 
 #: src/misc/coders/CodecNotice.js:23
-#~ msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
-#~ msgstr "HEVC 会输出为 fMP4 HLS。RTMP 发布不支持，浏览器播放支持有限。"
-
-#: src/misc/coders/CodecNotice.js:23
 msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and browser playback is limited."
 msgstr "HEVC 会输出为 fMP4 HLS。RTMP 发布不支持，内置播放器无法预览，浏览器播放支持有限。"
 
-#: src/views/Main/index.js:450
+#: src/views/Main/index.js:410
 msgid "HLS"
 msgstr "HLS"
 
@@ -1380,10 +1368,6 @@ msgstr "注入 4"
 msgid "Input stream"
 msgstr "输入流"
 
-#: src/views/Publication/Services/Instagram.js:121
-#~ msgid "Instafeed.me"
-#~ msgstr "instafeed.me"
-
 #: src/views/Publication/Services/PeerTube.js:85
 msgid "Instance domain"
 msgstr "实例域名"
@@ -1489,10 +1473,6 @@ msgstr "直播串流到 Facebook Live RTMP 服务"
 msgid "Live-Streaming to Instagram Live RTMP Service."
 msgstr ""
 
-#: src/views/Publication/Services/Instagram.js:19
-#~ msgid "Live-Streaming to Instagram Live RTMP Service. The stream key requires a service such as <0>Instafeed.me</0> or <1>Yellow Duck</1>."
-#~ msgstr "串流到 Instagram 直播 RTMP 服务。流密钥需要诸如 <0>Instafeed.me</0> 或 <1>Yellow Duck</1> 之类的服务。"
-
 #: src/views/Publication/Services/MediaNetwork.js:15
 msgid "Live-Streaming to Media Network RTMP Service."
 msgstr "将直播流传输到 Media Network RTMP 服务。"
@@ -1534,15 +1514,15 @@ msgstr "日志"
 msgid "Login"
 msgstr "登录"
 
-#: src/utils/restreamer.js:264
-#: src/utils/restreamer.js:298
+#: src/utils/restreamer.js:270
+#: src/utils/restreamer.js:304
 msgid "Login failed: {0}"
 msgstr "登录失败：{0}"
 
-#: src/utils/restreamer.js:273
-#: src/utils/restreamer.js:278
-#: src/utils/restreamer.js:307
-#: src/utils/restreamer.js:312
+#: src/utils/restreamer.js:279
+#: src/utils/restreamer.js:284
+#: src/utils/restreamer.js:313
+#: src/utils/restreamer.js:318
 msgid "Login failed: Couldn't load API details"
 msgstr "登录失败：无法加载 API 详情"
 
@@ -1571,7 +1551,7 @@ msgstr "响度归一化"
 msgid "Low latency (Buffer)"
 msgstr "低延迟（缓冲）"
 
-#: src/views/Main/index.js:306
+#: src/views/Main/index.js:296
 #: src/views/Playersite.js:367
 msgid "Main channel"
 msgstr "主频道"
@@ -1818,7 +1798,7 @@ msgstr "未找到合适的编码器。"
 msgid "No suitable filter found."
 msgstr "没有合适的过滤器。"
 
-#: src/views/Main/index.js:332
+#: src/views/Main/index.js:322
 #: src/views/Publication/Player.js:356
 msgid "No video"
 msgstr "没有视频"
@@ -1887,10 +1867,6 @@ msgstr "每行一个来源，例如 http://www.example.com"
 #: src/views/Playersite.js:839
 msgid "Open"
 msgstr "打开"
-
-#: src/views/Main/index.js:420
-msgid "Open the content URL with an external player, or choose H.264 for the video profile if the preview is required."
-msgstr "请用外部播放器打开内容 URL；若需要内置预览，请为视频配置选择 H.264。"
 
 #: src/misc/IngestAddressFields.js:54
 msgid "Or fill these fields instead of the full URL (e.g. for OBS):"
@@ -2003,7 +1979,7 @@ msgstr "播放列表"
 msgid "Playlist version (M3U8). Version 3 has the best browser/client compatibility."
 msgstr "Playlist 版本（M3U8）。版本 3 有最好的浏览器/客户端兼容性。"
 
-#: src/views/Main/index.js:375
+#: src/views/Main/index.js:365
 msgid "Please check the <0>process log</0>"
 msgstr "请检查 <0>进程日志</0>"
 
@@ -2123,15 +2099,15 @@ msgstr "串流进程"
 msgid "Process control"
 msgstr "进程控制"
 
-#: src/views/Main/index.js:497
-#: src/views/Main/index.js:513
+#: src/views/Main/index.js:457
+#: src/views/Main/index.js:473
 #: src/views/Publication/Edit.js:494
 #: src/views/Publication/Edit.js:613
 msgid "Process details"
 msgstr "进程详情"
 
-#: src/views/Main/index.js:500
-#: src/views/Main/index.js:521
+#: src/views/Main/index.js:460
+#: src/views/Main/index.js:481
 #: src/views/Publication/Edit.js:497
 #: src/views/Publication/Edit.js:621
 msgid "Process report"
@@ -2265,7 +2241,7 @@ msgstr "重连"
 msgid "Reconnect delay (seconds)"
 msgstr "重连延时（秒）"
 
-#: src/views/Main/index.js:386
+#: src/views/Main/index.js:376
 #: src/views/Publication/Process.js:68
 #: src/views/Publication/Process.js:81
 msgid "Reconnecting in {0}s"
@@ -2313,10 +2289,6 @@ msgstr "重新加载"
 #: src/misc/modals/Hint.js:159
 msgid "Remove Audio"
 msgstr ""
-
-#: src/misc/modals/Hint.js:150
-#~ msgid "Remove Stream"
-#~ msgstr ""
 
 #: src/views/Settings.js:1754
 msgid "Remove the oldest entries if the /memfs is full"
@@ -2367,7 +2339,7 @@ msgstr "Restreamer 指南"
 msgid "Restreamer Service"
 msgstr "Restreamer 服务"
 
-#: src/views/Main/index.js:279
+#: src/views/Main/index.js:278
 msgid "Retrieving stream data ..."
 msgstr "正在获取媒体流数据 ..."
 
@@ -2385,7 +2357,7 @@ msgstr "RGB 测试模式"
 msgid "Rotate"
 msgstr "旋转"
 
-#: src/views/Main/index.js:459
+#: src/views/Main/index.js:419
 #: src/views/Settings.js:1239
 #: src/views/Settings.js:1920
 msgid "RTMP"
@@ -2684,7 +2656,7 @@ msgid "Size"
 msgstr "大小"
 
 #: src/views/Edit/index.js:543
-#: src/views/Main/index.js:478
+#: src/views/Main/index.js:438
 msgid "Snapshot"
 msgstr "截图"
 
@@ -2723,7 +2695,7 @@ msgstr "速度"
 msgid "Speed Preset"
 msgstr "速度预设"
 
-#: src/views/Main/index.js:469
+#: src/views/Main/index.js:429
 #: src/views/Settings.js:1240
 #: src/views/Settings.js:2019
 msgid "SRT"
@@ -2902,10 +2874,6 @@ msgstr "可用的 FFmpeg 不支持任何一种要求的协议。"
 #: src/misc/coders/settings/Audio.js:40
 msgid "The bitrate of the audio stream."
 msgstr "音频流的比特率。"
-
-#: src/views/Main/index.js:415
-msgid "The built-in player cannot decode this channel's video codec."
-msgstr "内置播放器无法解码该频道的视频编码。"
 
 #: src/views/Edit/Sources/VirtualAudio.js:151
 msgid "The carrier frequency"
@@ -3285,10 +3253,6 @@ msgstr "将媒体流与在 Twitter Producer 中生成的秘钥传输。有关在
 msgid "Tune"
 msgstr "Tune"
 
-#: src/misc/modals/Hint.js:60
-#~ msgid "Type"
-#~ msgstr ""
-
 #: src/views/Edit/Sources/Network.js:534
 #: src/views/Edit/Wizard/Sources/Network.js:77
 msgid "UDP transport"
@@ -3473,10 +3437,6 @@ msgstr "虚拟源"
 msgid "Volume"
 msgstr "音量"
 
-#: src/misc/coders/CodecNotice.js:36
-#~ msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
-#~ msgstr "VP9 会输出为 fMP4 HLS。RTMP 发布不支持，Safari 无法播放。"
-
 #: src/misc/coders/CodecNotice.js:39
 msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and Safari cannot play it."
 msgstr "VP9 会输出为 fMP4 HLS。RTMP 发布不支持，内置播放器无法预览，Safari 无法播放。"
@@ -3513,10 +3473,6 @@ msgstr "宽度"
 msgid "Write protection"
 msgstr "写保护"
 
-#: src/views/Publication/Services/Instagram.js:127
-#~ msgid "Yellow Duck"
-#~ msgstr "Yellow Duck"
-
 #: src/views/Edit/Wizard/Abort.js:38
 msgid "Yes"
 msgstr "是"
@@ -3529,7 +3485,7 @@ msgstr "现在不能中止向导，因为至少必须定义一个输入。"
 msgid "You have changed the configuration. In order for the changes to take effect, you have to restart the application. Do you want to restart now?"
 msgstr "配置已更改。请重启应用以使更改生效。要立刻重启吗？"
 
-#: src/views/Main/index.js:393
+#: src/views/Main/index.js:383
 #: src/views/Publication/Process.js:73
 msgid "You have to reconnect manually"
 msgstr "需要手动重连"

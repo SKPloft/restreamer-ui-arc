@@ -11,11 +11,17 @@ import SemverMinor from 'semver/functions/minor';
 
 import * as M from './metadata';
 import { BuildIngestFields } from './ingest';
-import { isFmp4OnlyCoder } from '../misc/coders/targets';
+import { isFmp4OnlyCodec } from '../misc/coders/targets';
 import * as Storage from './storage';
 import * as Version from '../version';
 import API from './api';
 import { anonymize } from './anonymizer';
+
+// File extension of the HLS media segments. Only the non-low-latency version 7
+// muxes fMP4 segments; the low latency variant uses the DASH `media_seg_name`
+// template instead. Segment and cleanup filenames share this so they cannot
+// drift apart.
+const hlsSegmentExtension = (lhls, version) => (!lhls && version === 7 ? 'mp4' : 'ts');
 
 class Restreamer {
 	constructor(address) {
@@ -1698,18 +1704,18 @@ class Restreamer {
 			tee_muxer = true;
 		}
 
-		// HEVC/AV1/VP9 cannot be muxed into MPEG-TS, so those outputs must use
-		// the fMP4 HLS variant. Derive the effective version from the coder.
-		const outputVideoCoder = (() => {
-			const options = (outputs[0] && outputs[0].options) || [];
-			for (let i = 0; i < options.length - 1; i++) {
-				if (options[i] === '-c:v' || options[i] === '-codec:v') {
-					return `${options[i + 1]}`;
-				}
-			}
-			return '';
-		})();
-		const hls_version = isFmp4OnlyCoder(outputVideoCoder) ? 7 : control.hls.version;
+		// Effective output codecs, attached by `createInputsOutputs`: the selected
+		// source stream codec for a pass-through (`copy`), the encoder codec
+		// otherwise. A pass-through needs the probe result of that source stream;
+		// without it the codec stays unknown and the configured version is kept.
+		const outputVideoCodec = `${(outputs[0] && outputs[0].videoCodec) || ''}`.toLowerCase();
+		const outputAudioCodec = `${(outputs[0] && outputs[0].audioCodec) || ''}`.toLowerCase();
+
+		// HEVC/AV1/VP9 HLS cannot be demuxed from MPEG-TS by browsers (AV1 has
+		// no MPEG-TS mapping at all), so those outputs are forced to the fMP4
+		// variant. H.264 keeps the configured version. Low latency HLS is
+		// DASH/CMAF based and always fragmented MP4, so it is not affected.
+		const hls_version = !control.hls.lhls && isFmp4OnlyCodec(outputVideoCodec) ? 7 : control.hls.version;
 
 		// 1.5 Set hls filename vars
 		const hlsStorage = control.hls.storage;
@@ -1724,8 +1730,7 @@ class Restreamer {
 		const hls_master_playlist = `${channel.channelid}.m3u8`;
 		const hls_fmp4_init_filename = `${channel.channelid}.mp4`;
 		const hls_segment_playlist = `{${hlsStorage}}/${segmentPlaylistPath}.m3u8`;
-		const hls_segment_filename =
-			`{${hlsStorage}` + (tee_muxer ? '^:' : '') + `}/${segmentFilePath}.` + (!control.hls.lhls && hls_version === 7 ? 'mp4' : 'ts');
+		const hls_segment_filename = `{${hlsStorage}` + (tee_muxer ? '^:' : '') + `}/${segmentFilePath}.` + hlsSegmentExtension(control.hls.lhls, hls_version);
 
 		// 2. Add output address
 
@@ -1751,6 +1756,11 @@ class Restreamer {
 
 		// fix Malformed AAC bitstream detected for hls version 7
 		let hls_aac_adtstoasc = false;
+
+		// A copied AAC stream only. The filter is AAC specific, so it must not be
+		// applied to a copied/encoded MP3 or Opus stream, nor because the video is
+		// copied (`-codec:v copy` is not an audio copy).
+		const audio_copy = output.options.includes('-codec:a') && output.options[output.options.indexOf('-codec:a') + 1] === 'copy';
 
 		const getHLSParams = (lhls, version) => {
 			if (lhls) {
@@ -1787,7 +1797,7 @@ class Restreamer {
 						];
 					case 7:
 						// fix Malformed AAC bitstream detected for hls version 7
-						if (output.options.includes('-codec:a') && output.options.includes('copy')) {
+						if (outputAudioCodec === 'aac' && audio_copy) {
 							if (!tee_muxer) {
 								output.options.push('-bsf:a', 'aac_adtstoasc');
 							}
@@ -1891,7 +1901,7 @@ class Restreamer {
 		const cleanup_hls_master_playlist = `${hlsStorage}:/${channel.channelid}.m3u8`;
 		const cleanup_hls_fmp4_init_filename = `${hlsStorage}:/${channel.channelid}.mp4`;
 		const cleanup_hls_segment_playlist = `${hlsStorage}:/${segmentPlaylistPath}.m3u8`;
-		const cleanup_hls_segment_filename = `${hlsStorage}:/${cleanupSegmentFilePath}.` + (!control.hls.lhls && hls_version === 7 ? 'mp4' : 'ts');
+		const cleanup_hls_segment_filename = `${hlsStorage}:/${cleanupSegmentFilePath}.` + hlsSegmentExtension(control.hls.lhls, hls_version);
 
 		// 4.3 Cleanup id* (process is deleted) + continuously hls_segment_playlist and hls_segment_filename
 		output.cleanup.push(
@@ -1922,7 +1932,7 @@ class Restreamer {
 		}
 
 		// 4.5 Cleanup hls_fmp4_init_filename
-		if (!control.hls.lhls && hls_version === 7) {
+		if (hlsSegmentExtension(control.hls.lhls, hls_version) === 'mp4') {
 			output.cleanup.push({
 				pattern: cleanup_hls_fmp4_init_filename,
 				max_file_age_seconds: control.hls.cleanup ? parseInt(control.hls.segmentDuration) * (parseInt(control.hls.listSize) + 6) : 0,

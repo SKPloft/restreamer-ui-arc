@@ -1,0 +1,15 @@
+{
+  "url": "http://127.0.0.1:18080/ui/?verify=after#/78d35f6a-d149-4f5e-86bd-bf27b83ea239",
+  "codecGate": false,
+  "videoCount": 1,
+  "time": 21.704403,
+  "frames": 393,
+  "dropped": 0,
+  "width": 640,
+  "height": 360,
+  "mediaError": null,
+  "errorVisible": false,
+  "scripts": [
+    "http://127.0.0.1:18080/ui/static/js/main.e4385d7e.js"
+  ]
+}

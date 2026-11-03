@@ -1,0 +1,13 @@
+{
+  "url": "http://127.0.0.1:18080/78d35f6a-d149-4f5e-86bd-bf27b83ea239.html?autoplay=true&mute=true",
+  "time": 6.042656000000001,
+  "frames": 0,
+  "width": 0,
+  "height": 0,
+  "error": {
+    "code": 3,
+    "message": "Playback cannot continue. No available working or supported playlists."
+  },
+  "visibleError": "This is a modal window.\n\nPlayback cannot continue. No available working or supported playlists.",
+  "hasHls": false
+}

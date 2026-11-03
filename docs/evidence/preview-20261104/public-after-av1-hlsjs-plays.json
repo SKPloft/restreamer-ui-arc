@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:18080/78d35f6a-d149-4f5e-86bd-bf27b83ea239.html?autoplay=true&mute=true&verify=after2",
+  "time": 14.668227,
+  "frames": 220,
+  "dropped": 0,
+  "width": 640,
+  "height": 360,
+  "error": null,
+  "hasHls": true,
+  "hlsVersion": "1.7.4",
+  "currentSourceIsBlob": false,
+  "currentSourcePath": "/memfs/78d35f6a-d149-4f5e-86bd-bf27b83ea239.m3u8",
+  "visibleError": false
+}

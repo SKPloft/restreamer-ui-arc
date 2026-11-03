@@ -82,10 +82,6 @@ msgstr "Προσθήκη νέου καναλιού"
 msgid "Add Publication"
 msgstr "Προσθήκη δημοσίευσης"
 
-#: src/misc/modals/Hint.js:158
-#~ msgid "Add Stream"
-#~ msgstr ""
-
 #: src/views/Publication/Add.js:366
 msgid "Add: {0}"
 msgstr "Προσθήκη: {0}"
@@ -282,10 +278,6 @@ msgstr "Αυτόματος καθαρισμός όλων των δεδομένω
 #: src/views/Publication/Player.js:524
 msgid "Autoplay"
 msgstr "Αυτόματο παιχνίδι"
-
-#: src/misc/coders/CodecNotice.js:28
-#~ msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
-#~ msgstr ""
 
 #: src/misc/coders/CodecNotice.js:31
 msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
@@ -538,7 +530,7 @@ msgid "Connected since <0/>"
 msgstr "Συνδεδεμένος από <0/>"
 
 #: src/misc/ActionButton.js:12
-#: src/views/Main/index.js:351
+#: src/views/Main/index.js:341
 #: src/views/Publication/Process.js:40
 msgid "Connecting ..."
 msgstr "Σύνδεση ..."
@@ -565,7 +557,7 @@ msgstr "Λειτουργία σταθερού κβαντιστή (-1 έως 255)
 msgid "Content"
 msgstr "Περιεχόμενο"
 
-#: src/views/Main/index.js:441
+#: src/views/Main/index.js:401
 msgid "Content URL"
 msgstr "URL περιεχομένου"
 
@@ -999,7 +991,7 @@ msgstr "Σφάλμα"
 msgid "Error while copying data to clipboard"
 msgstr "Σφάλμα κατά την αντιγραφή δεδομένων στο πρόχειρο"
 
-#: src/views/Main/index.js:370
+#: src/views/Main/index.js:360
 #: src/views/Publication/Process.js:64
 msgid "Error: {0}"
 msgstr "Σφάλμα: {0}"
@@ -1049,7 +1041,7 @@ msgstr "Απέτυχε η δημιουργία αρχείων ιστότοπου
 msgid "Failed to probe the source. Please check the <0>probe details</0>."
 msgstr "Απέτυχε η διερεύνηση της πηγής. Ελέγξτε τις λεπτομέρειες του <0>ανιχνευτή</0>."
 
-#: src/utils/restreamer.js:451
+#: src/utils/restreamer.js:457
 msgid "Failed to refresh token: {0}"
 msgstr "Απέτυχε η ανανέωση του κουπονιού: {0}"
 
@@ -1245,14 +1237,10 @@ msgid "Height"
 msgstr "Ύψος"
 
 #: src/misc/coders/CodecNotice.js:23
-#~ msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
-#~ msgstr ""
-
-#: src/misc/coders/CodecNotice.js:23
 msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and browser playback is limited."
 msgstr ""
 
-#: src/views/Main/index.js:450
+#: src/views/Main/index.js:410
 msgid "HLS"
 msgstr "HLS"
 
@@ -1380,10 +1368,6 @@ msgstr "Ένεση 4"
 msgid "Input stream"
 msgstr "Ροή εισόδου"
 
-#: src/views/Publication/Services/Instagram.js:121
-#~ msgid "Instafeed.me"
-#~ msgstr "Instafeed.me"
-
 #: src/views/Publication/Services/PeerTube.js:85
 msgid "Instance domain"
 msgstr "Πεδίο αναφοράς"
@@ -1489,10 +1473,6 @@ msgstr "Live-Streaming στην υπηρεσία Facebook Live RTMP"
 msgid "Live-Streaming to Instagram Live RTMP Service."
 msgstr ""
 
-#: src/views/Publication/Services/Instagram.js:19
-#~ msgid "Live-Streaming to Instagram Live RTMP Service. The stream key requires a service such as <0>Instafeed.me</0> or <1>Yellow Duck</1>."
-#~ msgstr "Live-Streaming στην υπηρεσία Instagram Live RTMP. Το κλειδί ροής απαιτεί μια υπηρεσία όπως <0>Instafeed.me</0> ή <1>Yellow Duck</1>."
-
 #: src/views/Publication/Services/MediaNetwork.js:15
 msgid "Live-Streaming to Media Network RTMP Service."
 msgstr "Live-Streaming στην υπηρεσία RTMP του δικτύου μέσων ενημέρωσης."
@@ -1534,15 +1514,15 @@ msgstr "Καταγραφή"
 msgid "Login"
 msgstr "Σύνδεση"
 
-#: src/utils/restreamer.js:264
-#: src/utils/restreamer.js:298
+#: src/utils/restreamer.js:270
+#: src/utils/restreamer.js:304
 msgid "Login failed: {0}"
 msgstr "Η σύνδεση απέτυχε: {0}"
 
-#: src/utils/restreamer.js:273
-#: src/utils/restreamer.js:278
-#: src/utils/restreamer.js:307
-#: src/utils/restreamer.js:312
+#: src/utils/restreamer.js:279
+#: src/utils/restreamer.js:284
+#: src/utils/restreamer.js:313
+#: src/utils/restreamer.js:318
 msgid "Login failed: Couldn't load API details"
 msgstr "Η σύνδεση απέτυχε: API: Δεν μπόρεσε να φορτώσει λεπτομέρειες API"
 
@@ -1571,7 +1551,7 @@ msgstr "Κανονικοποίηση ηχηρότητας"
 msgid "Low latency (Buffer)"
 msgstr "Χαμηλή καθυστέρηση (Buffer)"
 
-#: src/views/Main/index.js:306
+#: src/views/Main/index.js:296
 #: src/views/Playersite.js:367
 msgid "Main channel"
 msgstr "Κύριο κανάλι"
@@ -1818,7 +1798,7 @@ msgstr "Δεν βρέθηκε κατάλληλος κωδικοποιητής."
 msgid "No suitable filter found."
 msgstr "Δεν βρέθηκε κατάλληλο φίλτρο."
 
-#: src/views/Main/index.js:332
+#: src/views/Main/index.js:322
 #: src/views/Publication/Player.js:356
 msgid "No video"
 msgstr "Δεν υπάρχει βίντεο"
@@ -1887,10 +1867,6 @@ msgstr "Ένας παραπομπός ανά γραμμή, π.χ. http://www.exa
 #: src/views/Playersite.js:839
 msgid "Open"
 msgstr "Ανοίξτε το"
-
-#: src/views/Main/index.js:420
-msgid "Open the content URL with an external player, or choose H.264 for the video profile if the preview is required."
-msgstr ""
 
 #: src/misc/IngestAddressFields.js:54
 msgid "Or fill these fields instead of the full URL (e.g. for OBS):"
@@ -2003,7 +1979,7 @@ msgstr "Λίστα αναπαραγωγής"
 msgid "Playlist version (M3U8). Version 3 has the best browser/client compatibility."
 msgstr "Έκδοση λίστας αναπαραγωγής (M3U8). Η έκδοση 3 έχει την καλύτερη συμβατότητα προγράμματος περιήγησης/πελάτη."
 
-#: src/views/Main/index.js:375
+#: src/views/Main/index.js:365
 msgid "Please check the <0>process log</0>"
 msgstr "Ελέγξτε το αρχείο καταγραφής <0>διεργασίας</0>"
 
@@ -2123,15 +2099,15 @@ msgstr "Διαδικασία"
 msgid "Process control"
 msgstr "Έλεγχος διεργασιών"
 
-#: src/views/Main/index.js:497
-#: src/views/Main/index.js:513
+#: src/views/Main/index.js:457
+#: src/views/Main/index.js:473
 #: src/views/Publication/Edit.js:494
 #: src/views/Publication/Edit.js:613
 msgid "Process details"
 msgstr "Λεπτομέρειες διαδικασίας"
 
-#: src/views/Main/index.js:500
-#: src/views/Main/index.js:521
+#: src/views/Main/index.js:460
+#: src/views/Main/index.js:481
 #: src/views/Publication/Edit.js:497
 #: src/views/Publication/Edit.js:621
 msgid "Process report"
@@ -2265,7 +2241,7 @@ msgstr "Επανασύνδεση"
 msgid "Reconnect delay (seconds)"
 msgstr "Καθυστέρηση επανασύνδεσης (δευτερόλεπτα)"
 
-#: src/views/Main/index.js:386
+#: src/views/Main/index.js:376
 #: src/views/Publication/Process.js:68
 #: src/views/Publication/Process.js:81
 msgid "Reconnecting in {0}s"
@@ -2313,10 +2289,6 @@ msgstr "Επαναφόρτωση"
 #: src/misc/modals/Hint.js:159
 msgid "Remove Audio"
 msgstr ""
-
-#: src/misc/modals/Hint.js:150
-#~ msgid "Remove Stream"
-#~ msgstr ""
 
 #: src/views/Settings.js:1754
 msgid "Remove the oldest entries if the /memfs is full"
@@ -2367,7 +2339,7 @@ msgstr "Οδηγίες Restreamer"
 msgid "Restreamer Service"
 msgstr "Υπηρεσία Restreamer"
 
-#: src/views/Main/index.js:279
+#: src/views/Main/index.js:278
 msgid "Retrieving stream data ..."
 msgstr "Ανάκτηση δεδομένων ροής ..."
 
@@ -2385,7 +2357,7 @@ msgstr "Μοτίβο δοκιμής RGB"
 msgid "Rotate"
 msgstr "Περιστροφή"
 
-#: src/views/Main/index.js:459
+#: src/views/Main/index.js:419
 #: src/views/Settings.js:1239
 #: src/views/Settings.js:1920
 msgid "RTMP"
@@ -2684,7 +2656,7 @@ msgid "Size"
 msgstr "Μέγεθος"
 
 #: src/views/Edit/index.js:543
-#: src/views/Main/index.js:478
+#: src/views/Main/index.js:438
 msgid "Snapshot"
 msgstr "Στιγμιότυπο"
 
@@ -2723,7 +2695,7 @@ msgstr "Ταχύτητα"
 msgid "Speed Preset"
 msgstr "Προεπιλογή ταχύτητας"
 
-#: src/views/Main/index.js:469
+#: src/views/Main/index.js:429
 #: src/views/Settings.js:1240
 #: src/views/Settings.js:2019
 msgid "SRT"
@@ -2902,10 +2874,6 @@ msgstr "Το διαθέσιμο δυαδικό αρχείο FFmpeg δεν υπο
 #: src/misc/coders/settings/Audio.js:40
 msgid "The bitrate of the audio stream."
 msgstr "Το bitrate της ροής ήχου."
-
-#: src/views/Main/index.js:415
-msgid "The built-in player cannot decode this channel's video codec."
-msgstr ""
 
 #: src/views/Edit/Sources/VirtualAudio.js:151
 msgid "The carrier frequency"
@@ -3285,10 +3253,6 @@ msgstr "Μεταδίδει τη ροή βίντεο με το απαιτούμε
 msgid "Tune"
 msgstr "Συντονισμός"
 
-#: src/misc/modals/Hint.js:60
-#~ msgid "Type"
-#~ msgstr ""
-
 #: src/views/Edit/Sources/Network.js:534
 #: src/views/Edit/Wizard/Sources/Network.js:77
 msgid "UDP transport"
@@ -3473,10 +3437,6 @@ msgstr "Εικονική πηγή"
 msgid "Volume"
 msgstr "Τόμος"
 
-#: src/misc/coders/CodecNotice.js:36
-#~ msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
-#~ msgstr ""
-
 #: src/misc/coders/CodecNotice.js:39
 msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and Safari cannot play it."
 msgstr ""
@@ -3513,10 +3473,6 @@ msgstr "Πλάτος"
 msgid "Write protection"
 msgstr "Προστασία εγγραφής"
 
-#: src/views/Publication/Services/Instagram.js:127
-#~ msgid "Yellow Duck"
-#~ msgstr "Κίτρινη πάπια"
-
 #: src/views/Edit/Wizard/Abort.js:38
 msgid "Yes"
 msgstr "Ναι"
@@ -3529,7 +3485,7 @@ msgstr "Δεν μπορείτε να διακόψετε τον οδηγό, επ�
 msgid "You have changed the configuration. In order for the changes to take effect, you have to restart the application. Do you want to restart now?"
 msgstr "Έχετε αλλάξει τη διαμόρφωση. Για να τεθούν σε ισχύ οι αλλαγές, πρέπει να επανεκκινήσετε την εφαρμογή. Θέλετε να κάνετε επανεκκίνηση τώρα;"
 
-#: src/views/Main/index.js:393
+#: src/views/Main/index.js:383
 #: src/views/Publication/Process.js:73
 msgid "You have to reconnect manually"
 msgstr "Πρέπει να επανασυνδεθείτε χειροκίνητα"

@@ -1,0 +1,130 @@
+{
+ "provenance": "/tmp/restreamer-preview-20261104/results/summary.json (harness run 2026-11-03T16:46Z, relabeled 16:52Z)",
+ "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+ "player": "video.js 8.17.4 + bundled @videojs/http-streaming 3.13.3",
+ "control": "hls.js 1.7.4",
+ "server": "python3 -m http.server --directory <fixtures root>",
+ "verdictRule": "VIDEO_OK only if timeAdvanced && frames>0 && videoWidth>0; time advancing with 0 frames/0 width = AUDIO_ONLY",
+ "matrix": [
+  {
+   "case": "av1-fmp4-master-codecs",
+   "mode": "videojs",
+   "src": "/fixtures/master_av1_codecs.m3u8",
+   "label": "VIDEO_OK",
+   "time": 6.021,
+   "frames": 150,
+   "width": 640,
+   "error": null
+  },
+  {
+   "case": "av1-fmp4-master-nocodecs",
+   "mode": "videojs",
+   "src": "/fixtures/master_av1_nocodecs.m3u8",
+   "label": "FAILS",
+   "time": 0,
+   "frames": 0,
+   "width": 0,
+   "error": "Playback cannot continue. No available working or supported playlists."
+  },
+  {
+   "case": "av1-fmp4-media-hlsjs",
+   "mode": "hlsjs",
+   "src": "/fixtures/av1/index.m3u8",
+   "label": "VIDEO_OK",
+   "time": 6.021,
+   "frames": 150,
+   "width": 640,
+   "error": null
+  },
+  {
+   "case": "av1-fmp4-media",
+   "mode": "videojs",
+   "src": "/fixtures/av1/index.m3u8",
+   "label": "FAILS",
+   "time": 0,
+   "frames": 0,
+   "width": 0,
+   "error": "Playback cannot continue. No available working or supported playlists."
+  },
+  {
+   "case": "av1-ts-media",
+   "mode": "videojs",
+   "src": "/fixtures/av1ts/index.m3u8",
+   "label": "AUDIO_ONLY",
+   "time": 6.037,
+   "frames": 0,
+   "width": 0,
+   "error": null
+  },
+  {
+   "case": "h264-fmp4-master-codecs",
+   "mode": "videojs",
+   "src": "/fixtures/master_h264_codecs.m3u8",
+   "label": "VIDEO_OK",
+   "time": 6.08,
+   "frames": 150,
+   "width": 640,
+   "error": null
+  },
+  {
+   "case": "h264-fmp4-master-nocodecs",
+   "mode": "videojs",
+   "src": "/fixtures/master_h264_nocodecs.m3u8",
+   "label": "VIDEO_OK",
+   "time": 6.08,
+   "frames": 150,
+   "width": 640,
+   "error": null
+  },
+  {
+   "case": "h264-fmp4-media",
+   "mode": "videojs",
+   "src": "/fixtures/h264/index.m3u8",
+   "label": "VIDEO_OK",
+   "time": 6.08,
+   "frames": 150,
+   "width": 640,
+   "error": null
+  },
+  {
+   "case": "h264-ts-media",
+   "mode": "videojs",
+   "src": "/fixtures/h264ts/index.m3u8",
+   "label": "VIDEO_OK",
+   "time": 6.016,
+   "frames": 150,
+   "width": 640,
+   "error": null
+  },
+  {
+   "case": "hevc-fmp4-master-codecs",
+   "mode": "videojs",
+   "src": "/fixtures/master_hevc_codecs.m3u8",
+   "label": "FAILS",
+   "time": 0,
+   "frames": 0,
+   "width": 0,
+   "error": "Playback cannot continue. No available working or supported playlists."
+  },
+  {
+   "case": "vp9-fmp4-master-codecs",
+   "mode": "videojs",
+   "src": "/fixtures/master_vp9_codecs.m3u8",
+   "label": "VIDEO_OK",
+   "time": 6.021,
+   "frames": 150,
+   "width": 640,
+   "error": null
+  },
+  {
+   "case": "vp9-fmp4-media",
+   "mode": "videojs",
+   "src": "/fixtures/vp9/index.m3u8",
+   "label": "FAILS",
+   "time": 0,
+   "frames": 0,
+   "width": 0,
+   "error": "Playback cannot continue. No available working or supported playlists."
+  }
+ ]
+}

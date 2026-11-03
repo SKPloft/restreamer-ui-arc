@@ -1,4 +1,7 @@
 dist/video.min.js
+dist/hls.min.js
+dist/hls.min.js.LICENSE.txt
+dist/videojs-hlsjs.js
 dist/video-js.min.css
 dist/videojs-overlay.min.js
 dist/videojs-overlay.min.css

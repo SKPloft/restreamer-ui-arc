@@ -22,7 +22,6 @@ import H from '../../utils/help';
 import Paper from '../../misc/Paper';
 import PaperHeader from '../../misc/PaperHeader';
 import Player from '../../misc/Player';
-import * as Encoders from '../../misc/coders/Encoders';
 import Progress from './Progress';
 import Publication from './Publication';
 import ProcessModal from '../../misc/modals/Process';
@@ -41,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 	playerL1: {
 		//padding: '4px 1px 4px 8px',
 		paddingTop: 10,
-		paddingLeft: 18
+		paddingLeft: 18,
 	},
 	playerL2: {
 		position: 'relative',
@@ -292,15 +291,6 @@ export default function Main(props) {
 	const manifest = props.restreamer.GetChannelAddress('hls+' + storage, _channelid);
 	const poster = props.restreamer.GetChannelAddress('snapshot+' + storage, _channelid);
 
-	// The bundled player (video.js/VHS) only decodes H.264. For every other
-	// codec the playlist is valid but nothing is playable, so show an explicit
-	// hint instead of a black player.
-	const previewProfile = ($metadata.profiles && $metadata.profiles[0]) || {};
-	const previewCoder = (previewProfile.video && previewProfile.video.encoder && previewProfile.video.encoder.coder) || '';
-	const previewCoderInfo = Encoders.Video.Get(previewCoder);
-	const previewCodec = previewCoderInfo === null ? null : previewCoderInfo.codec;
-	const previewUnsupported = previewCodec !== null && previewCodec !== 'h264';
-
 	const addressFields = props.restreamer.GetIngestAddressFields(_channelid);
 
 	let title = <Trans>Main channel</Trans>;
@@ -397,37 +387,7 @@ export default function Main(props) {
 											</Grid>
 										)}
 										{$state.state === 'connected' && (
-											<React.Fragment>
-												{previewUnsupported ? (
-													<Grid
-														container
-														direction="column"
-														className={classes.playerL3}
-														justifyContent="center"
-														alignItems="center"
-														spacing={1}
-													>
-														<Grid item>
-															<WarningIcon className={classes.playerWarningIcon} />
-														</Grid>
-														<Grid item>
-															<Typography>
-																<Trans>The built-in player cannot decode this channel's video codec.</Trans>
-															</Typography>
-														</Grid>
-														<Grid item>
-															<Typography>
-																<Trans>
-																	Open the content URL with an external player, or choose H.264 for the video
-																	profile if the preview is required.
-																</Trans>
-															</Typography>
-														</Grid>
-													</Grid>
-												) : (
-													<Player type="videojs-internal" source={manifest} poster={poster} autoplay mute controls />
-												)}
-											</React.Fragment>
+											<Player type="videojs-internal" source={manifest} poster={poster} autoplay mute controls />
 										)}
 									</Grid>
 								</Grid>

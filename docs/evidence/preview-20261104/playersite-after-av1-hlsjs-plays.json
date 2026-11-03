@@ -1,0 +1,12 @@
+{
+  "url": "http://127.0.0.1:18080/?verify=playersite-after2",
+  "title": "AV1 synthetic file copy",
+  "time": 6.136733,
+  "frames": 8,
+  "width": 640,
+  "height": 360,
+  "error": null,
+  "hasHls": true,
+  "hlsVersion": "1.7.4",
+  "currentSourceIsBlob": false
+}

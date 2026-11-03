@@ -82,10 +82,6 @@ msgstr "Tilføj ny kanal"
 msgid "Add Publication"
 msgstr "Tilføj Publicering"
 
-#: src/misc/modals/Hint.js:158
-#~ msgid "Add Stream"
-#~ msgstr ""
-
 #: src/views/Publication/Add.js:366
 msgid "Add: {0}"
 msgstr "Tilføj: {0}"
@@ -282,10 +278,6 @@ msgstr "Automatisk oprydning af alle mediedata"
 #: src/views/Publication/Player.js:524
 msgid "Autoplay"
 msgstr "Auto afspil"
-
-#: src/misc/coders/CodecNotice.js:28
-#~ msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
-#~ msgstr ""
 
 #: src/misc/coders/CodecNotice.js:31
 msgid "AV1 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview, Safari cannot play it and the Intel QSV encoder requires disabled B-frames."
@@ -538,7 +530,7 @@ msgid "Connected since <0/>"
 msgstr "Forbundet siden <0/>"
 
 #: src/misc/ActionButton.js:12
-#: src/views/Main/index.js:351
+#: src/views/Main/index.js:341
 #: src/views/Publication/Process.js:40
 msgid "Connecting ..."
 msgstr "Forbinder ..."
@@ -565,7 +557,7 @@ msgstr "Konstant kvantiseringstilstand (-1 til 255)."
 msgid "Content"
 msgstr "Indhold"
 
-#: src/views/Main/index.js:441
+#: src/views/Main/index.js:401
 msgid "Content URL"
 msgstr "Indhold URL"
 
@@ -999,7 +991,7 @@ msgstr "Fejl"
 msgid "Error while copying data to clipboard"
 msgstr "Fejl under kopiering af data til udklipsholderen"
 
-#: src/views/Main/index.js:370
+#: src/views/Main/index.js:360
 #: src/views/Publication/Process.js:64
 msgid "Error: {0}"
 msgstr "Fejl: {0}"
@@ -1049,7 +1041,7 @@ msgstr "Det lykkedes ikke at oprette filer til publikationswebstedet."
 msgid "Failed to probe the source. Please check the <0>probe details</0>."
 msgstr "Mislykkes probe hos kilde. Undersøg <0> probe oplysninger</0>."
 
-#: src/utils/restreamer.js:451
+#: src/utils/restreamer.js:457
 msgid "Failed to refresh token: {0}"
 msgstr "Det lykkedes ikke at opdatere token: {0}"
 
@@ -1245,14 +1237,10 @@ msgid "Height"
 msgstr "Højde"
 
 #: src/misc/coders/CodecNotice.js:23
-#~ msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it and browser playback is limited."
-#~ msgstr ""
-
-#: src/misc/coders/CodecNotice.js:23
 msgid "HEVC is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and browser playback is limited."
 msgstr ""
 
-#: src/views/Main/index.js:450
+#: src/views/Main/index.js:410
 msgid "HLS"
 msgstr "HLS"
 
@@ -1380,10 +1368,6 @@ msgstr "Injicere 4"
 msgid "Input stream"
 msgstr "Input-strøm"
 
-#: src/views/Publication/Services/Instagram.js:121
-#~ msgid "Instafeed.me"
-#~ msgstr "Instafeed.me"
-
 #: src/views/Publication/Services/PeerTube.js:85
 msgid "Instance domain"
 msgstr "Instansdomæne"
@@ -1489,10 +1473,6 @@ msgstr "Live-streaming til Facebook Live RTMP-tjeneste"
 msgid "Live-Streaming to Instagram Live RTMP Service."
 msgstr ""
 
-#: src/views/Publication/Services/Instagram.js:19
-#~ msgid "Live-Streaming to Instagram Live RTMP Service. The stream key requires a service such as <0>Instafeed.me</0> or <1>Yellow Duck</1>."
-#~ msgstr "Live-streaming til Instagram Live RTMP-tjeneste. Streamnøglen kræver en tjeneste som <0>Instafeed.me</0> eller <1>Yellow Duck</1>."
-
 #: src/views/Publication/Services/MediaNetwork.js:15
 msgid "Live-Streaming to Media Network RTMP Service."
 msgstr "Live-streaming til Media Network RTMP-tjeneste."
@@ -1534,15 +1514,15 @@ msgstr "Logning"
 msgid "Login"
 msgstr "Log på"
 
-#: src/utils/restreamer.js:264
-#: src/utils/restreamer.js:298
+#: src/utils/restreamer.js:270
+#: src/utils/restreamer.js:304
 msgid "Login failed: {0}"
 msgstr "Login mislykkedes: {0}"
 
-#: src/utils/restreamer.js:273
-#: src/utils/restreamer.js:278
-#: src/utils/restreamer.js:307
-#: src/utils/restreamer.js:312
+#: src/utils/restreamer.js:279
+#: src/utils/restreamer.js:284
+#: src/utils/restreamer.js:313
+#: src/utils/restreamer.js:318
 msgid "Login failed: Couldn't load API details"
 msgstr "Login mislykkedes: Kunne ikke indlæse API-detaljer"
 
@@ -1571,7 +1551,7 @@ msgstr "Normalisering af lydstyrke"
 msgid "Low latency (Buffer)"
 msgstr "Lav latenstid (buffer)"
 
-#: src/views/Main/index.js:306
+#: src/views/Main/index.js:296
 #: src/views/Playersite.js:367
 msgid "Main channel"
 msgstr "Hovedkanal"
@@ -1818,7 +1798,7 @@ msgstr "Ingen egnet encoder fundet."
 msgid "No suitable filter found."
 msgstr "Der er ikke fundet noget egnet filter."
 
-#: src/views/Main/index.js:332
+#: src/views/Main/index.js:322
 #: src/views/Publication/Player.js:356
 msgid "No video"
 msgstr "Ingen video"
@@ -1887,10 +1867,6 @@ msgstr "Én henvisningsadresse pr. linje, f.eks. http://www.example.com"
 #: src/views/Playersite.js:839
 msgid "Open"
 msgstr "Åbn"
-
-#: src/views/Main/index.js:420
-msgid "Open the content URL with an external player, or choose H.264 for the video profile if the preview is required."
-msgstr ""
 
 #: src/misc/IngestAddressFields.js:54
 msgid "Or fill these fields instead of the full URL (e.g. for OBS):"
@@ -2003,7 +1979,7 @@ msgstr "Afspiller-liste"
 msgid "Playlist version (M3U8). Version 3 has the best browser/client compatibility."
 msgstr "Version af afspilningsliste (M3U8). Version 3 har den bedste browser/klient-kompatibilitet."
 
-#: src/views/Main/index.js:375
+#: src/views/Main/index.js:365
 msgid "Please check the <0>process log</0>"
 msgstr "Tjek venligst <0>procesloggen</0>"
 
@@ -2123,15 +2099,15 @@ msgstr "Proces"
 msgid "Process control"
 msgstr "Proceskontrol"
 
-#: src/views/Main/index.js:497
-#: src/views/Main/index.js:513
+#: src/views/Main/index.js:457
+#: src/views/Main/index.js:473
 #: src/views/Publication/Edit.js:494
 #: src/views/Publication/Edit.js:613
 msgid "Process details"
 msgstr "Procesoplysninger"
 
-#: src/views/Main/index.js:500
-#: src/views/Main/index.js:521
+#: src/views/Main/index.js:460
+#: src/views/Main/index.js:481
 #: src/views/Publication/Edit.js:497
 #: src/views/Publication/Edit.js:621
 msgid "Process report"
@@ -2265,7 +2241,7 @@ msgstr "Genopret"
 msgid "Reconnect delay (seconds)"
 msgstr "Forsinkelse af genforbindelse (sekunder)"
 
-#: src/views/Main/index.js:386
+#: src/views/Main/index.js:376
 #: src/views/Publication/Process.js:68
 #: src/views/Publication/Process.js:81
 msgid "Reconnecting in {0}s"
@@ -2313,10 +2289,6 @@ msgstr "Genindlæsning"
 #: src/misc/modals/Hint.js:159
 msgid "Remove Audio"
 msgstr ""
-
-#: src/misc/modals/Hint.js:150
-#~ msgid "Remove Stream"
-#~ msgstr ""
 
 #: src/views/Settings.js:1754
 msgid "Remove the oldest entries if the /memfs is full"
@@ -2367,7 +2339,7 @@ msgstr "Restreamer-vejledning"
 msgid "Restreamer Service"
 msgstr "Restreamer-tjeneste"
 
-#: src/views/Main/index.js:279
+#: src/views/Main/index.js:278
 msgid "Retrieving stream data ..."
 msgstr "Modtager stream data ..."
 
@@ -2385,7 +2357,7 @@ msgstr "RGB test mønster"
 msgid "Rotate"
 msgstr "Drej"
 
-#: src/views/Main/index.js:459
+#: src/views/Main/index.js:419
 #: src/views/Settings.js:1239
 #: src/views/Settings.js:1920
 msgid "RTMP"
@@ -2684,7 +2656,7 @@ msgid "Size"
 msgstr "Størrelse"
 
 #: src/views/Edit/index.js:543
-#: src/views/Main/index.js:478
+#: src/views/Main/index.js:438
 msgid "Snapshot"
 msgstr "Øjebliksbillde"
 
@@ -2723,7 +2695,7 @@ msgstr "Hastighed"
 msgid "Speed Preset"
 msgstr "Forudindstillet hastighed"
 
-#: src/views/Main/index.js:469
+#: src/views/Main/index.js:429
 #: src/views/Settings.js:1240
 #: src/views/Settings.js:2019
 msgid "SRT"
@@ -2902,10 +2874,6 @@ msgstr "Den tilgængelige binære FFmpeg-version understøtter ikke nogen af de 
 #: src/misc/coders/settings/Audio.js:40
 msgid "The bitrate of the audio stream."
 msgstr "Bitraten for lydstrømmen."
-
-#: src/views/Main/index.js:415
-msgid "The built-in player cannot decode this channel's video codec."
-msgstr ""
 
 #: src/views/Edit/Sources/VirtualAudio.js:151
 msgid "The carrier frequency"
@@ -3285,10 +3253,6 @@ msgstr "Overfører din videostream med den nødvendige nøgle, som blev generere
 msgid "Tune"
 msgstr "Afstemning"
 
-#: src/misc/modals/Hint.js:60
-#~ msgid "Type"
-#~ msgstr ""
-
 #: src/views/Edit/Sources/Network.js:534
 #: src/views/Edit/Wizard/Sources/Network.js:77
 msgid "UDP transport"
@@ -3473,10 +3437,6 @@ msgstr "Virtuel kilde"
 msgid "Volume"
 msgstr "Volumen"
 
-#: src/misc/coders/CodecNotice.js:36
-#~ msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it and Safari cannot play it."
-#~ msgstr ""
-
 #: src/misc/coders/CodecNotice.js:39
 msgid "VP9 is written as fMP4 HLS. RTMP publishing does not support it, the built-in player cannot show a preview and Safari cannot play it."
 msgstr ""
@@ -3513,10 +3473,6 @@ msgstr "Bredde"
 msgid "Write protection"
 msgstr "Beskyttelse mod skrivning"
 
-#: src/views/Publication/Services/Instagram.js:127
-#~ msgid "Yellow Duck"
-#~ msgstr "Gul and"
-
 #: src/views/Edit/Wizard/Abort.js:38
 msgid "Yes"
 msgstr "Ja"
@@ -3529,7 +3485,7 @@ msgstr "Du kan ikke afbryde guiden, fordi der skal være defineret mindst ét in
 msgid "You have changed the configuration. In order for the changes to take effect, you have to restart the application. Do you want to restart now?"
 msgstr "Du har ændret konfigurationen. For at ændringerne kan træde i kraft, skal du genstarte programmet. Ønsker du at genstarte nu?"
 
-#: src/views/Main/index.js:393
+#: src/views/Main/index.js:383
 #: src/views/Publication/Process.js:73
 msgid "You have to reconnect manually"
 msgstr "Du skal genetablere forbindelsen manuelt"

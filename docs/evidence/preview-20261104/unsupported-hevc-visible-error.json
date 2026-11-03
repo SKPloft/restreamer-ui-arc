@@ -1,0 +1,13 @@
+{
+  "error": {
+    "code": 3,
+    "message": "HLS: manifestIncompatibleCodecsError: one or more CODECS in variant not supported: [\"hvc1.1.6.L63.B0,mp4a.40.2\"]"
+  },
+  "visible": "block",
+  "text": "This is a modal window.\n\nHLS: manifestIncompatibleCodecsError: one or more CODECS in variant not supported: [\"hvc1.1.6.L63.B0,mp4a.40.2\"]",
+  "time": 0,
+  "frames": 0,
+  "hasHls": true,
+  "observationMs": 14308,
+  "browserCapability": false
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "name": "mp3-roundtrip",
+    "exitCode": 0,
+    "inputCodecs": [
+      "av1",
+      "mp3"
+    ],
+    "outputCodecs": [
+      "wrapped_avframe",
+      "pcm_s16le"
+    ],
+    "frames": 24
+  },
+  {
+    "name": "aac-copy-create",
+    "exitCode": 0,
+    "inputCodecs": [
+      "av1",
+      "aac"
+    ],
+    "outputCodecs": [
+      "av1",
+      "aac"
+    ],
+    "frames": 75
+  },
+  {
+    "name": "aac-roundtrip",
+    "exitCode": 0,
+    "inputCodecs": [
+      "av1",
+      "aac"
+    ],
+    "outputCodecs": [
+      "wrapped_avframe",
+      "pcm_s16le"
+    ],
+    "frames": 24
+  }
+]

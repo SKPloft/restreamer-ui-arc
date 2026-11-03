@@ -1,0 +1,20 @@
+{
+  "refreshStatus": 200,
+  "exec": "running",
+  "frames": 1932,
+  "fps": 24.5,
+  "time": 77.55,
+  "inputCount": 2,
+  "outputCount": 2,
+  "inputCodecs": [
+    "av1",
+    "aac"
+  ],
+  "outputCodecs": [
+    "av1",
+    "aac"
+  ],
+  "logging": "level+info",
+  "active": 0,
+  "bytesTx": 0
+}
